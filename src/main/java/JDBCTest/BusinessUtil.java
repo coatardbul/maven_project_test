@@ -17,6 +17,7 @@ public class BusinessUtil {
     public static String  PRODID = "prodId";
     public static String  ORACLE_PRODID  = "PROD_ID";
 
+    public  static String   SB="hello";
     /**
      * crmList 从crm取出的数据集合
      * 查询当前trade_time>=当前时间
