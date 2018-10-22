@@ -1,5 +1,8 @@
 package JDBCTest;
 
+import entity.ImportCrmProduct;
+import reflex.ReflexUtil;
+
 public class test3 {
     public static void main(String[] args) {
         ImportCrmProduct importCrmProduct=new ImportCrmProduct();

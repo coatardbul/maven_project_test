@@ -1,3 +1,6 @@
+package xss;
+
+import entity.UserIp;
 import org.owasp.encoder.Encode;
 
 import java.lang.reflect.Field;

@@ -1,4 +1,8 @@
-package JDBCTest;
+package JDBC;
+
+import JDBC.JDBCUtil;
+import entity.ImportCrmProduct;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -60,16 +64,23 @@ public class BusinessUtil {
         }
     }
 
-    public <T> List<T> getCrmSystemProduceList() {
+
+    @Test
+    public void getCrmSystemProduceList() {
         JDBCUtil jdbcUtil = getCrmConnect();
         try {
             jdbcUtil.connection.setAutoCommit(false);
             //************业务开始***************
-            Map<String,List<Object>> map= getOwnParamsToCRM();
-            String querySql = getCRMProductSql(map);
-            //TODO
-            List<ImportCrmProduct> list = jdbcUtil.excuteQuery(querySql, getListByMap(map), ImportCrmProduct.class);
+            String querySql="select app.DATE_ID,'' as update_time,app.prod_id,app.app_type,app.cust_bal,app.res_status,app.PRINTAPP_YES  as print_app_yes,'' as print_confim_yes,to_char(app.reg_app_time,'yyyy-mm-dd hh24:mi:ss') as reg_app_time,'2018-10-22' as trade_time   " +
+                    "FROM CRM_F_SE_CUST_APP app  inner JOIN CRM_F_PD_RECORD pd    " +
+                    " ON app.prod_id = pd.prod_id  inner JOIN CRM_F_CI_CUST cust   " +
+                    "  ON app.cus_id = cust.cust_id   left JOIN CRM_F_CFG_BENEFIT bef    " +
+                    " on pd.benefit_id = bef.benefitcode   left JOIN crm_f_ack_trans OTS    " +
+                    " on app.appsheetserialno = OTS.Appsheetserialno " +
+                    " WHERE bef.fundtype = '5200'    ";
+            List<ImportCrmProduct> list=jdbcUtil.excuteQuery(querySql,new ArrayList<Object>(),ImportCrmProduct.class);
             //*************业务结束**************
+            System.out.println(list.toString());
             jdbcUtil.connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -81,32 +92,27 @@ public class BusinessUtil {
         } finally {
             jdbcUtil.closeAll();
         }
-        return null;
+       // return null;
     }
 
     public JDBCUtil getCrmConnect() {
         JDBCUtil jdbcUtil = new JDBCUtil();
         String driver = "oracle.jdbc.driver.OracleDriver";
-        String url = "jdbc:oracle:thin:@//localhost:1521/ssw";
-        String userName = "XIR_TRD_J";
-        String userPassword = "xpar";
+        String url = "jdbc:oracle:thin:@//10.50.21.89:1521/acrmtest";
+        String userName = "crmsc";
+        String userPassword = "crmsc";
         jdbcUtil.getConnection(driver, url, userName, userPassword);
         return jdbcUtil;
     }
+
+
 
     public <T> void ownSystemProcess(List<T> insertList, List<T> updateList) {
         JDBCUtil jdbcUtil = getCrmConnect();
         try {
             jdbcUtil.connection.setAutoCommit(false);
             //************业务开始***************
-            String insertSql = "";
-            List<String> reduceParam = new ArrayList<>();
-            reduceParam.add("");
-            jdbcUtil.executeInsertList(insertSql, insertList, reduceParam);
 
-            String updateSql = "";
-            String[] param = new String[3];
-            jdbcUtil.executeUpdateList(updateSql, updateList, param);
             //*************业务结束**************
             jdbcUtil.connection.commit();
         } catch (SQLException e) {

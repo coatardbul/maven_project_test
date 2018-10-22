@@ -1,4 +1,4 @@
-package JDBCTest;
+package entity;
 
 public class UserIp {
     /**

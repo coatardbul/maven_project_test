@@ -1,5 +1,6 @@
-package JDBCTest;
+package reflex;
 
+import entity.ImportCrmProduct;
 import org.junit.Test;
 
 import java.util.Random;
@@ -67,7 +68,7 @@ public class ReflexTest {
         System.out.println(o.toString());
         int num = 0;
         num += ReflexUtil.singleReadAttributeCount(new ImportCrmProduct().getClass());
-        num += ReflexUtil.singleReadAttributeCount(new ImportCrmProductParent().getClass());
+        num += ReflexUtil.singleReadAttributeCount(new ImportCrmProduct().getClass());
         System.out.println(num);
     }
 

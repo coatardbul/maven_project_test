@@ -1,4 +1,4 @@
-package objectClone;
+package clone;
 
 import java.io.*;
 import java.util.List;

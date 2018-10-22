@@ -1,4 +1,4 @@
-package JDBCTest;
+package JDBC;
 
 import java.io.*;
 import java.util.List;

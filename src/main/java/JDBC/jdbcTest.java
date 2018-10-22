@@ -1,5 +1,6 @@
-package JDBCTest;
+package JDBC;
 
+import entity.ImportCrmProduct;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -17,9 +18,9 @@ public class jdbcTest {
     public JDBCUtil getConnect() {
         JDBCUtil jdbcUtil = new JDBCUtil();
         String driver = "oracle.jdbc.driver.OracleDriver";
-        String url = "jdbc:oracle:thin:@//localhost:1521/ssw";
-        String userName = "XIR_TRD_J";
-        String userPassword = "xpar";
+        String url = "jdbc:oracle:thin:@//10.50.21.89:1521/acrmtest";
+        String userName = "crmsc";
+        String userPassword = "crmsc";
         jdbcUtil.getConnection(driver, url, userName, userPassword);
         return jdbcUtil;
     }
@@ -30,13 +31,8 @@ public class jdbcTest {
         try {
             jdbcUtil.connection.setAutoCommit(false);
             //************业务开始***************
-            insertTest(jdbcUtil);
-//            List<ImportCrmProductParent> l = new ArrayList<>();
-//            for (int i = 0; i < 10; i++) {
-//                l.add(ReflexTest.getObject());
-//            }
-//            updateTestList(jdbcUtil, l);
-//            updateTest(jdbcUtil);
+
+
             //*************业务结束**************
 
             jdbcUtil.connection.commit();
@@ -53,15 +49,15 @@ public class jdbcTest {
         }
     }
 
-    public List<ImportCrmProductParent> queryTest(JDBCUtil jdbcUtil) {
+    public List<ImportCrmProduct> queryTest(JDBCUtil jdbcUtil) {
         String sql = "select date_id     dateId, update_time     updateTime, prod_id     prodId,  app_type     appType, cust_bal     custBal, res_status     resStatus, print_app_yes     printAppYes , print_confim_yes     printConfimYes , reg_app_time     regAppTime , trade_time     tradeTime from TTRD_IMPORT_CRM_PRODUCT";
-        List<ImportCrmProductParent> list = jdbcUtil.excuteQuery(sql, null, ImportCrmProductParent.class);
+        List<ImportCrmProduct> list = jdbcUtil.excuteQuery(sql, null, ImportCrmProduct.class);
         System.out.println("******" + list.size() + "*************");
         System.out.println(list.toString());
         return list;
     }
 
-    public void updateTestList(JDBCUtil jdbcUtil, List<ImportCrmProductParent> list) throws SQLException {
+    public void updateTestList(JDBCUtil jdbcUtil, List<ImportCrmProduct> list) throws SQLException {
         for (int i = 0; i < list.size(); i++) {
             list.get(i).setProdId("25588");
             list.get(i).setCustBal(22.90);
@@ -87,20 +83,20 @@ public class jdbcTest {
     public void insertTest(JDBCUtil jdbcUtil) {
         String insertSql = "insert into TTRD_IMPORT_CRM_PRODUCT (DATE_ID, UPDATE_TIME, PROD_ID, APP_TYPE, CUST_BAL, RES_STATUS, PRINT_APP_YES, PRINT_CONFIM_YES, REG_APP_TIME, TRADE_TIME) values (?,?,?,?,?,?,?,?,?,?) ";
 
-        List<ImportCrmProductParent> ImportCrmProductParentsList = new ArrayList<ImportCrmProductParent>();
+        List<ImportCrmProduct> ImportCrmProductsList = new ArrayList<ImportCrmProduct>();
         for (int i = 0; i < 10; i++) {
-            ImportCrmProductParent ImportCrmProductParent = new ImportCrmProductParent();
-            ImportCrmProductParent.setDateId((long) new Random().nextInt());
-            ImportCrmProductParent.setProdId("hello");
-            ImportCrmProductParent.setAppType("12");
-            ImportCrmProductParent.setResStatus("1");
-            ImportCrmProductParent.setTradeTime("2018-09-08 12:12");
-            ImportCrmProductParentsList.add(ImportCrmProductParent);
+            ImportCrmProduct ImportCrmProduct = new ImportCrmProduct();
+            ImportCrmProduct.setDateId((long) new Random().nextInt());
+            ImportCrmProduct.setProdId("hello");
+            ImportCrmProduct.setAppType("12");
+            ImportCrmProduct.setResStatus("1");
+            ImportCrmProduct.setTradeTime("2018-09-08 12:12");
+            ImportCrmProductsList.add(ImportCrmProduct);
         }
         List<String> cutParam=new ArrayList<>();
         cutParam.add("prodName");
-        jdbcUtil.executeInsertList(insertSql, ImportCrmProductParentsList, cutParam);
-        //jdbcUtil.executeInsert(insertSql,ImportCrmProductParent);
+        jdbcUtil.executeInsertList(insertSql, ImportCrmProductsList, cutParam);
+        //jdbcUtil.executeInsert(insertSql,ImportCrmProduct);
 
     }
 }

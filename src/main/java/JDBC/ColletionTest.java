@@ -1,4 +1,4 @@
-package JDBCTest;
+package JDBC;
 
 import org.junit.Test;
 

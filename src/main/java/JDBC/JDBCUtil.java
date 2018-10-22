@@ -1,4 +1,6 @@
-package JDBCTest;
+package JDBC;
+
+import reflex.ReflexUtil;
 
 import java.sql.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package JDBCTest;
+package reflex;
 
 import org.owasp.encoder.Encode;
 
@@ -37,6 +37,9 @@ public class ReflexUtil {
                 field.setAccessible(true);
                 //获取属性
                 String nameTemp = field.getName();
+                if(name.contains("_")){
+                    name=name.replace("_","");
+                }
                 if (nameTemp.equalsIgnoreCase(name)) {
                     String attributeTypeFullName = field.getGenericType().toString().trim();
                     String attributeType = attributeTypeFullName.substring(attributeTypeFullName.lastIndexOf(".") + 1);
