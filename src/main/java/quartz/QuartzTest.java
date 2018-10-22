@@ -1,3 +1,5 @@
+package quartz;
+
 import static org.quartz.DateBuilder.newDate;
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.SimpleScheduleBuilder.simpleSchedule;

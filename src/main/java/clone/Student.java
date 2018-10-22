@@ -1,4 +1,4 @@
-package objectClone;
+package clone;
 
 public class Student implements Cloneable {
     private int number;

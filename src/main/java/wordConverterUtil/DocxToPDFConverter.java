@@ -1,4 +1,4 @@
-package converterUtil;
+package wordConverterUtil;
 
 import java.io.InputStream;
 import java.io.OutputStream;

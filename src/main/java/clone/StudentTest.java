@@ -1,4 +1,4 @@
-package objectClone;
+package clone;
 
 import org.junit.Test;
 

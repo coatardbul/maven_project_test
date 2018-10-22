@@ -1,4 +1,4 @@
-
+package quartz;
 import java.util.Date;
 
 import org.quartz.DisallowConcurrentExecution;

@@ -1,3 +1,5 @@
+package xss;
+
 import org.owasp.encoder.Encode;
 
 public class EncodeForHtmlTest {

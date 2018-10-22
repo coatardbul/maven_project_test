@@ -1,6 +1,8 @@
+package ip;
+
 import javax.servlet.http.HttpServletRequest;
 
-public class JavaTest {
+public class ipTest {
     public static void main(String[] args) {
     String str="1.1.1.1, 127.0.0.1, 192.168.247.131, 192.168.247.132";
         String ip=getRealIpAdd(str);

@@ -1,4 +1,4 @@
-package JDBCTest;
+package JDBC;
 
 import entity.ImportCrmProduct;
 import reflex.ReflexUtil;

@@ -1,4 +1,4 @@
-package objectClone;
+package clone;
 
 public class  Address  implements Cloneable{
     private String add;
