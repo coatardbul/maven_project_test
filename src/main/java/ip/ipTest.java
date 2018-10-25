@@ -7,7 +7,6 @@ public class ipTest {
     String str="1.1.1.1, 127.0.0.1, 192.168.247.131, 192.168.247.132";
         String ip=getRealIpAdd(str);
         System.out.println(ip);
-
     }
     public static String getRealIpStringByRequest(HttpServletRequest request){
         String ip = request.getHeader("x-forwarded-for");

@@ -70,21 +70,21 @@ public class JDBCUtil {
      * @return List
      * 结果集
      */
-    public <T>List<T> excuteQuery(String sql, List<Object> params,Class<T> object) {
+    public <T> List<T> excuteQuery(String sql, List<Object> params, Class<T> object) {
         List<T> list = new ArrayList<T>();
         ResultSetMetaData resultSetMetaData = null;
         try {
             preparedStatement = connection.prepareStatement(sql);
             // 参数赋值
-            if(params.size()!=0){
-                for(int i=0;i<params.size();i++){
+            if (params.size() != 0) {
+                for (int i = 0; i < params.size(); i++) {
                     preparedStatement.setObject(i + 1, params.get(i));
                 }
             }
             resultSet = preparedStatement.executeQuery();
             resultSetMetaData = resultSet.getMetaData();
             while (resultSet.next()) {
-                T t=object.newInstance();
+                T t = object.newInstance();
                 for (int i = 1; i <= resultSetMetaData.getColumnCount(); i++) {
                     ReflexUtil.setAttributeValue(resultSetMetaData.getColumnLabel(i), resultSet.getObject(i), t);
                 }
@@ -100,23 +100,37 @@ public class JDBCUtil {
         return list;
     }
 
-    public <T>void executeUpdateList(String sql, List<T> list,String[]param) {
+    public <T> void executeUpdateList(String sql, List<T> list, String[] param) {
         try {
             for (int i = 0; i < list.size(); i++) {
                 List<Object> paramlist = new ArrayList<Object>();
                 T targetObject = list.get(i);
-                for(int j=0;j<param.length;j++){
-                   Object object= ReflexUtil.readValueByName(param[j],targetObject);
-                    paramlist.add( object);
+                for (int j = 0; j < param.length; j++) {
+                    Object object = ReflexUtil.readValueByName(param[j], targetObject);
+                    paramlist.add(object);
                 }
-                executeUpdate(sql,  paramlist);
+                executeUpdate(sql, paramlist);
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
+
+    public String getSqlString(String sql, List params) {
+        if (sql == null || sql.length()==0) {
+            return sql;
+        }
+        for(int i=0;i<params.size();i++){
+           if(params.get(i) instanceof  String){
+               params.set(i,"'"+params.get(i)+"'");
+           }
+        }
+        Object[] objects = params.toArray();
+        String statement =String.format(sql.replaceAll("\\?", "%s"), objects);
+        return statement;
+    }
+
     /**
-     *
      * @param sql
      * @param list 传入sql的参数
      * @return
@@ -124,30 +138,29 @@ public class JDBCUtil {
     public int executeUpdate(String sql, List<?> list) throws SQLException {
         // 受影响的行数
         int affectedLine = 0;
-            // 调用SQL
-            preparedStatement = connection.prepareStatement(sql);
-            // 参数赋值
-            if (list != null) {
-                for (int i = 0; i < list.size(); i++) {
-                    preparedStatement.setObject(i+1,list.get(i));
-                }
+        // 调用SQL
+        preparedStatement = connection.prepareStatement(sql);
+        // 参数赋值
+        if (list != null) {
+            for (int i = 0; i < list.size(); i++) {
+                preparedStatement.setObject(i + 1, list.get(i));
             }
-            // 执行
-            affectedLine = preparedStatement.executeUpdate();
+        }
+        // 执行
+        affectedLine = preparedStatement.executeUpdate();
         return affectedLine;
     }
 
     /**
-     *
      * @param sql
      * @param list
-     * @param reduceParam  实体类比数据库多出的字段
+     * @param reduceParam 实体类比数据库多出的字段
      * @param <T>
      */
-    public <T>void executeInsertList(String sql,List<T> list,List<String> reduceParam){
+    public <T> void executeInsertList(String sql, List<T> list, List<String> reduceParam) {
         try {
-            for(T t:list){
-                executeInsert(sql,t,reduceParam);
+            for (T t : list) {
+                executeInsert(sql, t, reduceParam);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -155,16 +168,15 @@ public class JDBCUtil {
     }
 
     /**
-     *
      * @param sql
      * @param t
      * @param <T>
      * @throws SQLException
      */
-    public <T>void executeInsert(String sql, T  t,List<String>cutParam) throws SQLException {
-            preparedStatement = connection.prepareStatement(sql);
-            ReflexUtil.setObjectToPreparedStatement(preparedStatement,t,cutParam);
-            preparedStatement.executeUpdate();
+    public <T> void executeInsert(String sql, T t, List<String> cutParam) throws SQLException {
+        preparedStatement = connection.prepareStatement(sql);
+        ReflexUtil.setObjectToPreparedStatement(preparedStatement, t, cutParam);
+        preparedStatement.executeUpdate();
     }
 
     /**

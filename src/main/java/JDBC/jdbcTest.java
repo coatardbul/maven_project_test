@@ -93,10 +93,21 @@ public class jdbcTest {
             ImportCrmProduct.setTradeTime("2018-09-08 12:12");
             ImportCrmProductsList.add(ImportCrmProduct);
         }
-        List<String> cutParam=new ArrayList<>();
+        List<String> cutParam = new ArrayList<>();
         cutParam.add("prodName");
         jdbcUtil.executeInsertList(insertSql, ImportCrmProductsList, cutParam);
         //jdbcUtil.executeInsert(insertSql,ImportCrmProduct);
 
+    }
+
+    @Test
+    public void getSqlString() {
+        JDBCUtil jdbcUtil = new JDBCUtil();
+        String sql = "select * from ttrd ?,?  ";
+        List list = new ArrayList();
+        list.add("123");
+        list.add(2123);
+        String str =   jdbcUtil.getSqlString(sql, list);
+        System.out.println(str);
     }
 }
