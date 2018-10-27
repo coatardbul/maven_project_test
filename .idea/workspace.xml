@@ -2,30 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="197f351a-07c2-4d2b-be97-3c8938ab5961" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/String/StringMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/list/HashMaptest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xss/sddfdas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xss/webFilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JDBC/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBC/test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ip/ipTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clone/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clone/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clone/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clone/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clone/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clone/StudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ImportCrmProductParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/ImportCrmProductParent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quartz/HelloQuartz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quartz/HelloQuartz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quartz/QuartzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quartz/QuartzTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quartz/SimpleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quartz/SimpleExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JDBCTest/test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/domain/TtrdImportCrmProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/TtrdImportCrmProductMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/ArrayListAndLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/ArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/Box.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/GenericTest$Generic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/GenericTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/LinkedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/list/ListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/quartz/HelloJob.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,99 +28,130 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Converter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ListTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/list/ListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3014">
+              <caret line="144" column="32" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMaptest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/list/HashMaptest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5632">
+              <caret line="283" column="7" selection-start-line="283" selection-start-column="7" selection-end-line="283" selection-end-column="7" />
+              <folding>
+                <element signature="e#10650#10651#0" expanded="true" />
+                <element signature="e#10717#10718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webFilterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xss/webFilterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="divideTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/math/divideTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sddfdas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/xss/sddfdas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocToPDFConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java">
+      <file leaf-file-name="StringMatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/String/StringMatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="8" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocxToPDFConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java">
+      <file leaf-file-name="UserIp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserIp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="304">
+              <caret line="208" column="28" selection-start-line="208" selection-start-column="28" selection-end-line="208" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java">
+      <file leaf-file-name="ReflexTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OdtToPDF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PptToPDFConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PptxToPDFConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncodeForHtmlTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XSSUtilFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xss/XSSUtilFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ipTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ip/ipTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="196">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -136,9 +160,21 @@
       <find>getCrmSystemProduceList</find>
       <find>getConnect</find>
       <find>ReflexUtil</find>
+      <find>XWPFWordHandler</find>
+      <find>poi-ooxml</find>
+      <find>stax</find>
+      <find>poi</find>
+      <find>IRunBody</find>
+      <find>CRMPurchaseAndRedemptionDateServiceImp.BATCH_NUM</find>
+      <find>spring</find>
+      <find>${spring-data.version}</find>
+      <find>Const</find>
+      <find>req</find>
     </findStrings>
     <replaceStrings>
       <replace>ImportCrmProduct</replace>
+      <replace>100</replace>
+      <replace>1.2.0.RELEASE</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -148,13 +184,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/ListCopyUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/jdbcTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/clone/ListCopyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/clone/ListCopyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/ListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/UserIp.java" />
         <option value="$PROJECT_DIR$/src/main/java/xss/XSSUtilFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/JDBC/test2.java" />
         <option value="$PROJECT_DIR$/src/main/java/reflex/ReflexUtil.java" />
@@ -177,6 +210,18 @@
         <option value="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ip/JavaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ip/ipTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wordConverterUtil/sdfsdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/math/divideTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBC/jdbcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JDBC/JDBCUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/UserIp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/list/ListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/list/HashMaptest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/xss/webFilterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xss/sddfdas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/String/StringMatch.java" />
       </list>
     </option>
   </component>
@@ -190,19 +235,18 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="40" />
-    <option name="y" value="30" />
-    <option name="width" value="1349" />
-    <option name="height" value="690" />
+    <option name="x" value="3" />
+    <option name="y" value="64" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,12 +278,38 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ip" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reflex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="String" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -248,6 +318,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -266,34 +337,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BusinessUtil.getCrmSystemProduceList">
+  <component name="RunManager" selected="Application.sddfdas">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JDBCTest.test2" />
+    <configuration name="sddfdas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xss.sddfdas" />
       <module name="maven_project_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDBCTest.*" />
+          <option name="PATTERN" value="xss.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="BusinessUtil.getCrmSystemProduceList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListTest.hashCodeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDBC.*" />
+          <option name="PATTERN" value="list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="JDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.BusinessUtil" />
-      <option name="METHOD_NAME" value="getCrmSystemProduceList" />
+      <option name="PACKAGE_NAME" value="list" />
+      <option name="MAIN_CLASS_NAME" value="list.ListTest" />
+      <option name="METHOD_NAME" value="hashCodeTests" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -304,19 +375,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BusinessUtil.ownSystemProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDBC.*" />
+          <option name="PATTERN" value="list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="JDBC" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.BusinessUtil" />
-      <option name="METHOD_NAME" value="ownSystemProcess" />
+      <option name="PACKAGE_NAME" value="list" />
+      <option name="MAIN_CLASS_NAME" value="list.ListTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="StringMatch.match" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="String" />
+      <option name="MAIN_CLASS_NAME" value="String.StringMatch" />
+      <option name="METHOD_NAME" value="match" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -334,6 +428,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="jdbcTest.getSqlString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="JDBC" />
+      <option name="MAIN_CLASS_NAME" value="JDBC.jdbcTest" />
+      <option name="METHOD_NAME" value="getSqlString" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -366,15 +483,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.BusinessUtil.ownSystemProcess" />
-      <item itemvalue="JUnit.BusinessUtil.getCrmSystemProduceList" />
-      <item itemvalue="Application.test2" />
+      <item itemvalue="JUnit.jdbcTest.getSqlString" />
+      <item itemvalue="JUnit.ListTest.test6" />
+      <item itemvalue="JUnit.ListTest.hashCodeTests" />
+      <item itemvalue="JUnit.StringMatch.match" />
+      <item itemvalue="Application.sddfdas" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BusinessUtil.getCrmSystemProduceList" />
-        <item itemvalue="Application.test2" />
-        <item itemvalue="JUnit.BusinessUtil.ownSystemProcess" />
+        <item itemvalue="Application.sddfdas" />
+        <item itemvalue="JUnit.StringMatch.match" />
+        <item itemvalue="JUnit.ListTest.hashCodeTests" />
+        <item itemvalue="JUnit.ListTest.test6" />
+        <item itemvalue="JUnit.jdbcTest.getSqlString" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +509,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540204068140</updated>
-      <workItem from="1540204071140" duration="5285000" />
+      <workItem from="1540204071140" duration="6582000" />
+      <workItem from="1540259197184" duration="20617000" />
+      <workItem from="1540446510856" duration="1763000" />
+      <workItem from="1540453369175" duration="6909000" />
+      <workItem from="1540543897797" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="update_2018_10_22_20_04">
       <created>1540209894117</created>
@@ -397,79 +522,98 @@
       <option name="project" value="LOCAL" />
       <updated>1540209894117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update_2018_10_22_20_55">
+      <created>1540212942481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540212942481</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update_2018_10_25_10_55">
+      <created>1540435953779</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540435953779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BusinessUtil_ownSystemProcess - 2018.10.22 at 18h 44m 27s.xml">
-      <configuration name="BusinessUtil.ownSystemProcess" configurationId="JUnit" />
+    <history-entry file="ListTest_test6 - 2018.10.24 at 16h 28m 59s.xml">
+      <configuration name="ListTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_ownSystemProcess - 2018.10.22 at 18h 44m 49s.xml">
-      <configuration name="BusinessUtil.ownSystemProcess" configurationId="JUnit" />
+    <history-entry file="ListTest_test6 - 2018.10.24 at 16h 30m 36s.xml">
+      <configuration name="ListTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_ownSystemProcess - 2018.10.22 at 18h 44m 53s.xml">
-      <configuration name="BusinessUtil.ownSystemProcess" configurationId="JUnit" />
+    <history-entry file="ListTest_test6 - 2018.10.24 at 16h 31m 20s.xml">
+      <configuration name="ListTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 18h 47m 27s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="ListTest_test6 - 2018.10.24 at 18h 30m 43s.xml">
+      <configuration name="ListTest.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 18h 48m 42s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="ListTest_hashCodeTests - 2018.10.24 at 19h 21m 11s.xml">
+      <configuration name="ListTest.hashCodeTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 19h 00m 57s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="ListTest_hashCodeTests - 2018.10.24 at 19h 21m 57s.xml">
+      <configuration name="ListTest.hashCodeTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 19h 11m 39s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="ListTest_hashCodeTests - 2018.10.24 at 19h 22m 20s.xml">
+      <configuration name="ListTest.hashCodeTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 19h 12m 16s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="ListTest_hashCodeTests - 2018.10.24 at 19h 22m 51s.xml">
+      <configuration name="ListTest.hashCodeTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 19h 14m 32s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="StringMatch_match - 2018.10.26 at 11h 06m 46s.xml">
+      <configuration name="StringMatch.match" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BusinessUtil_getCrmSystemProduceList - 2018.10.22 at 19h 15m 17s.xml">
-      <configuration name="BusinessUtil.getCrmSystemProduceList" configurationId="JUnit" />
+    <history-entry file="StringMatch_match - 2018.10.26 at 11h 07m 41s.xml">
+      <configuration name="StringMatch.match" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5285000" />
+    <option name="totallyTimeSpent" value="37610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="8" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38190955" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3835846" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="4" weight="0.329296" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32998326" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37018424" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981076" />
-      <window_info anchor="bottom" id="Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32943144" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32998326" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35117057" />
+      <window_info anchor="right" id="Mybatis datasource" order="3" side_tool="true" weight="0.329296" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24753974" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +624,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update_2018_10_22_20_04" />
-    <option name="LAST_COMMIT_MESSAGE" value="update_2018_10_22_20_04" />
+    <MESSAGE value="update_2018_10_22_20_55" />
+    <MESSAGE value="update_2018_10_25_10_55" />
+    <option name="LAST_COMMIT_MESSAGE" value="update_2018_10_25_10_55" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -491,12 +637,59 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/list/ListTest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/JDBC/jdbcTest.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/list/ListTest.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="14" />
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>(i + 1) * 100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(i + 1) * 100)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(num  * 100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.size()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(num - 1) * 100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>jdbcUtil.excuteQuery(querySql,null,ImportCrmProduct.class);</expression-string>
         <language-id>JAVA</language-id>
@@ -505,13 +698,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/clone/ListCopyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clone/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -554,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserIp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/BusinessUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -575,31 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/jdbcTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="53" column="52" lean-forward="true" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/ListCopyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -610,13 +768,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/list/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -655,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="70" column="71" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
@@ -669,59 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ip/ipTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="154">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -732,10 +827,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ip/ipTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/sdfsdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar!/org/apache/poi/xwpf/usermodel/XWPFDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar!/org/apache/poi/xwpf/usermodel/IRunBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/ArrayListAndLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/ArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" selection-start-line="14" selection-end-line="21" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/LinkedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/GenericTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9482">
+          <caret line="454" column="6" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/jdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2266">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JDBC/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2794">
+          <caret line="130" column="5" selection-start-line="118" selection-start-column="3" selection-end-line="130" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/junit/junit/4.4/junit-4.4.jar!/org/junit/internal/runners/TestMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3014">
+          <caret line="144" column="32" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/list/HashMaptest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5632">
+          <caret line="283" column="7" selection-start-line="283" selection-start-column="7" selection-end-line="283" selection-end-column="7" />
+          <folding>
+            <element signature="e#10650#10651#0" expanded="true" />
+            <element signature="e#10717#10718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ojdbc14-10.2.0.3.0.jar!/oracle/jdbc/driver/Const.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xss/webFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/math/divideTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xss/sddfdas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/String/StringMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserIp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="208" column="28" selection-start-line="208" selection-start-column="28" selection-end-line="208" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
         </state>
       </provider>
     </entry>
