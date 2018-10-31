@@ -1,17 +1,13 @@
-package quartz;
+package timedTask.quartz;
 
-import static org.quartz.DateBuilder.newDate;
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 import static org.quartz.TriggerBuilder.newTrigger;
-
-import java.util.GregorianCalendar;
 
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.Trigger;
 import org.quartz.impl.StdSchedulerFactory;
-import org.quartz.impl.calendar.AnnualCalendar;
 
 public class QuartzTest {
 
@@ -31,7 +27,7 @@ public class QuartzTest {
             //定义一个JobDetail
             JobDetail job = newJob(HelloQuartz.class) //定义Job类为HelloQuartz类，这是真正的执行逻辑所在
                     .withIdentity("job1", "group1") //定义name/group
-                    .usingJobData("name", "quartz") //定义属性
+                    .usingJobData("name", "timedTask/quartz") //定义属性
                     .build();
 
             //加入这个调度

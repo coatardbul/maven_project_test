@@ -1,4 +1,4 @@
-package quartz;
+package timedTask.quartz;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
@@ -23,8 +23,7 @@ public class TestJobJobTest {
                 .build();
         scheduler.scheduleJob(jobDetail , trigger);
 
-        Thread.sleep(5000);
-        // 删除job
-        scheduler.deleteJob(jobKey);
+
+
     }
 }

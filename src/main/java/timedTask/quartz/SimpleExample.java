@@ -1,4 +1,4 @@
-package quartz;/*
+package timedTask.quartz;/*
  * All content copyright Terracotta, Inc., unless otherwise indicated. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -26,7 +26,6 @@ import org.quartz.Scheduler;
 import org.quartz.SchedulerFactory;
 import org.quartz.Trigger;
 import org.quartz.impl.StdSchedulerFactory;
-import quartz.HelloJob;
 
 import java.util.Date;
 
@@ -52,13 +51,13 @@ public class SimpleExample {
 
 
 
-        // define the job and tie it to our quartz.HelloJob class
+        // define the job and tie it to our timedTask.quartz.HelloJob class
         JobDetail job = newJob(HelloJob.class).withIdentity("job1", "group1").build();
 
         // Trigger the job to run on the next round minute
         Trigger trigger = newTrigger().withIdentity("trigger1", "group1").startAt(runTime).build();
 
-        // Tell quartz to schedule the job using our trigger
+        // Tell timedTask.quartz to schedule the job using our trigger
         sched.scheduleJob(job, trigger);
 
 

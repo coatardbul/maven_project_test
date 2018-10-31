@@ -1,7 +1,6 @@
-package quartz;
+package timedTask.quartz;
 import java.util.Date;
 
-import org.quartz.DisallowConcurrentExecution;
 import org.quartz.Job;
 import org.quartz.JobDetail;
 import org.quartz.JobExecutionContext;
