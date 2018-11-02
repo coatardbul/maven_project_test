@@ -141,7 +141,7 @@ public class BusinessUtil {
     public String getCRMProductSql(Map<String,List<Object>>  mapParam) {
         StringBuffer sb = new StringBuffer();
         //TODO
-        sb.append(getSqlIn(BusinessUtil.DATEID,mapParam.get(BusinessUtil.DATEID)));
+        sb.append(getSqlIn(BusinessUtil.DATEID," and "," in ",mapParam.get(BusinessUtil.DATEID)));
         //TODO
         return sb.toString();
     }
@@ -162,13 +162,14 @@ public class BusinessUtil {
      * @param ownSystemProdIdList
      * @return sqlParam in (?,?)
      */
-    public StringBuffer getSqlIn(String sqlParam, List<Object> ownSystemProdIdList) {
-        if (ownSystemProdIdList.size() == 0) {
+    public static  StringBuffer getSqlIn(String sqlParam, String andOr, String inOrNot, List<Object> ownSystemProdIdList) {
+        if (ownSystemProdIdList.size() == 0 || ownSystemProdIdList == null) {
             return new StringBuffer();
         }
         StringBuffer sb = new StringBuffer(sqlParam);
-        sb.append("in (");
-        if (ownSystemProdIdList.size() < BusinessUtil.INT_SQL_LENGTH) {
+        sb.append(inOrNot);
+        sb.append("(");
+        if (ownSystemProdIdList.size() < INT_SQL_LENGTH) {
             for (int i = 1; i < ownSystemProdIdList.size(); i++) {
                 sb.append("?,");
             }
@@ -176,25 +177,27 @@ public class BusinessUtil {
             return sb;
         } else {
             BigDecimal bd = new BigDecimal(ownSystemProdIdList.size());
-            int num = bd.divide(new BigDecimal(BusinessUtil.INT_SQL_LENGTH), BigDecimal.ROUND_UP).intValue();
-            int remainderNum = ownSystemProdIdList.size() % BusinessUtil.INT_SQL_LENGTH;
+            int num = bd.divide(new BigDecimal(INT_SQL_LENGTH), BigDecimal.ROUND_UP).intValue();
+            int remainderNum = ownSystemProdIdList.size() % INT_SQL_LENGTH;
             if (remainderNum == 0) {
                 for (int i = 1; i < num; i++) {
-                    for (int j = 1; j < BusinessUtil.INT_SQL_LENGTH; j++) {
+                    for (int j = 1; j < INT_SQL_LENGTH; j++) {
                         sb.append("?,");
                     }
                     sb.append("?) ");
                 }
             } else {
                 for (int i = 1; i < num; i++) {
-                    for (int j = 1; j < BusinessUtil.INT_SQL_LENGTH; j++) {
+                    for (int j = 1; j < INT_SQL_LENGTH; j++) {
                         sb.append("?,");
                     }
-                    sb.append("?)  or");
+                    sb.append("?) ");
+                    sb.append(andOr);
                     sb.append(sqlParam);
-                    sb.append("in (");
+                    sb.append(inOrNot);
+                    sb.append("(");
                 }
-                for (int i=1;i<remainderNum;i++) {
+                for (int i = 1; i < remainderNum; i++) {
                     sb.append("?,");
                 }
                 sb.append("?)");
