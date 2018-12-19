@@ -4,7 +4,7 @@ package entity;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class ImportCrmProduct implements Serializable {
+public class ImportCrmProduct extends UserIp {
     /**
      *预约ID
      */
@@ -155,22 +155,6 @@ public class ImportCrmProduct implements Serializable {
     this.tradeTime = tradeTime;
   }
 
-  @Override
-  public String toString() {
-    return "ImportCrmProduct{" +
-            "dateId=" + dateId +
-            ", updateTime='" + updateTime + '\'' +
-            ", prodId='" + prodId + '\'' +
-            ", prodName='" + prodName + '\'' +
-            ", appType='" + appType + '\'' +
-            ", custBal=" + custBal +
-            ", resStatus='" + resStatus + '\'' +
-            ", printAppYes='" + printAppYes + '\'' +
-            ", printConfimYes='" + printConfimYes + '\'' +
-            ", regAppTime='" + regAppTime + '\'' +
-            ", tradeTime='" + tradeTime + '\'' +
-            '}';
-  }
 
   @Override
   public boolean equals(Object o) {

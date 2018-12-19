@@ -5,10 +5,38 @@ import org.owasp.encoder.Encode;
 import java.lang.reflect.Field;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class ReflexUtil {
+    public  static  void setMapToObject(Object   object, Map map ) throws IllegalAccessException {
+        recurveSetMapToObject(object,map,object.getClass());
+    }
+    public  static<T>  void recurveSetMapToObject( Object   object, Map map,Class<T> tClass ) throws IllegalAccessException {
+        if (tClass != Object.class) {
+            singleSetMapToObject(  object,  map,tClass);
+            recurveSetMapToObject(object,map,tClass.getSuperclass());
+
+        }
+
+    }
+    public  static<T>  void singleSetMapToObject(Object   object, Map map, Class<T> tClass) throws IllegalAccessException {
+        //得到所有属性
+        Field[] fields = tClass.getDeclaredFields();
+        for (int i = 0; i < fields.length; i++) {//遍历
+            //得到属性
+            Field field = fields[i];
+            //打开私有访问
+            field.setAccessible(true);
+            //获取属性
+            String nameTemp = field.getName();
+            if(map.containsKey(nameTemp)){
+                field.set(object,map.get(nameTemp));
+            }
+        }
+    }
 
     /**
      * 根据name设置对应的value
@@ -264,6 +292,71 @@ public class ReflexUtil {
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    /**
+     * 将map中对应的属性放到对象中
+     */
+    public  static  void setMaptoObject(Map<String,Object> map,Object object) throws IllegalAccessException {
+        recurveSetMaptoObject(map,object,object.getClass());
+    }
+
+    public  static <T> void recurveSetMaptoObject(Map < String, Object > map, Object
+            object, Class < T > tClass) throws IllegalAccessException {
+        if (tClass != Object.class) {
+            singleSetMaptoObject(map,object,tClass);
+            recurveSetMaptoObject(map,object,tClass.getSuperclass());
+
+        }
+    }
+    public  static <T> void singleSetMaptoObject(Map < String, Object > map, Object
+            object, Class < T > tClass) throws IllegalAccessException {
+         Field[] fields = tClass.getDeclaredFields();
+        for (int i = 0; i < fields.length; i++) {
+            //得到属性
+            Field field = fields[i];
+            //打开私有访问
+            field.setAccessible(true);
+            //获取属性
+            String name = field.getName();
+            if(map.containsKey(name)){
+                field.set(object,map.get(name));
+            }
+        }
+
+    }
+
+    /**
+     * 读取当前对象的所有属性，包括父类的属性
+     */
+    public static Map<String, Object> readObjectAllAttribute (Object object) throws IllegalAccessException {
+        Map<String, Object> map = new HashMap<>();
+        recurveReadObjectAllAttribute(map,object,object.getClass());
+        return map;
+    }
+    public static <T > void recurveReadObjectAllAttribute (Map < String, Object > map, Object
+            object, Class < T > tClass) throws IllegalAccessException {
+        if (tClass != Object.class) {
+            singleReadObjectAllAttribute(map,object,tClass);
+            recurveReadObjectAllAttribute(map,object,tClass.getSuperclass());
+
+        }
+    }
+    public static <T > void singleReadObjectAllAttribute (Map < String, Object > map, Object
+            object, Class < T > tClass) throws IllegalAccessException {
+        //得到所有属性
+        Field[] fields = tClass.getDeclaredFields();
+        for (int i = 0; i < fields.length; i++) {//遍历
+            //得到属性
+            Field field = fields[i];
+            //打开私有访问
+            field.setAccessible(true);
+            //获取属性
+            String name = field.getName();
+            //获取属性值
+            java.lang.Object value = field.get(object);
+           map.put(name,value);
         }
     }
 }

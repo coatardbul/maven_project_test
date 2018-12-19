@@ -3,6 +3,8 @@ package reflex;
 import entity.ImportCrmProduct;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class ReflexTest {
@@ -22,7 +24,7 @@ public class ReflexTest {
     }
 
     @Test
-    public void testCompareTest() {
+    public void testCompareTest() throws IllegalAccessException {
         ImportCrmProduct importCrmProduct = new ImportCrmProduct();
         importCrmProduct.setProdName("sb");
         importCrmProduct.setDateId(1123l);
@@ -38,6 +40,14 @@ public class ReflexTest {
         importCrmProductTemp.setAppType("12");
         importCrmProductTemp.setResStatus("1");
         importCrmProductTemp.setTradeTime("2018-09-08 12:12");
+        importCrmProduct.setUserId(13123l);
+        importCrmProduct.setIp("127.0.0.1");
+        Map<String,Object> map=ReflexUtil.readObjectAllAttribute(importCrmProduct);
+        System.out.println(map);
+
+        ImportCrmProduct  i =new ImportCrmProduct();
+        ReflexUtil.setMapToObject(i,map);
+        System.out.println(i.getIp());
         int num = ReflexUtil.compareTwoObject(importCrmProduct, importCrmProductTemp);
         System.out.println(num);
 
@@ -88,6 +98,21 @@ public class ReflexTest {
         ImportCrmProduct i = getObject();
         ReflexUtil.setAttributeValue("regAppTime", "123go", i);
         ReflexUtil.readAttributeValuePrint(i);
+    }
+
+    @Test
+    public  void  testSetMapToObject() throws IllegalAccessException, InstantiationException {
+        ImportCrmProduct importCrmProduct = new ImportCrmProduct();
+        Map<String,Object> map=new HashMap<>();
+        map.put("prodId","hello");
+//        importCrmProduct.setProdId("h1ello");
+//        importCrmProduct.setAppType("12");
+//        importCrmProduct.setResStatus("1");
+//        importCrmProduct.setTradeTime("2018-09-08 12:12");
+//        importCrmProduct.setProdName("qunidayede");
+       // ReflexUtil.singleSetMapToObject(importCrmProduct,map);
+        System.out.println(importCrmProduct.toString());
+
     }
 
 
