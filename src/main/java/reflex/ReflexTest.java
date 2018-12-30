@@ -3,6 +3,8 @@ package reflex;
 import entity.ImportCrmProduct;
 import org.junit.Test;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -44,12 +46,12 @@ public class ReflexTest {
         importCrmProduct.setIp("127.0.0.1");
         Map<String,Object> map=ReflexUtil.readObjectAllAttribute(importCrmProduct);
         System.out.println(map);
-
-        ImportCrmProduct  i =new ImportCrmProduct();
-        ReflexUtil.setMapToObject(i,map);
-        System.out.println(i.getIp());
-        int num = ReflexUtil.compareTwoObject(importCrmProduct, importCrmProductTemp);
-        System.out.println(num);
+        ReflexUtil.singleReadAttributeValuePrint(importCrmProduct,importCrmProduct.getClass());
+//        ImportCrmProduct  i =new ImportCrmProduct();
+//        ReflexUtil.setMapToObject(i,map);
+//        System.out.println(i.getIp());
+//        int num = ReflexUtil.compareTwoObject(importCrmProduct, importCrmProductTemp);
+//        System.out.println(num);
 
     }
 
@@ -113,6 +115,33 @@ public class ReflexTest {
        // ReflexUtil.singleSetMapToObject(importCrmProduct,map);
         System.out.println(importCrmProduct.toString());
 
+    }
+    @Test
+    public void test2() throws ClassNotFoundException {
+        ImportCrmProduct importCrmProduct = new ImportCrmProduct();
+        importCrmProduct.setIp("dsfsdfsd");
+        Map<String,Object> map=new HashMap<>();
+        map.put("ordid",1231212);
+        map.put("id",12313L);
+        map.put("str","hello");
+        System.out.println(map.get("id").getClass());
+        System.out.println(Class.forName("java.lang.Long").getClass());
+
+
+    }
+    @Test
+    public void demo1() throws Exception {
+        //获取字节码对象
+        Class<ReflexTest> clazz = (Class<ReflexTest>) Class.forName("entity.ImportCrmProduct");
+
+        //获取一个对象
+        Constructor con =  clazz.getConstructor();
+        ImportCrmProduct m = (ImportCrmProduct) con.newInstance();
+        String[] s = new String[]{"aa","bb"};
+        //获取Method对象
+        Method method = clazz.getMethod("test", String[].class);
+        //调用invoke方法来调用
+        method.invoke(m, s);
     }
 
 

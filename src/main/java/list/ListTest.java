@@ -13,10 +13,14 @@ public class ListTest {
     @Test
     public void test1() {
         List list = new ArrayList();
-        list.add("qqyumidi");
-        list.add("corn");
-        list.add(100);
+        list.add("111");
+        list.add("222");
+        list.add("333");
+        List list1 = new ArrayList();
+        list1.add("444");
 
+list.retainAll(list1);
+System.out.println(list.size());
         for (int i = 0; i < list.size(); i++) {
             String name = (String) list.get(i); // 1
             System.out.println("name:" + name);

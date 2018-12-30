@@ -1,8 +1,9 @@
 package entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class UserIp {
+public class UserIp implements Serializable {
     /**
      * 主键
      */
@@ -189,18 +190,8 @@ public class UserIp {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserIp userIp = (UserIp) o;
-        return Objects.equals(userCheckId, userIp.userCheckId) &&
-                Objects.equals(userId, userIp.userId) &&
-                Objects.equals(ip, userIp.ip) &&
-                Objects.equals(mac, userIp.mac) &&
-                Objects.equals(beginActiveTime, userIp.beginActiveTime) &&
-                Objects.equals(endActiveTime, userIp.endActiveTime) &&
-                Objects.equals(createTime, userIp.createTime) &&
-                Objects.equals(createUser, userIp.createUser) &&
-                Objects.equals(updateUser, userIp.updateUser) &&
-                Objects.equals(updateTime, userIp.updateTime) &&
-                Objects.equals(remark, userIp.remark) &&
-                Objects.equals(ipFlag, userIp.ipFlag);
+        return
+                Objects.equals(ip, userIp.ip) ;
     }
 
     @Override

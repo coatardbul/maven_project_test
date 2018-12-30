@@ -1,6 +1,10 @@
 package math;
 
+import org.junit.Test;
+
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 public class sad {
         public static void main(String[] args) {
@@ -15,7 +19,15 @@ public class sad {
             System.out.println(num2);
             BigDecimal bd2 = new BigDecimal(num2);
             System.out.println(bd2.toPlainString());
+            //bd1.compareTo()
             System.out.println(bd2.setScale(2, BigDecimal.ROUND_HALF_UP).toPlainString());
+        }
+
+        @Test
+    public void test2(){
+            Map<String,String> map=new HashMap<>();
+            map.put("sb","1321");
+            System.out.println(map.get("312123"));
         }
 
 

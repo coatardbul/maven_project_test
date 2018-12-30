@@ -14,7 +14,11 @@ public class Num3 {
      * @return
      */
     public int lengthOfLongestSubstring(String s) {
-        return 0;
+
+         for(int i=0;i<s.length();i++){
+
+         }
+       return 0;
     }
 
     @Test
