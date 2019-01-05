@@ -128,13 +128,24 @@ public class BondPoolRule {
         map4.put("SURPLUS_PERIOD_UP", new BigDecimal(12));
         map4.put("SURPLUS_PERIOD_DOWN", new BigDecimal(234));
         List<Map<String, Object>> resultList = new ArrayList<>();
+
+
+
         resultList.add(map);
         resultList.add(map1);
         resultList.add(map2);
+        for(Map<String, Object> s:resultList){
+            s.put("123123","111111111111");
+
+
+        }
+        for(Map<String, Object> s:resultList){
+            System.out.println(s);
+        }
 //        resultList.add(map3);
 //        resultList.add(map4);
-        Map<String, Object> resultMap = mergerRules(resultList);
-        System.out.println(resultMap);
+//        Map<String, Object> resultMap = mergerRules(resultList);
+//        System.out.println(resultMap);
     }
 
     public Map<String, Object> mergerRules(List<Map<String, Object>> resultList) {
