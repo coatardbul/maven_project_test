@@ -4,13 +4,13 @@
     <bookmark url="file://F:/dev_2.0_CAT/xQuant-maven-parent/xQuant-platform-app-common/src/main/java/com/xQuant/platform/app/calendar/dao/CalendarMapper.java" description="String getTskBussinessDate(@Param(&quot;tskId&quot;) String ..." line="67" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="197f351a-07c2-4d2b-be97-3c8938ab5961" name="Default" comment="update_2018_12_03_19-44">
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/builderModel/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dsjkdsl.java" afterDir="false" />
+    <list default="true" id="197f351a-07c2-4d2b-be97-3c8938ab5961" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/DecoratorLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/JsonLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +36,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserIp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserIp.java">
+      <file leaf-file-name="Proxy.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="40" selection-start-line="6" selection-start-column="3" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="15026">
+              <caret line="727" selection-start-line="727" selection-end-line="727" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Component.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Component.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConcretComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConcreteDecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcreteDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecoratorLogger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/DecoratorLogger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+                <element signature="e#2255#2256#0" expanded="true" />
+                <element signature="e#2283#2284#0" expanded="true" />
+                <element signature="e#2718#2719#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#3242#3243#0" expanded="true" />
+                <element signature="e#3270#3271#0" expanded="true" />
+                <element signature="e#3693#3694#0" expanded="true" />
+                <element signature="e#3721#3722#0" expanded="true" />
+                <element signature="e#4212#4213#0" expanded="true" />
+                <element signature="e#4240#4241#0" expanded="true" />
+                <element signature="e#4669#4670#0" expanded="true" />
+                <element signature="e#4697#4698#0" expanded="true" />
+                <element signature="e#5189#5190#0" expanded="true" />
+                <element signature="e#5217#5218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonLogger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/JsonLogger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#905#934#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/DynamicProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,102 +149,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Num1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num1.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sdfsdfsd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/sdfsdfsd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BondPoolRule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+            <state relative-caret-position="462">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpClientUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1804">
-              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dsjkdsl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/dsjkdsl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="56" column="19" selection-start-line="39" selection-start-column="8" selection-end-line="56" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19360">
-              <caret line="921" selection-start-line="921" selection-end-line="921" />
-              <folding>
-                <element signature="e#10650#10651#0" expanded="true" />
-                <element signature="e#10717#10718#0" expanded="true" />
-                <element signature="e#32740#32741#0" expanded="true" />
-                <element signature="e#32791#32792#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/MapTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Iterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -162,7 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DefaultQuartzScheduler_Worker-1</find>
       <find>test-1</find>
       <find>TestJob</find>
       <find>INT_SQL_LENGTH</find>
@@ -192,6 +204,7 @@
       <find>setExtremeValue</find>
       <find>map</find>
       <find>+ &quot;_TEMP&quot;</find>
+      <find>newProxyInstance</find>
     </findStrings>
     <replaceStrings>
       <replace>ImportCrmProduct</replace>
@@ -208,22 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/String/StringMatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/web/RequestHeadParse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reflex/TestJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quartz/TestJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quartz/TestJobJobTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/timedTask/timer/timedTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/timedTask/quartz/TestJobJobTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/timedTask/quartz/TestJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/BusinessUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JDBC/BusinessTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/math/MathTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/genericity/genericity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/genericity/genericityUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/file/fileTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xml/xmlTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/xml/TransformUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/mul_Thread/RunnableDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/mul_Thread/ExecutorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/webService/dsf.java" />
@@ -259,6 +256,22 @@
         <option value="$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/dsjkdsl.java" />
         <option value="$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/util/ListOptimizeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/math/divideTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/sdfds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/asdfsd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/sddssd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/asdas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/asdsa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/adasd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Component.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/sdfsdds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/sdfdsfsd.java" />
       </list>
     </option>
   </component>
@@ -279,8 +292,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="518" />
+    <option name="y" value="80" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -291,7 +304,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,7 +335,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BondPool" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
@@ -331,34 +343,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designMode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="designMode" type="462c0819:PsiDirectoryNode" />
-              <item name="builderModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Proxy&#9;PSI&#9;JAVA://java.lang.reflect.Proxy&#10;InvocationHandler&#9;PSI&#9;JAVA://java.lang.reflect.InvocationHandler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -370,6 +378,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="baseJava.util" />
       <recent name="xml" />
       <recent name="entity" />
     </key>
@@ -390,20 +399,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BondPoolRule.test4">
-    <configuration name="HttpClientUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.HttpClientUtil" />
+  <component name="RunManager" selected="Application.test">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.test.dynamic.Client" />
       <module name="maven_project_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="baseJava.test.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="divideTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.divideTest" />
+      <module name="maven_project_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.test.decorator.test" />
+      <module name="maven_project_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baseJava.test.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="BondPoolRule.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven_project_test" />
@@ -418,29 +449,6 @@
       <option name="PACKAGE_NAME" value="BondPool" />
       <option name="MAIN_CLASS_NAME" value="BondPool.BondPoolRule" />
       <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MapTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven_project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BondPool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BondPool" />
-      <option name="MAIN_CLASS_NAME" value="BondPool.MapTest" />
-      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -490,29 +498,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="dsjkdsl.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven_project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.dsjkdsl" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -537,18 +522,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BondPoolRule.test4" />
-      <item itemvalue="JUnit.MapTest.test3" />
-      <item itemvalue="Application.HttpClientUtil" />
-      <item itemvalue="JUnit.dsjkdsl.test" />
       <item itemvalue="JUnit.dsjkdsl.tes" />
+      <item itemvalue="Application.divideTest" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.divideTest" />
         <item itemvalue="JUnit.BondPoolRule.test4" />
         <item itemvalue="JUnit.dsjkdsl.tes" />
-        <item itemvalue="JUnit.dsjkdsl.test" />
-        <item itemvalue="Application.HttpClientUtil" />
-        <item itemvalue="JUnit.MapTest.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -614,7 +599,9 @@
       <workItem from="1546517532393" duration="981000" />
       <workItem from="1546582377828" duration="1617000" />
       <workItem from="1546587375771" duration="3715000" />
-      <workItem from="1546675499541" duration="811000" />
+      <workItem from="1546675499541" duration="1433000" />
+      <workItem from="1546928900704" duration="14803000" />
+      <workItem from="1547020753353" duration="2719000" />
     </task>
     <task id="LOCAL-00001" summary="update_2018_10_22_20_04">
       <created>1540209894117</created>
@@ -756,7 +743,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546241319640</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update_2019_01_05_16-44">
+      <created>1546678091875</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1546678091875</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update_2019_01_09_09-44">
+      <created>1546996679343</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546996679343</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -792,11 +793,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185130000" />
+    <option name="totallyTimeSpent" value="203274000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.39932886" />
@@ -808,22 +808,21 @@
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Tail" order="9" />
       <window_info anchor="right" id="Database" order="6" show_stripe_button="false" />
-      <window_info anchor="right" id="Structure" order="3" sideWeight="0.24916388" side_tool="true" visible="true" weight="0.17411052" />
+      <window_info anchor="right" id="Structure" order="3" sideWeight="0.24916388" side_tool="true" weight="0.1680545" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996215" weight="0.41107383" />
+      <window_info anchor="bottom" x="22" y="180" width="1321" height="378" id="Debug" order="3" sideWeight="0.4996215" weight="0.34395972" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32550335" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.43718594" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31879196" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3456376" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3489933" />
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" weight="0.329296" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="JRebel remote servers log" order="10" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.28538987" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.25813776" />
       <window_info id="JRebel" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Analysis" order="7" />
       <window_info anchor="right" id="BPMNPalette" order="10" />
@@ -835,6 +834,7 @@
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="11" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32550335" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -892,7 +892,9 @@
     <MESSAGE value="update_2018_12_19_19-44" />
     <MESSAGE value="update_2018_12_30_12-21" />
     <MESSAGE value="update_2018_12_03_19-44" />
-    <option name="LAST_COMMIT_MESSAGE" value="update_2018_12_03_19-44" />
+    <MESSAGE value="update_2019_01_05_16-44" />
+    <MESSAGE value="update_2019_01_09_09-44" />
+    <option name="LAST_COMMIT_MESSAGE" value="update_2019_01_09_09-44" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,8 +989,20 @@
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Client.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Client.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1002,6 +1016,33 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>subject.getClass().getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>realSubject
+        .getClass().getInterfaces()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>realSubject .getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>realSubject
+                .getClass().getInterfaces()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>handler.getClass().getClassLoader()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>bStrikeDateList</expression-string>
         <language-id>JAVA</language-id>
@@ -1022,31 +1063,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>resultMap</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(((BigDecimal) (map.get(dictMap.get(str)))).compareTo((BigDecimal) mapResult.get(dictMap.get(str))) &gt; 0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((BigDecimal) (map.get(dictMap.get(str)))).compareTo((BigDecimal) mapResult.get(dictMap.get(str)))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>mapTemp</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>map.get(dictMap.get(str)))).compareTo((BigDecimal) mapResult.get(dictMap.get(str)))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="filteringjava.util.HashMap">
       <expression>
@@ -1057,202 +1073,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="177" column="33" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent.ScheduledThreadPoolExecutor">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent.ScheduledThreadPoolExecutor</OriginalElement>
-          <nodes>
-            <node x="" y="">java.util.concurrent.RunnableFuture</node>
-            <node x="" y="">java.util.concurrent.AbstractExecutorService</node>
-            <node x="" y="">java.util.concurrent.Future</node>
-            <node x="" y="">java.util.concurrent.ThreadPoolExecutor</node>
-            <node x="" y="">java.util.concurrent.Executor</node>
-            <node x="" y="">java.util.concurrent.ScheduledExecutorService</node>
-            <node x="" y="">java.util.concurrent.FutureTask</node>
-            <node x="" y="">java.util.concurrent.ScheduledThreadPoolExecutor</node>
-            <node x="" y="">java.lang.Runnable</node>
-            <node x="" y="">java.util.concurrent.ExecutorService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="203.0" y="250.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.util.concurrent.FutureTask">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.concurrent.FutureTask</OriginalElement>
-          <nodes>
-            <node x="" y="">java.util.concurrent.RunnableFuture</node>
-            <node x="" y="">java.util.concurrent.Future</node>
-            <node x="" y="">java.util.concurrent.FutureTask</node>
-            <node x="" y="">java.lang.Runnable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="97.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webService/MobileClient2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/net/www/protocol/http/HttpURLConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23628">
-          <caret line="1158" selection-start-line="1158" selection-end-line="1158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webService/HttpClientCallSoapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webService/soapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="178" column="16" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataConnection/DbContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataConnection/MultiDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/String/StringMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/fileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/sdfsdfds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/sdfsdf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.io.IOException">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.io.IOException</OriginalElement>
-          <nodes>
-            <node x="" y="">java.lang.Throwable</node>
-            <node x="" y="">java.io.IOException</node>
-            <node x="" y="">java.lang.Exception</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="59.0" y="164.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exception/ExceptionTryCatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/String/StringConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50292">
-          <caret line="2361" column="25" selection-start-line="2361" selection-start-column="25" selection-end-line="2361" selection-end-column="25" />
-          <folding>
-            <element signature="e#93265#93266#0" expanded="true" />
-            <element signature="e#93303#93304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IO/FileRead.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6182">
-          <caret line="290" column="68" selection-start-line="290" selection-start-column="35" selection-end-line="290" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1291,20 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/math/IntegerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/math/divideTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/math/sad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1323,10 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="148" column="19" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
-          <folding>
-            <element signature="e#5860#5861#0" expanded="true" />
-            <element signature="e#5896#5897#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1413,7 +1219,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19360">
+        <state relative-caret-position="19316">
           <caret line="921" selection-start-line="921" selection-end-line="921" />
           <folding>
             <element signature="e#10650#10651#0" expanded="true" />
@@ -1433,11 +1239,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserIp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="528">
           <caret line="25" column="40" selection-start-line="6" selection-start-column="3" selection-end-line="25" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1448,30 +1251,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/sdfsdfsd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/MapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2926">
           <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/designMode/builderModel/Builder.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1482,31 +1268,275 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
+        <state relative-caret-position="1452">
           <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/dsjkdsl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="1144">
           <caret line="56" column="19" selection-start-line="39" selection-start-column="8" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2985">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+        <state relative-caret-position="359">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BondPool/sdfsdfsd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/clone/ListCopyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/util/ListOptimizeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/math/IntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/math/divideTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="1451" selection-start-line="1451" selection-end-line="1451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.lang.reflect.InvocationHandler">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.lang.reflect.InvocationHandler</OriginalElement>
+          <nodes>
+            <node x="237.00000000000006" y="81.0">javax.management.openmbean.CompositeDataInvocationHandler</node>
+            <node x="0.0" y="81.0">sun.reflect.annotation.AnnotationInvocationHandler</node>
+            <node x="501.00000000000006" y="81.0">com.sun.xml.internal.ws.model.AbstractWrapperBeanGenerator.XmlElementHandler</node>
+            <node x="683.0" y="81.0">com.sun.org.glassfish.external.statistics.impl.TimeStatisticImpl</node>
+            <node x="505.00000000000006" y="0.0">java.lang.reflect.InvocationHandler</node>
+            <node x="849.0" y="81.0">com.sun.org.glassfish.external.statistics.impl.BoundaryStatisticImpl</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="sun.reflect.annotation.AnnotationInvocationHandler" target="java.lang.reflect.InvocationHandler">
+              <point x="0.0" y="-15.5" />
+              <point x="108.5" y="51.0" />
+              <point x="520.4000000000001" y="51.0" />
+              <point x="-61.60000000000002" y="15.5" />
+            </edge>
+            <edge source="com.sun.org.glassfish.external.statistics.impl.BoundaryStatisticImpl" target="java.lang.reflect.InvocationHandler">
+              <point x="0.0" y="-15.5" />
+              <point x="936.0" y="51.0" />
+              <point x="643.6000000000001" y="51.0" />
+              <point x="61.60000000000002" y="15.5" />
+            </edge>
+            <edge source="com.sun.xml.internal.ws.model.AbstractWrapperBeanGenerator.XmlElementHandler" target="java.lang.reflect.InvocationHandler">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="javax.management.openmbean.CompositeDataInvocationHandler" target="java.lang.reflect.InvocationHandler">
+              <point x="0.0" y="-15.5" />
+              <point x="359.00000000000006" y="61.0" />
+              <point x="551.2" y="61.0" />
+              <point x="-30.80000000000001" y="15.5" />
+            </edge>
+            <edge source="com.sun.org.glassfish.external.statistics.impl.TimeStatisticImpl" target="java.lang.reflect.InvocationHandler">
+              <point x="0.0" y="-15.5" />
+              <point x="756.0" y="61.0" />
+              <point x="612.8000000000001" y="61.0" />
+              <point x="30.80000000000001" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="335.0" y="95.0" />
+          <SelectedNodes>
+            <node>com.sun.xml.internal.ws.model.AbstractWrapperBeanGenerator.XmlElementHandler</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reflex/ReflexUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="248" column="17" lean-forward="true" selection-start-line="248" selection-start-column="17" selection-end-line="248" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="587" column="18" selection-start-line="587" selection-start-column="18" selection-end-line="587" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/InvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15026">
+          <caret line="727" selection-start-line="727" selection-end-line="727" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcreteDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/DecoratorLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#2255#2256#0" expanded="true" />
+            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3270#3271#0" expanded="true" />
+            <element signature="e#3693#3694#0" expanded="true" />
+            <element signature="e#3721#3722#0" expanded="true" />
+            <element signature="e#4212#4213#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4669#4670#0" expanded="true" />
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#5189#5190#0" expanded="true" />
+            <element signature="e#5217#5218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/JsonLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#905#934#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="57" />
         </state>
       </provider>
     </entry>

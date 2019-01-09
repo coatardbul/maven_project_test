@@ -1,7 +1,7 @@
 package baseJava.test.decorator;
 
 //装饰类
-public class Decorator implements Component {
+public  abstract  class Decorator implements Component {
 
     public Component component;
 
