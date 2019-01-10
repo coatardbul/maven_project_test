@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 public class JsonLogger extends DecoratorLogger {
     public JsonLogger(Logger logger) {
-
         super(logger);
     }
 
