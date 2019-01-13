@@ -29,7 +29,16 @@ public class MapTest {
         map.put("sb", 21321);
         map.put("hello", 21321);
         map.put("eret", 21321);
-        map.put("sb",null);
+      for(String str:map.keySet()){
+          if(str.equals("sb")){
+              map.put(str,"dfsdf");
+             map.put("sdsdsd",1213212);
+              map.put(str,null);
+              break;
+          }
+
+      }
+      map.clear();
         System.out.println(map);
     }
 }

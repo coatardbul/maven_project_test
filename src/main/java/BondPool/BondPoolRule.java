@@ -109,16 +109,16 @@ public class BondPoolRule {
         //行权日的判断
         Map<String, Object> map = new HashMap<>();
         map.put("SURPLUS_PERIOD_TYPE", "1");
-        map.put("SURPLUS_PERIOD_UP", new BigDecimal(111));
-        map.put("SURPLUS_PERIOD_DOWN", new BigDecimal(333));
+        map.put("SURPLUS_PERIOD_UP", new BigDecimal(11));
+        map.put("SURPLUS_PERIOD_DOWN", new BigDecimal(22));
         Map<String, Object> map1 = new HashMap<>();
         map1.put("SURPLUS_PERIOD_TYPE", "1");
-        map1.put("SURPLUS_PERIOD_UP", new BigDecimal(44));
-        map1.put("SURPLUS_PERIOD_DOWN", new BigDecimal(444));
+        map1.put("SURPLUS_PERIOD_UP", new BigDecimal(15));
+        map1.put("SURPLUS_PERIOD_DOWN", new BigDecimal(17));
         Map<String, Object> map2 = new HashMap<>();
-        map2.put("SURPLUS_PERIOD_TYPE", "2");
-        map2.put("SURPLUS_PERIOD_UP", new BigDecimal(11));
-        map2.put("SURPLUS_PERIOD_DOWN", new BigDecimal(55));
+//        map2.put("SURPLUS_PERIOD_TYPE", "2");
+//        map2.put("SURPLUS_PERIOD_UP", new BigDecimal(11));
+//        map2.put("SURPLUS_PERIOD_DOWN", new BigDecimal(55));
         Map<String, Object> map3 = new HashMap<>();
         map3.put("SURPLUS_PERIOD_TYPE", "1");
         map3.put("SURPLUS_PERIOD_UP", new BigDecimal(32));
@@ -128,13 +128,24 @@ public class BondPoolRule {
         map4.put("SURPLUS_PERIOD_UP", new BigDecimal(12));
         map4.put("SURPLUS_PERIOD_DOWN", new BigDecimal(234));
         List<Map<String, Object>> resultList = new ArrayList<>();
+
+
+
         resultList.add(map);
         resultList.add(map1);
         resultList.add(map2);
-        resultList.add(map3);
-        resultList.add(map4);
-        Map<String, Object> resultMap = mergerRules(resultList);
-        System.out.println(resultMap);
+        for(Map<String, Object> s:resultList){
+            s.put("123123","111111111111");
+
+
+        }
+        for(Map<String, Object> s:resultList){
+            System.out.println(s);
+        }
+//        resultList.add(map3);
+//        resultList.add(map4);
+//        Map<String, Object> resultMap = mergerRules(resultList);
+//        System.out.println(resultMap);
     }
 
     public Map<String, Object> mergerRules(List<Map<String, Object>> resultList) {

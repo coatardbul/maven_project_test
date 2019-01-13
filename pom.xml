@@ -127,7 +127,11 @@
         <artifactId>http-core</artifactId>
         <version>4.3.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
