@@ -14,16 +14,23 @@ public class Num3 {
      * @return
      */
     public int lengthOfLongestSubstring(String s) {
-
-         for(int i=0;i<s.length();i++){
-
-         }
-       return 0;
+        String str = "";
+        for (int i = 0; i < s.length() - 2; i++) {
+           for(int j=i;j<s.length()-1;i++){
+               String strTemp=s.substring(i,j);
+               //FIXME 
+//               if(strTemp.length()>1 && strTemp.contains( s.charAt(j+1))){
+//
+//               }
+           }
+        }
+        return 0;
     }
 
     @Test
     public void test() {
         String str = "update|insert|select";
+
         String[] dd = str.split("\\|");
         System.out.println(dd.length);
     }
