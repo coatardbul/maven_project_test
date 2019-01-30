@@ -28,6 +28,7 @@ public class Num1 {
                 if(nums[j]+nums[i]==target){
                     result[0]=j;
                     result[1]=i;
+                    //return
                 }
             }
         }
