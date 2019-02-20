@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
  */
-public class Num4 {
+public class Num5 {
     /**
      * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
      * <p>
@@ -42,7 +42,7 @@ public class Num4 {
             }
         }
         if (resultStr.length() == 0) {
-            return "没有回文";
+            return "";
         }
         return resultStr;
     }
@@ -64,7 +64,7 @@ public class Num4 {
         List<Character> list = new ArrayList<>();
         for (int i = 0; i < length; i++) {
             //如果当前字符串和中间的字符串相等，则跳出循环
-            if (source.charAt(begin + i) == source.charAt(begin + i + 1)) {
+            if (source.charAt(begin + i) == source.charAt(begin +length)) {
                 break;
             }
             if (i == 0 && source.charAt(begin + i) == source.charAt(begin + 2 * length - i)) {
