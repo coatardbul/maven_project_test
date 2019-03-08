@@ -1,4 +1,4 @@
-package baseJava.test.dynamic;
+package baseJava.test.dynamicProxy;
 
 public  class RealSubject implements Subject
 {

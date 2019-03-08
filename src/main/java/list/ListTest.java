@@ -19,8 +19,8 @@ public class ListTest {
         List list1 = new ArrayList();
         list1.add("444");
 
-list.retainAll(list1);
-System.out.println(list.size());
+        list.retainAll(list1);
+        System.out.println(list.size());
         for (int i = 0; i < list.size(); i++) {
             String name = (String) list.get(i); // 1
             System.out.println("name:" + name);
@@ -29,15 +29,12 @@ System.out.println(list.size());
 
     @Test
     public void test3() {
-        List<String> list = new ArrayList();
-        list.add("1111");
-        list.add("2222");
-        list.add("3333");
-        list.add("4444");
-        list.add("5555");
-        list.add("6666");
+        List<String> cashAcctIds = new ArrayList<>();
+        cashAcctIds.add("sdfds");
+        Map<String, List<String>> paramMap = new HashMap<>();
 
-        System.out.println(list.subList(0, 3));
+        paramMap.put("cashAcctIds", cashAcctIds);
+
     }
 
     @Test
@@ -92,17 +89,17 @@ System.out.println(list.size());
         List<List<Integer>> batchList = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            list.add( 1111);
+            list.add(1111);
         }
         for (int i = 0; i < 100; i++) {
-            list.add( 222);
+            list.add(222);
         }
         for (int i = 0; i < 23; i++) {
-            list.add( 333);
+            list.add(333);
         }
 
         //System.out.println(list.toString());
-        batchList=getBatch(list);
+        batchList = getBatch(list);
         System.out.println(batchList.size());
         System.out.println(batchList.toString());
     }
@@ -121,10 +118,10 @@ System.out.println(list.size());
                 resultList.add(list);
                 return resultList;
             } else {
-                for (int i = 0; i < num ; i++) {
+                for (int i = 0; i < num; i++) {
                     resultList.add(list.subList(i, (i + 1) * 100));
                 }
-                resultList.add(list.subList(num  * 100, list.size()));
+                resultList.add(list.subList(num * 100, list.size()));
                 return resultList;
             }
         }
@@ -133,14 +130,15 @@ System.out.println(list.size());
     public void getData(Box<? extends Number> data) {
         System.out.println("data :" + data.getData());
     }
+
     @Test
-    public void hashCodeTests(){
-        UserIp u1=new UserIp();
+    public void hashCodeTests() {
+        UserIp u1 = new UserIp();
         u1.setIp("123");
-      u1.setCreateUser("sdfs");
-        UserIp u2=new UserIp();
+        u1.setCreateUser("sdfs");
+        UserIp u2 = new UserIp();
         u2.setIp("123");
-        System.out.println(u1.hashCode()+"###"+u2.hashCode());
+        System.out.println(u1.hashCode() + "###" + u2.hashCode());
     }
 
     public <T> T ss(Class<T> c) {

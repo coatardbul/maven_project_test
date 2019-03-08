@@ -1,12 +1,16 @@
-package baseJava.test.dynamic;
+package baseJava.test.dynamicProxy;
 
+import sun.misc.ProxyGenerator;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 public class Client
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
         //    我们要代理的真实对象
         Subject realSubject = new RealSubject();
 
@@ -25,5 +29,12 @@ public class Client
         System.out.println(subject.getClass().getName());
         subject.rent();
         subject.hello("world");
+        byte[] classFile = ProxyGenerator.generateProxyClass("Proxy0", RealSubject.class.getInterfaces());
+        File file = new File("C:\\Users\\xiaolei.su\\Desktop\\111.class");
+        FileOutputStream fos = new FileOutputStream(file);
+        fos.write(classFile);
+        fos.flush();
+        fos.close();
+
     }
 }
