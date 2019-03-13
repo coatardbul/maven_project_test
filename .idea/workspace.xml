@@ -4,28 +4,39 @@
     <bookmark url="file://F:/dev_2.0_CAT/xQuant-maven-parent/xQuant-platform-app-common/src/main/java/com/xQuant/platform/app/calendar/dao/CalendarMapper.java" description="String getTskBussinessDate(@Param(&quot;tskId&quot;) String ..." line="67" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="197f351a-07c2-4d2b-be97-3c8938ab5961" name="Default" comment="update_2019_01_10_17-44">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/Num11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/regrerregef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="197f351a-07c2-4d2b-be97-3c8938ab5961" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BondPool/MapTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BondPool/sdfsdfsd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BondPool/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/RealSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/RealSubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/list/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/list/ListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/Converter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocToPDFConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/DocxToPDFConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/MainClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/OdtToPDF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptToPDFConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/PptxToPDFConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wordConverterUtil/sdfsdf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/StringConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/String/StringConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Cafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/ConcreteCafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Decorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/MilkDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/SugarDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/Cafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/MilkCafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/SugarCafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/SugarMilkCafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Cafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/ConcreteCafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Proxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Component.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcreteDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/DecoratorLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/JsonLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/RealSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/IDBHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/OracleHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/OracleHandlerProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/ProxyTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,92 +62,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="JsonLogger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/JsonLogger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="76">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="111.class" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/111.class">
+      <file leaf-file-name="IDBHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/IDBHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proxy.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Proxy.java">
+      <file leaf-file-name="OracleHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="709" selection-start-line="709" selection-end-line="709" />
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Constructor.java">
+      <file leaf-file-name="OracleHandlerProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandlerProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="409" selection-start-line="409" selection-end-line="409" />
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelegatingConstructorAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/DelegatingConstructorAccessorImpl.class">
+      <file leaf-file-name="ProxyTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/ProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NativeConstructorAccessorImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructorAccessor.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/ConstructorAccessor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeakCache.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/WeakCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+            <state relative-caret-position="114">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DynamicProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/DynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="76">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocationHandler.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/InvocationHandler.java">
+      <file leaf-file-name="RealSubject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/RealSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+            <state relative-caret-position="38">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -201,38 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/designMode/builderModel/Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/dsjkdsl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BondPool/BondPoolRule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/util/ListOptimizeUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/math/divideTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/sdfds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/asdfsd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamic/sddssd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/asdas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/asdsa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/adasd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Component.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/Decorator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/ConcretComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/sdfsdds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/sdfdsfsd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/decorator/JsonLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/sdf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/sdfsdf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/proxy/sdfsd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/sddssd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/dsfds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/ConcreteCafe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/sdfds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/sdfsd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/fsdfs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/sdfsdf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/sdfsdfs.java" />
         <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/sdfsd.java" />
         <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareExtends/sdfsd.java" />
@@ -252,6 +234,38 @@
         <option value="$PROJECT_DIR$/src/main/java/list/ListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/String/StringConvert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Cafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Cafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/MilkDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/SugarDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/ConcreteCafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/Cafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/MilkCafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/SugarCafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/SugarMilkCafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Cafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/ConcreteCafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Proxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/Component.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/ConcretComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/ConcreteDecorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/DecoratorLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/JsonLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/RealSubject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/IDBHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandlerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/ProxyTest.java" />
       </list>
     </option>
   </component>
@@ -284,8 +298,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,7 +338,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baseJava" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
@@ -335,7 +347,47 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baseJava" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
+              <item name="compareDecorator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
+              <item name="compareExtends" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
+              <item name="compareProxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="baseJava" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
               <item name="dynamicProxy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,21 +397,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="baseJava" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="designMode" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maven_project_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maven_project_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -398,7 +444,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="JUnit.StringConvert.test13">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baseJava.test.dynamicProxy.Client" />
       <module name="maven_project_test" />
@@ -458,13 +504,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="StringConvert.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="String" />
+      <option name="MAIN_CLASS_NAME" value="String.StringConvert" />
+      <option name="METHOD_NAME" value="test13" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -474,20 +527,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="dsjkdsl.tes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven_project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.dsjkdsl" />
-      <option name="METHOD_NAME" value="tes" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -521,18 +567,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.regrerregef" />
-      <item itemvalue="JUnit.dsjkdsl.tes" />
       <item itemvalue="JUnit.ListTest.test3" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.ProxyTest" />
+      <item itemvalue="JUnit.StringConvert.test13" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringConvert.test13" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.ProxyTest" />
         <item itemvalue="JUnit.ListTest.test3" />
         <item itemvalue="Application.regrerregef" />
-        <item itemvalue="JUnit.dsjkdsl.tes" />
       </list>
     </recent_temporary>
   </component>
@@ -622,6 +668,9 @@
       <workItem from="1550824517095" duration="591000" />
       <workItem from="1551250070182" duration="555000" />
       <workItem from="1551949850465" duration="9700000" />
+      <workItem from="1552035795281" duration="1463000" />
+      <workItem from="1552297898376" duration="1709000" />
+      <workItem from="1552441180886" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="update_2018_10_22_20_04">
       <created>1540209894117</created>
@@ -805,25 +854,17 @@
       <option name="project" value="LOCAL" />
       <updated>1550647529107</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update_2019_03_8_17-04">
+      <created>1552035883372</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1552035883373</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Num7_test1 - 2019.02.20 at 14h 48m 07s.xml">
-      <configuration name="Num7.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Num7_test1 - 2019.02.20 at 14h 48m 18s.xml">
-      <configuration name="Num7.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Num9_test1 - 2019.02.20 at 15h 05m 52s.xml">
-      <configuration name="Num9.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Num9_test1 - 2019.02.20 at 15h 06m 08s.xml">
-      <configuration name="Num9.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Num11_test2 - 2019.02.20 at 16h 32m 07s.xml">
-      <configuration name="Num11.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="dsjkdsl_tes - 2019.02.21 at 10h 21m 23s.xml">
       <configuration name="dsjkdsl.tes" configurationId="JUnit" />
     </history-entry>
@@ -839,9 +880,24 @@
     <history-entry file="ListTest_test3 - 2019.02.27 at 14h 56m 19s.xml">
       <configuration name="ListTest.test3" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringConvert_test13 - 2019.03.11 at 18h 20m 15s.xml">
+      <configuration name="StringConvert.test13" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringConvert_test13 - 2019.03.11 at 18h 20m 19s.xml">
+      <configuration name="StringConvert.test13" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringConvert_test13 - 2019.03.11 at 18h 21m 12s.xml">
+      <configuration name="StringConvert.test13" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringConvert_test13 - 2019.03.11 at 18h 22m 02s.xml">
+      <configuration name="StringConvert.test13" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringConvert_test13 - 2019.03.11 at 18h 22m 32s.xml">
+      <configuration name="StringConvert.test13" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288208000" />
+    <option name="totallyTimeSpent" value="292249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -860,7 +916,6 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" x="22" y="180" width="1321" height="378" id="Debug" order="3" sideWeight="0.4996215" weight="0.40939596" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4988645" weight="0.32550335" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.35402685" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996215" weight="0.3204698" />
@@ -868,10 +923,11 @@
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="JRebel remote servers log" order="10" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.21498865" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49864498" visible="true" weight="0.20666163" />
       <window_info id="JRebel" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Analysis" order="7" />
       <window_info anchor="right" id="BPMNPalette" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.35234898" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="1" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
@@ -882,7 +938,7 @@
       <window_info anchor="bottom" id="Run with VisualVM" order="11" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943144" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4988645" weight="0.32550335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="JRebel Setup Guide" order="11" sideWeight="0.75083613" weight="0.31037092" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -947,7 +1003,8 @@
     <MESSAGE value="update_2019_01_10_17-44" />
     <MESSAGE value="update_2019_01_30_18-44" />
     <MESSAGE value="update_2019_02_20_17-44" />
-    <option name="LAST_COMMIT_MESSAGE" value="update_2019_02_20_17-44" />
+    <MESSAGE value="update_2019_03_8_17-04" />
+    <option name="LAST_COMMIT_MESSAGE" value="update_2019_03_8_17-04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1043,12 +1100,6 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Proxy.java</url>
-          <line>709</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java</url>
           <line>21</line>
           <properties />
@@ -1067,31 +1118,13 @@
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/src/main/java/String/StringConvert.java</url>
+          <line>44</line>
           <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1209,244 +1242,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="364" selection-start-line="364" selection-end-line="364" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/security/AccessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="526" column="8" selection-start-line="526" selection-start-column="8" selection-end-line="526" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="529" selection-start-line="529" selection-end-line="529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Cafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/ConcreteCafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareProxy/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Decorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/MilkDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/ConcreteCafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Cafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar!/org/apache/commons/lang/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="206" column="26" selection-start-line="206" selection-start-column="26" selection-end-line="206" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/org/apache/commons/lang/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="1924" column="4" lean-forward="true" selection-start-line="1924" selection-start-column="4" selection-end-line="1924" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num11.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/domain/TtrdImportCrmProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webService/HttpClientCallSoapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="626" column="22" selection-start-line="626" selection-start-column="22" selection-end-line="626" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18430">
-          <caret line="1050" column="41" selection-start-line="1050" selection-start-column="41" selection-end-line="1050" selection-end-column="41" />
-          <folding>
-            <element signature="e#44347#44348#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23674">
-          <caret line="1321" column="22" selection-start-line="1321" selection-start-column="22" selection-end-line="1321" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/regrerregef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/list/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/list/ListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/util/ListOptimizeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/HttpClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/dsjkdsl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/proxy/IDBHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1465,10 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,7 +1300,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/WeakCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="988">
           <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
         </state>
       </provider>
@@ -1523,57 +1314,297 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/DelegatingConstructorAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="228">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="456">
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="6612">
           <caret line="409" selection-start-line="409" selection-end-line="409" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="709" selection-start-line="709" selection-end-line="709" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/DynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="323">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/InvocationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="1311">
           <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/111.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="74" column="13" lean-forward="true" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        <state relative-caret-position="202">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/dynamicProxy/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12654">
+          <caret line="709" selection-start-line="709" selection-end-line="709" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/String/StringConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/test/compareDecorator/Cafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetCode/Num11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/SugarDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/MilkDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/Cafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareDecorator/ConcreteCafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/Cafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/MilkCafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/SugarCafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/SugarMilkCafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareExtends/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Cafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/ConcreteCafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/compareProxy/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/ConcretComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/ConcreteDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/DecoratorLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/JsonLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/decorator/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/dynamicProxy/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/IDBHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/OracleHandlerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/baseJava/designMode/proxy/ProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
