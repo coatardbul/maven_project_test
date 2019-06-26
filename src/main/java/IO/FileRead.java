@@ -1,11 +1,12 @@
 package IO;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,4 +43,95 @@ public class FileRead {
         }
         System.out.println(list.toString());
     }
+
+    @Test
+    public void kldsjf() throws IOException {
+        String resourceFilePath = "C:\\Users\\coatardbul\\Desktop\\sss.txt";
+        FileReader fr = new FileReader(resourceFilePath);
+
+        String resultFilePath="C:\\Users\\coatardbul\\Desktop\\ttt.txt";
+        FileWriter fw=new FileWriter(resultFilePath);
+
+
+        String setString="C:\\Users\\coatardbul\\Desktop\\www.txt";
+        FileWriter fw1=new FileWriter(setString);
+
+
+        BufferedReader br = new BufferedReader(fr);
+        StringBuffer sb=new StringBuffer();
+        String str = "";
+
+        BodyUnit bodyUnit=new BodyUnit();
+        BodySetUtil bodySetUtil=new BodySetUtil();
+        while ((str = br.readLine()) != null) {
+            System.out.println(str);
+            if("CNY".equals(str.trim())){
+                continue;
+            }
+            if("String".equals(str.trim())){
+                continue;
+            }
+            if(str.trim().matches("[0-9]+")){
+                continue;
+            }
+            if(str.trim().matches("^[A-Za-z]+$")){
+                //将数据写入到文件中
+                fw.write(bodyUnit.toString());
+                fw.flush();
+
+                fw1.write(bodySetUtil.toString());
+                fw1.flush();
+
+                bodyUnit=new BodyUnit();
+                bodyUnit.setName(str.trim());
+
+                bodySetUtil=new BodySetUtil();
+                bodySetUtil.setName(str.trim());
+                continue;
+            }
+            if("✔️".equals(str.trim())){
+                bodyUnit.setProperty("yes");
+
+                bodySetUtil.setProperty("yes");
+                continue;
+            }
+            bodyUnit.setDeclare(str.trim());
+            bodySetUtil.setDeclare(str.trim());
+        }
+        fw.write(bodyUnit.toString());
+        fw.flush();
+
+        fw1.write(bodySetUtil.toString());
+        fw1.flush();
+
+        fr.close();
+        br.close();
+        fw.close();
+        fw1.close();
+    }
+
+    @Test
+    public  void  djflk(){
+        ResponseHeadDro  responseHeadDro=new ResponseHeadDro();
+        responseHeadDro.setResCd("1111");
+        responseHeadDro.setResMsg("222");
+        responseHeadDro.setResDt("333");
+        responseHeadDro.setResTm("444");
+        responseHeadDro.setResSeqNum("55");
+        responseHeadDro.setReqSeqNum("666");
+        ResponseDto<BodyUnit> responseDto=new ResponseDto();
+        responseDto.setHead(responseHeadDro);
+        BodyUnit b=new BodyUnit();
+        b.setName("dsfsdf");
+        b.setProperty("sdfsd");
+        b.setDeclare("fasdfsd");
+        responseDto.setBody(b);
+
+        String str=JSON.toJSONString(responseDto);
+        ResponseDto<BodyUnit> responseDto1=JSON.parseObject(str,  new TypeReference<ResponseDto<BodyUnit>>(){});
+       // JSONObject  jsonObject=responseDto1.getBody();
+        BodyUnit bodyUnit=responseDto1.getBody();
+        responseDto1.toString();
+    }
+
 }
