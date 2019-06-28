@@ -71,10 +71,16 @@ public class FileRead {
             if("String".equals(str.trim())){
                 continue;
             }
+            if("Number".equals(str.trim())){
+                continue;
+            }
+            if("abc".equals(str.trim())){
+                continue;
+            }
             if(str.trim().matches("[0-9]+")){
                 continue;
             }
-            if(str.trim().matches("^[A-Za-z]+$")){
+            if(str.trim().matches("^[A-Za-z_]+$")){
                 //将数据写入到文件中
                 fw.write(bodyUnit.toString());
                 fw.flush();
