@@ -12,13 +12,13 @@ public class ListCopyTest {
 
 
     public <T> List<T> test1() {
-        ReflexTest reflexTest = new ReflexTest();
-        ImportCrmProduct importCrmProduct = reflexTest.getObject();
-        List<ImportCrmProduct> list = new ArrayList<ImportCrmProduct>();
-        for (int i = 0; i < 19; i++) {
-            list.add(reflexTest.getObject());
-        }
-        return (List<T>) list;
+//        ReflexTest reflexTest = new ReflexTest();
+//        ImportCrmProduct importCrmProduct = reflexTest.getObject();
+//        List<ImportCrmProduct> list = new ArrayList<ImportCrmProduct>();
+//        for (int i = 0; i < 19; i++) {
+//            list.add(reflexTest.getObject());
+//        }
+        return  null;
 
     }
 

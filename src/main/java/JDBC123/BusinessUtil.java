@@ -1,6 +1,5 @@
-package JDBC;
+package JDBC123;
 
-import JDBC.JDBCUtil;
 import entity.ImportCrmProduct;
 import org.junit.Test;
 

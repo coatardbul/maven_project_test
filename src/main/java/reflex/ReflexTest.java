@@ -132,16 +132,16 @@ public class ReflexTest {
     @Test
     public void demo1() throws Exception {
         //获取字节码对象
-        Class<ReflexTest> clazz = (Class<ReflexTest>) Class.forName("entity.ImportCrmProduct");
-
-        //获取一个对象
-        Constructor con =  clazz.getConstructor();
-        ImportCrmProduct m = (ImportCrmProduct) con.newInstance();
-        String[] s = new String[]{"aa","bb"};
-        //获取Method对象
-        Method method = clazz.getMethod("test", String[].class);
-        //调用invoke方法来调用
-        method.invoke(m, s);
+//        Class<ReflexTest> clazz = (Class<ReflexTest>) Class.forName("entity.ImportCrmProduct");
+//
+//        //获取一个对象
+//        Constructor con =  clazz.getConstructor();
+//        ImportCrmProduct m = (ImportCrmProduct) con.newInstance();
+//        String[] s = new String[]{"aa","bb"};
+//        //获取Method对象
+//        Method method = clazz.getMethod("test", String[].class);
+//        //调用invoke方法来调用
+//        method.invoke(m, s);
     }
 
 

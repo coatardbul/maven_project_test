@@ -27,15 +27,10 @@ public class TestUtil {
 
     @Test
     public void test2() {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("sb", 123);
-        map.put("hello", 123);
-
-        Map<String, Integer> map1 = new HashMap<>();
-        map1.put("sb", 121232133);
-        map1.put("hello", 12312321);
-        map = map1;
-        System.out.println(map);
+      String str1="1";
+        String str2="1";
+        String str=str1+" "+str2;
+        System.out.println(str);
     }
 
     @Test
