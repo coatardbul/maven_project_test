@@ -41,14 +41,14 @@ public class JdbcUnitTest {
         List<JdbcUnit> list = new ArrayList<>(split.length);
         JdbcUnit jdbcUnit = new JdbcUnit();
         for (String s : split) {
-            if (s.contains("String")) {
+            if (s.contains("String")|| s.contains("Timestamp")) {
                 jdbcUnit = new JdbcUnit();
                 jdbcUnit.setValue("'" + s.substring(0, s.indexOf("(")).trim() + "'");
                 jdbcUnit.setAttribute("String");
                 list.add(jdbcUnit);
                 continue;
             }
-            if (s.contains("Long")) {
+            if (s.contains("Long")||s.contains("BigDecimal")||s.contains("Integer")) {
                 jdbcUnit = new JdbcUnit();
                 jdbcUnit.setValue(s.substring(0, s.indexOf("(")).trim());
                 jdbcUnit.setAttribute("Long");
