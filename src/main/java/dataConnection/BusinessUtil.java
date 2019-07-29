@@ -1,4 +1,4 @@
-package JDBC123;
+package dataConnection;
 
 import entity.ImportCrmProduct;
 import org.junit.Test;

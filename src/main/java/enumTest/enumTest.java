@@ -1,5 +1,5 @@
 
-package enumUtil;
+package enumTest;
 
 import org.junit.Test;
 

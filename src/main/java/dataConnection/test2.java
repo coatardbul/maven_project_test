@@ -1,4 +1,4 @@
-package JDBC123;
+package dataConnection;
 
 public class test2 {
     public static void main(String[] args) {

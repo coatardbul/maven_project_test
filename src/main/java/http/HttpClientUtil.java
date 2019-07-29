@@ -1,4 +1,4 @@
-package test;
+package http;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.InputStreamRequestEntity;

@@ -1,4 +1,4 @@
-package JDBC123;
+package dataConnection;
 
 import java.io.*;
 import java.util.List;
