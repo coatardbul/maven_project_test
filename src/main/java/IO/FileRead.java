@@ -56,12 +56,16 @@ public class FileRead {
         String setString="C:\\Users\\coatardbul\\Desktop\\www.txt";
         FileWriter fw1=new FileWriter(setString);
 
+        String setString2="C:\\Users\\coatardbul\\Desktop\\vvv.txt";
+        FileWriter fw2=new FileWriter(setString2);
+
 
         BufferedReader br = new BufferedReader(fr);
         StringBuffer sb=new StringBuffer();
         String str = "";
 
         BodyUnit bodyUnit=new BodyUnit();
+        BodyName bodyName=new BodyName();
         BodySetUtil bodySetUtil=new BodySetUtil();
         while ((str = br.readLine()) != null) {
             System.out.println(str);
@@ -88,8 +92,15 @@ public class FileRead {
                 fw1.write(bodySetUtil.toString());
                 fw1.flush();
 
+                fw2.write(bodyName.toString());
+                fw2.flush();
+
+
                 bodyUnit=new BodyUnit();
                 bodyUnit.setName(str.trim());
+
+                bodyName=new BodyName();
+                bodyName.setName(str.trim());
 
                 bodySetUtil=new BodySetUtil();
                 bodySetUtil.setName(str.trim());
@@ -110,10 +121,14 @@ public class FileRead {
         fw1.write(bodySetUtil.toString());
         fw1.flush();
 
+        fw2.write(bodyName.toString());
+        fw2.flush();
+
         fr.close();
         br.close();
         fw.close();
         fw1.close();
+        fw2.close();
     }
 
     @Test
