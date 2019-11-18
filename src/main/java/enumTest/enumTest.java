@@ -1,7 +1,8 @@
 
 package enumTest;
 
-import org.junit.Test;
+
+import java.time.LocalDateTime;
 
 /**
  * @author: suxiaolei
@@ -9,11 +10,9 @@ import org.junit.Test;
  */
 public class enumTest {
 
+    public static final String DATE_TIME = "yyyy-MM-dd HH:mm:ssSSSSSS";
 
-    @Test
-    public void tlekj() {
-        for (CommonResult c : CommonResult.values()) {
-            System.out.println(c.toString());
-        }
+    public static void main(String[] args) {
+        System.out.println(LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern(DATE_TIME)));
     }
 }

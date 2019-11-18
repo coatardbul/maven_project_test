@@ -1,20 +1,31 @@
 package reflex;
 
 import entity.ImportCrmProduct;
+import org.apache.poi.ss.formula.functions.T;
 import org.junit.Test;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
+import java.lang.reflect.Field;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
 public class ReflexTest {
+    public static final String DATE_TIME = "yyyy-MM-dd HH:mm:ssSSSSSS";
+
     public static void main(String[] args) {
-        ImportCrmProduct importCrmProduct = new ImportCrmProduct();
-        importCrmProduct.setTradeTime("213123");
-        //Object object=ReflexUtil.readValueByName("tradeTime",importCrmProduct);
-        //System.out.println(object.toString());
+        String ss=null;
+
+
+        LocalDateTime now = LocalDateTime.now();
+        long l = System.nanoTime();
+        System.out.println(l);
+        System.out.println(now);
+        System.out.println(now.getMinute());
+        System.out.println(now.getSecond());
+        System.out.println(now.getNano());
+        System.out.println(now.format(DateTimeFormatter.ofPattern(DATE_TIME)));
     }
 
     @Test
@@ -44,9 +55,9 @@ public class ReflexTest {
         importCrmProductTemp.setTradeTime("2018-09-08 12:12");
         importCrmProduct.setUserId(13123l);
         importCrmProduct.setIp("127.0.0.1");
-        Map<String,Object> map=ReflexUtil.readObjectAllAttribute(importCrmProduct);
+        Map<String, Object> map = ReflexUtil.readObjectAllAttribute(importCrmProduct);
         System.out.println(map);
-        ReflexUtil.singleReadAttributeValuePrint(importCrmProduct,importCrmProduct.getClass());
+        ReflexUtil.singleReadAttributeValuePrint(importCrmProduct, importCrmProduct.getClass());
 //        ImportCrmProduct  i =new ImportCrmProduct();
 //        ReflexUtil.setMapToObject(i,map);
 //        System.out.println(i.getIp());
@@ -63,7 +74,28 @@ public class ReflexTest {
         importCrmProduct.setResStatus("1");
         importCrmProduct.setTradeTime("2018-09-08 12:12");
         importCrmProduct.setProdName("qunidayede");
+
+
+        //    xx(importCrmProduct);
+
+
         return importCrmProduct;
+    }
+
+    public static void xx(T t) {
+        //得到所有属性
+        Field[] fields = t.getClass().getDeclaredFields();
+        for (int i = 0; i < fields.length; i++) {//遍历
+            //得到属性
+            Field field = fields[i];
+            //打开私有访问
+            field.setAccessible(true);
+            //获取属性
+            String name = field.getName();
+            //获取属性值
+            // java.lang.Object value = field.get(t);
+
+        }
     }
 
     @Test
@@ -103,32 +135,34 @@ public class ReflexTest {
     }
 
     @Test
-    public  void  testSetMapToObject() throws IllegalAccessException, InstantiationException {
+    public void testSetMapToObject() throws IllegalAccessException, InstantiationException {
         ImportCrmProduct importCrmProduct = new ImportCrmProduct();
-        Map<String,Object> map=new HashMap<>();
-        map.put("prodId","hello");
+        Map<String, Object> map = new HashMap<>();
+        map.put("prodId", "hello");
 //        importCrmProduct.setProdId("h1ello");
 //        importCrmProduct.setAppType("12");
 //        importCrmProduct.setResStatus("1");
 //        importCrmProduct.setTradeTime("2018-09-08 12:12");
 //        importCrmProduct.setProdName("qunidayede");
-       // ReflexUtil.singleSetMapToObject(importCrmProduct,map);
+        // ReflexUtil.singleSetMapToObject(importCrmProduct,map);
         System.out.println(importCrmProduct.toString());
 
     }
+
     @Test
     public void test2() throws ClassNotFoundException {
         ImportCrmProduct importCrmProduct = new ImportCrmProduct();
         importCrmProduct.setIp("dsfsdfsd");
-        Map<String,Object> map=new HashMap<>();
-        map.put("ordid",1231212);
-        map.put("id",12313L);
-        map.put("str","hello");
+        Map<String, Object> map = new HashMap<>();
+        map.put("ordid", 1231212);
+        map.put("id", 12313L);
+        map.put("str", "hello");
         System.out.println(map.get("id").getClass());
         System.out.println(Class.forName("java.lang.Long").getClass());
 
 
     }
+
     @Test
     public void demo1() throws Exception {
         //获取字节码对象
