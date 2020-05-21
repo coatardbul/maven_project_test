@@ -1,38 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99ede73b-0db6-44e6-8ea2-212539e191c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/maven_project_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/annotation/TestAnno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/annotation/TestAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enumTest/dsfsd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num17/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num19/num19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num20/num20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num22/num22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IO/AbcReplace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IO/CompareTwoFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/date/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/AC220.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/AdapterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/Charge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/decorate/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/decorate/装饰模式" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/facotry/abstra/dsf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/PropUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableStandardInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/WordReadWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num24/num24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num26/num26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectOfficeToJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJsonoptisizm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maven_project_test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodyName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/BodyName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/excelParse/dfas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/excelParse/dfas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enumTest/enumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enumTest/enumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/sdfsdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/sdfsdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num14/Num14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num14/Num14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num17/num17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num17/num17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodySetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/BodySetUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodyUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/BodyUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/TestAnno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/TestAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserIp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserIp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/math/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/divideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/math/divideTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,42 +62,44 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\.m2\repository" />
-        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settingsali.xml" />
+        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1S2OqGyKLte7NfIbEYIlJiqbDXR" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Un2JNcuy7LbgCuGgIpt07LlGDQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/bedcDetail" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.test1">
-    <configuration name="ReflexTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reflex.ReflexTest" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\maven_project_test\src\main\java\bedcDetail" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DefaultChargeAdapter">
+    <configuration name="AbcReplace (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IO.AbcReplace" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reflex.*" />
+          <option name="PATTERN" value="IO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,89 +107,236 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="concurrent.test1" />
+    <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designMode.adapt.AdapterTest" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="concurrent.*" />
+          <option name="PATTERN" value="designMode.adapt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultChargeAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designMode.adapt.DefaultChargeAdapter" />
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designMode.adapt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IO.sfds" />
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileRead.kldsjf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IO" />
+      <option name="MAIN_CLASS_NAME" value="IO.FileRead" />
+      <option name="METHOD_NAME" value="kldsjf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test1" />
-        <item itemvalue="Application.ReflexTest" />
+        <item itemvalue="Application.DefaultChargeAdapter" />
+        <item itemvalue="Application.AdapterTest" />
+        <item itemvalue="Application.sfds" />
+        <item itemvalue="Application.AbcReplace (1)" />
+        <item itemvalue="JUnit.FileRead.kldsjf" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="99ede73b-0db6-44e6-8ea2-212539e191c4" name="Default Changelist" comment="" />
-      <created>1570621332994</created>
+      <changelist id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="" />
+      <created>1575977965163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570621332994</updated>
-      <workItem from="1570621335795" duration="1738000" />
-      <workItem from="1570671211422" duration="589000" />
-      <workItem from="1570690032574" duration="1786000" />
-      <workItem from="1570758414957" duration="31000" />
-      <workItem from="1571046943796" duration="1373000" />
-      <workItem from="1571907625782" duration="979000" />
-      <workItem from="1572419790728" duration="51000" />
-      <workItem from="1573112379750" duration="124000" />
-      <workItem from="1573112860914" duration="384000" />
-      <workItem from="1573799701303" duration="1881000" />
-      <workItem from="1574063236396" duration="282000" />
+      <updated>1575977965163</updated>
+      <workItem from="1575977968851" duration="1176000" />
+      <workItem from="1576138503946" duration="1899000" />
+      <workItem from="1576218787095" duration="577000" />
+      <workItem from="1576220474613" duration="3505000" />
+      <workItem from="1576304925209" duration="854000" />
+      <workItem from="1576381584012" duration="1429000" />
+      <workItem from="1576480280643" duration="5220000" />
+      <workItem from="1576743296776" duration="1269000" />
+      <workItem from="1576981429891" duration="891000" />
+      <workItem from="1577935143459" duration="4317000" />
+      <workItem from="1578019659762" duration="11003000" />
+      <workItem from="1578377888957" duration="598000" />
+      <workItem from="1578380195282" duration="6672000" />
+      <workItem from="1578463946474" duration="1842000" />
+      <workItem from="1578552226730" duration="2372000" />
+      <workItem from="1578881677825" duration="1229000" />
+      <workItem from="1578913243682" duration="592000" />
+      <workItem from="1578915744186" duration="2732000" />
+      <workItem from="1578982872106" duration="2080000" />
+      <workItem from="1578987276015" duration="677000" />
+      <workItem from="1579070130241" duration="1371000" />
+      <workItem from="1579149521914" duration="7373000" />
+      <workItem from="1579341219123" duration="3838000" />
+      <workItem from="1579436536615" duration="607000" />
+      <workItem from="1579572669252" duration="825000" />
+      <workItem from="1579605526686" duration="16000" />
+      <workItem from="1581477297178" duration="329000" />
+      <workItem from="1581494776061" duration="154000" />
+      <workItem from="1582121379258" duration="2114000" />
+      <workItem from="1582176760359" duration="594000" />
+      <workItem from="1582637144859" duration="1001000" />
+      <workItem from="1582703475844" duration="866000" />
+      <workItem from="1582713967402" duration="681000" />
+      <workItem from="1583300418248" duration="589000" />
+      <workItem from="1583387336117" duration="761000" />
+      <workItem from="1583803925222" duration="3939000" />
+      <workItem from="1583981812443" duration="1911000" />
+      <workItem from="1584410794958" duration="1845000" />
+      <workItem from="1585200215269" duration="598000" />
+      <workItem from="1585315394846" duration="1204000" />
+      <workItem from="1585536122362" duration="1285000" />
+      <workItem from="1585553912028" duration="33000" />
+      <workItem from="1586077675251" duration="312000" />
+      <workItem from="1586315945177" duration="808000" />
+      <workItem from="1587437934976" duration="10660000" />
+      <workItem from="1587866874024" duration="40000" />
+      <workItem from="1589337217743" duration="1524000" />
+      <workItem from="1589444708824" duration="2219000" />
+      <workItem from="1589525129955" duration="1639000" />
+      <workItem from="1589800797813" duration="1094000" />
+      <workItem from="1589882346719" duration="2869000" />
+      <workItem from="1589960671207" duration="3439000" />
+      <workItem from="1590025670598" duration="4987000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="699" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590030563138">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="699" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1590030563138" />
+    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1590026177307">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1590026177307" />
+    <state x="805" y="316" key="FileChooserDialogImpl" timestamp="1589969164068">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="805" y="316" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1589969164068" />
+    <state width="992" height="347" key="GridCell.Tab.0.bottom" timestamp="1589972001967">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="992" height="347" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
+    <state width="992" height="347" key="GridCell.Tab.0.center" timestamp="1589972001967">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="992" height="347" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
+    <state width="992" height="347" key="GridCell.Tab.0.left" timestamp="1589972001967">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="992" height="347" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
+    <state width="992" height="347" key="GridCell.Tab.0.right" timestamp="1589972001967">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="992" height="347" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
+    <state width="998" height="336" key="GridCell.Tab.1.bottom" timestamp="1589972001964">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="998" height="336" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
+    <state width="998" height="336" key="GridCell.Tab.1.center" timestamp="1589972001964">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="998" height="336" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
+    <state width="998" height="336" key="GridCell.Tab.1.left" timestamp="1589972001963">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="998" height="336" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001963" />
+    <state width="998" height="336" key="GridCell.Tab.1.right" timestamp="1589972001964">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="998" height="336" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
+    <state x="723" y="293" width="602" height="536" key="find.popup" timestamp="1589801148485">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="723" y="293" width="602" height="536" key="find.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1589801148485" />
+    <state x="687" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1589961166204">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="687" y="246" width="672" height="678" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1589961166204" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/date/DateUtil.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/file/word/WordReadWrite.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.2.RELEASE/spring-beans-4.2.2.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>LocalDateTime.now().getNano()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>LocalDateTime.now()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>

@@ -15,7 +15,7 @@ public class BodySetUtil {
 
     @Override
     public String toString() {
-        if (name == null || "".equals(name)) {
+        /*if (name == null || "".equals(name)) {
             return "";
         } else {
             if (property == null || "".equals(property)) {
@@ -26,6 +26,11 @@ public class BodySetUtil {
                         "xxxxx.set" + name.substring(0, 1).toUpperCase() + name.substring(1, name.length()) + "(\"\");" + "\n";
             }
 
+        }*/
+        if (name == null || "".equals(name)) {
+            return "";
+        }else {
+            return name+"\t"+declare+"\n";
         }
     }
 

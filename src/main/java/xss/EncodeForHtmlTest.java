@@ -1,10 +1,15 @@
 package xss;
 
+import entity.ImportCrmProduct;
 import org.owasp.encoder.Encode;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EncodeForHtmlTest {
     public static void main(String[] args) {
-        String str="<img src=1 . onerror=alter(2)>";
-        System.out.println(Encode.forHtml(str));
+        int x=1;
+        double y=3;
+        System.out.println(x/y);
     }
 }

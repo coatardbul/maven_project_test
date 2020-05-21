@@ -29,7 +29,7 @@ public class BodyUnit {
             return "/**\n" +
                     "     * \n" +declare+
                     "     */\n"+
-                    "@NotEmpty(message = \""+declare+"不能为空\")"+
+                    "@NotBlank(message = \""+declare+"不能为空\")"+
                     " private String "+name+";\n";
         }
 
