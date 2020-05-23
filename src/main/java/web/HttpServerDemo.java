@@ -59,7 +59,7 @@ public class HttpServerDemo {
                 URI requestURI = httpExchange.getRequestURI();
                 Headers responseHeaders = httpExchange.getResponseHeaders();
                 responseHeaders.set("Content-Type", "application/json;charset=utf-8");
-               // String response = "this is server";
+               // baseJava.String response = "this is server";
 
 
                 String response = "\"name\": \"123\",\n" +

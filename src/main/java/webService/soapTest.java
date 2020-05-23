@@ -20,7 +20,7 @@ public class soapTest {
         byte[] buf = new byte[(int) fileToSend.length()];// 用于存放文件数据的数组
         new FileInputStream(xmlFile).read(buf);
 //		httpConn.setRequestProperty("Content-Length",
-//				String.valueOf(buf.length));//这句话可以不用写，即使是随便写
+//				baseJava.String.valueOf(buf.length));//这句话可以不用写，即使是随便写
         //根据我的测试，过去的请求头中的Content-Length长度也是正确的，也就是说它会自动进行计算
         httpConn.setRequestProperty("Content-Type", "text/xml; charset=utf-8");
         httpConn.setRequestProperty("Soapaction",soapActionString);//Soap

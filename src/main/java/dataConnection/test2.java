@@ -2,7 +2,7 @@ package dataConnection;
 
 public class test2 {
     public static void main(String[] args) {
-//        String str="date_id";
+//        baseJava.String str="date_id";
 //        if(str.contains("_")){
 //
 //            System.out.println(str.replace("_",""));

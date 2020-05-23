@@ -1,6 +1,6 @@
 package dataConnection;
 
-import entity.ImportCrmProduct;
+import common.entity.ImportCrmProduct;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -51,10 +51,10 @@ public class BusinessUtil {
             List<ImportCrmProduct> crmListTemp = ListCopyUtil.deepCopy(crmList);
             //插入的数据
             crmList.removeAll(ownList);
-            //TODO  插入sql  list
+            //TODO  插入sql  baseJava.list
             //更新的数据
             crmListTemp.removeAll(crmList);
-            //TODO  更新sql  list
+            //TODO  更新sql  baseJava.list
 
         } catch (IOException e) {
             e.printStackTrace();

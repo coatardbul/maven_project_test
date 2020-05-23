@@ -1,11 +1,9 @@
 package xss;
 
-import entity.UserIp;
+import common.entity.UserIp;
 import org.owasp.encoder.Encode;
 
 import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.Map;
 
 public class XSSUtilFilter {
     public String str;
@@ -88,7 +86,7 @@ public class XSSUtilFilter {
                 //获取属性值
                 Object value = field.get(obj);
                 //一个个赋值
-                if (field.getGenericType().toString().equals("class java.lang.String")) {
+                if (field.getGenericType().toString().equals("class java.lang.baseJava.String")) {
                     field.set(obj, Encode.forHtml((String) value));
                 }
                 if (field.getGenericType().getClass() instanceof Object) {
@@ -133,11 +131,11 @@ public class XSSUtilFilter {
                 //获取属性值
                 Object value = field.get(obj);
 
-                if (field.getGenericType().toString().equals("class java.lang.String")) {
+                if (field.getGenericType().toString().equals("class java.lang.baseJava.String")) {
                     field.set(obj, Encode.forHtml((String) value));
                 }
 
-                if (!field.getGenericType().toString().equals("class java.lang.String") &&
+                if (!field.getGenericType().toString().equals("class java.lang.baseJava.String") &&
                         !field.getGenericType().toString().equals("class java.lang.Long") &&
                         !field.getGenericType().toString().equals("long") &&
                         !field.getGenericType().toString().equals("class java.lang.Integer") &&

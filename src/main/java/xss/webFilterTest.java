@@ -14,7 +14,7 @@
 //    protected boolean filterEnabled;
 //    protected int logLevel;
 //    protected boolean needVCode;
-//    protected List<String> noFilerList =null;
+//    protected List<baseJava.String> noFilerList =null;
 //    private CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
 //    public RequestFilter() {
 //        this.filterConfig = null;
@@ -34,11 +34,11 @@
 //            Const.SESSION_CSRFTOKEN;
 //            HttpServletRequest httpReq = (HttpServletRequest)req;
 //            HttpServletResponse httpResp = (HttpServletResponse)resp;
-//            String ctxPath = httpReq.getContextPath();
-//            String requestUri = httpReq.getRequestURI();        //请求的全路径,比如:
-//            String uri = requestUri.substring(ctxPath.length());//全路径除去ctxPath
-//            String tarUri = uri.trim();
-//            String operatorHtmlModel = (httpReq.getHeader("referer")!=null?httpReq.getHeader("referer"):"").trim(); //获取当前页面的url，判断url是否是后台而url（后台的html就两个）
+//            baseJava.String ctxPath = httpReq.getContextPath();
+//            baseJava.String requestUri = httpReq.getRequestURI();        //请求的全路径,比如:
+//            baseJava.String uri = requestUri.substring(ctxPath.length());//全路径除去ctxPath
+//            baseJava.String tarUri = uri.trim();
+//            baseJava.String operatorHtmlModel = (httpReq.getHeader("referer")!=null?httpReq.getHeader("referer"):"").trim(); //获取当前页面的url，判断url是否是后台而url（后台的html就两个）
 //            //不在过滤列表里的url请求,过滤列表包括t_sys_filter表中数据及visitor角色用户下的授权页面
 //            if(!this.isInNoFilerList(tarUri)){
 //                UserInfo uInfo = SessionUtil.getCurrentUser();
@@ -61,8 +61,8 @@
 //                        httpResp.sendRedirect(ctxPath+"/error/noSecurity.htm");
 //                        return;
 //                    }else if(tarUri.endsWith(".do") && !isWithoutUri(tarUri)){
-//                        String contentType = httpReq.getContentType();//获取请求的content-type
-//                        String post_csrftoken = "";
+//                        baseJava.String contentType = httpReq.getContentType();//获取请求的content-type
+//                        baseJava.String post_csrftoken = "";
 //                        if(contentType.contains("multipart/form-data")){//文件上传请求 *特殊请求
 //　　　　　　　　　　　　　　/*
 //　　　　　　　　　　　　　　　　CommonsMultipartResolver 是spring框架中自带的类，使用multipartResolver.resolveMultipart(final HttpServletRequest request)方法可以将request转化为MultipartHttpServletRequest
@@ -76,7 +76,7 @@
 //                        }
 //                        //csrf防御：判断是否带token
 //                        //post_csrftoken=httpReq.getParameter(Const.SESSION_CSRFTOKEN);
-//                        String csrftoken=(String)SessionUtil.getAttribute(Const.SESSION_CSRFTOKEN);
+//                        baseJava.String csrftoken=(baseJava.String)SessionUtil.getAttribute(Const.SESSION_CSRFTOKEN);
 //                        if(post_csrftoken==null || !csrftoken.equals(post_csrftoken)){
 //                            //判断为不安全的访问
 //                            httpResp.sendRedirect(ctxPath+"/common/goNoSecurity.do");
@@ -103,8 +103,8 @@
 //    }
 //
 //
-//    private Boolean isWithoutUri(String tarUri){
-//        String[] withoutUriStrings = {//无需匹配token的请求
+//    private Boolean isWithoutUri(baseJava.String tarUri){
+//        baseJava.String[] withoutUriStrings = {//无需匹配token的请求
 //                "/common/goNoSecurity.do",
 //                "/plateFormCommon/isLoginForPlateForm.do",
 //                "/supplierForPlateForm/getCompanyListByRegId.do"
@@ -112,7 +112,7 @@
 //                /*,"/PfTaskFileCtrl/addOrUpdateTaskImgFileForUpdate.do"*/
 //        };
 //
-//        for(String uri:withoutUriStrings){
+//        for(baseJava.String uri:withoutUriStrings){
 //            if(uri.equals(tarUri)){
 //                return true;
 //            }

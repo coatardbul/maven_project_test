@@ -1,6 +1,6 @@
 package dataConnection;
 
-import entity.ImportCrmProduct;
+import common.entity.ImportCrmProduct;
 import org.junit.Test;
 
 import java.sql.SQLException;

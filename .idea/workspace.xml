@@ -2,43 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IO/AbcReplace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IO/CompareTwoFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/date/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/AC220.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/adapt/Charge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/decorate/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/decorate/装饰模式" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designMode/facotry/abstra/dsf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/file/PropUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/TableStandardInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/file/word/WordReadWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num24/num24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num26/num26.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectOfficeToJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJsonoptisizm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/maven_project_test.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jvm/HeepOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetCode/num22/num122.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodySetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/BodySetUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodyUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/BodyUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/TestAnno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/TestAnnotation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserIp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserIp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/math/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/math/MathTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/math/divideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/math/divideTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/AbcReplace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/AbcReplace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodyName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/BodyName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodySetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/BodySetUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/BodyUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/BodyUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/CompareTwoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/CompareTwoFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/FileRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/ResponseHeadDro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/ResponseHeadDro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/excelParse/BedcBankbranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/excelParse/BedcBankbranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IO/excelParse/dfas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/excelParse/dfas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/StringConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/StringMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/jdbc/JdbcUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/jdbc/JdbcUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/String/jdbc/JdbcUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/jdbc/JdbcUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/util/ReflexUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clone/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/clone/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clone/ListCopyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/clone/ListCopyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clone/ListCopyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/clone/ListCopyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clone/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/clone/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clone/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/clone/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/concurrent/test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataConnection/BusinessUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataConnection/BusinessUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataConnection/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataConnection/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataConnection/jdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataConnection/jdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataConnection/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataConnection/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataConnection/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataConnection/test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/date/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/dateTime/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ImportCrmProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/entity/ImportCrmProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/ImportCrmProductParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/entity/ImportCrmProductParent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserIp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/entity/UserIp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enumTest/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/enumInfo/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enumTest/dsfsd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/enumInfo/dsfsd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enumTest/enumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/enumInfo/enumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/PropUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/PropUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/fileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/jrebel.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/jrebel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/sdfsdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/sdfsdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/sdfsdfds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/sdfsdfds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/word/TableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/word/TableInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/word/TableList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/word/TableList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/word/TableStandardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/word/TableStandardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/file/word/WordReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/word/WordReadWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genericity/genericityUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/genericity/genericityUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/http/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/http/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/http/regrerregef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/http/regrerregef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/Num2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/Num2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/Num5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/Num5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num17/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num17/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num22/num22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num22/num22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num24/num24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num24/num24.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/ArrayListAndLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/ArrayListAndLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/ArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/GenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/HashMaptest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/HashMaptest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/LinkedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/LinkedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/list/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/list/ListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/IntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/IntegerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/divideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/divideTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/sad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/sad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/question/json/ObjectOfficeToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonInfo/ObjectOfficeToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonInfo/ObjectToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/question/json/ObjectToJsonoptisizm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsonInfo/ObjectToJsonoptisizm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reflex/ReflexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/reflex/ReflexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reflex/ReflexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/reflex/ReflexUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/timedTask/quartz/HelloJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/timedTask/quartz/HelloJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/timedTask/quartz/SimpleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/timedTask/quartz/SimpleExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/HttpServerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/HttpServerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/RequestHeadParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/RequestHeadParse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webService/soapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webService/soapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/EncodeForHtmlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xss/XSSUtilFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/XSSUtilFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xss/sddfdas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/sddfdas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xss/webFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xss/webFilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,20 +131,24 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\idea\maven_project_test\src\main\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetCode.num22" />
       <recent name="file" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\idea\maven_project_test\src\main\java\bedcDetail" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DefaultChargeAdapter">
-    <configuration name="AbcReplace (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IO.AbcReplace" />
+  <component name="RunManager" selected="JUnit.Num11.test2">
+    <configuration name="MethodTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.num21.MethodTest" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IO.*" />
+          <option name="PATTERN" value="leetCode.num21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designMode.adapt.AdapterTest" />
+    <configuration name="Num21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetCode.num21.Num21" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designMode.adapt.*" />
+          <option name="PATTERN" value="leetCode.num21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,43 +169,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefaultChargeAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designMode.adapt.DefaultChargeAdapter" />
+    <configuration name="Num11.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="designMode.adapt.*" />
+          <option name="PATTERN" value="leetCode.num11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="leetCode.num11" />
+      <option name="MAIN_CLASS_NAME" value="leetCode.num11.Num11" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sfds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IO.sfds" />
+    <configuration name="ObjectToJsonoptisizm.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IO.*" />
+          <option name="PATTERN" value="jsonInfo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileRead.kldsjf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven_project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IO" />
-      <option name="MAIN_CLASS_NAME" value="IO.FileRead" />
-      <option name="METHOD_NAME" value="kldsjf" />
+      <option name="PACKAGE_NAME" value="jsonInfo" />
+      <option name="MAIN_CLASS_NAME" value="jsonInfo.ObjectToJsonoptisizm" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,13 +210,37 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="fileTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baseJava.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baseJava.file" />
+      <option name="MAIN_CLASS_NAME" value="baseJava.file.fileTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Num21" />
+      <item itemvalue="Application.MethodTest" />
+      <item itemvalue="JUnit.ObjectToJsonoptisizm.test1" />
+      <item itemvalue="JUnit.fileTest.get" />
+      <item itemvalue="JUnit.Num11.test2" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DefaultChargeAdapter" />
-        <item itemvalue="Application.AdapterTest" />
-        <item itemvalue="Application.sfds" />
-        <item itemvalue="Application.AbcReplace (1)" />
-        <item itemvalue="JUnit.FileRead.kldsjf" />
+        <item itemvalue="JUnit.Num11.test2" />
+        <item itemvalue="JUnit.fileTest.get" />
+        <item itemvalue="JUnit.ObjectToJsonoptisizm.test1" />
+        <item itemvalue="Application.MethodTest" />
+        <item itemvalue="Application.Num21" />
       </list>
     </recent_temporary>
   </component>
@@ -245,8 +309,19 @@
       <workItem from="1589800797813" duration="1094000" />
       <workItem from="1589882346719" duration="2869000" />
       <workItem from="1589960671207" duration="3439000" />
-      <workItem from="1590025670598" duration="4987000" />
+      <workItem from="1590025670598" duration="7693000" />
+      <workItem from="1590114785734" duration="12117000" />
+      <workItem from="1590201665615" duration="8478000" />
+      <workItem from="1590220990397" duration="2482000" />
     </task>
+    <task id="LOCAL-00001" summary="s">
+      <created>1590045949980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590045949980</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,51 +339,91 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="s" />
+    <option name="LAST_COMMIT_MESSAGE" value="s" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="479" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590048854310">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="479" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1590048854310" />
     <state x="699" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590030563138">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="699" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1590030563138" />
-    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1590026177307">
+    <state x="804" y="266" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1590048225760">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1590026177307" />
+    <state x="804" y="266" key="#com.intellij.ide.macro.MacrosDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1590048225760" />
+    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1590212561011">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="830" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1590212561011" />
+    <state x="800" y="454" width="448" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590225850440">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="800" y="454" width="448" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2048.1122@0.0.2048.1122" timestamp="1590225850440" />
+    <state x="780" y="263" key="#xdebugger.evaluate" timestamp="1590135381548">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="780" y="263" key="#xdebugger.evaluate/0.0.2048.1122@0.0.2048.1122" timestamp="1590135381548" />
+    <state x="607" y="128" key="CommitChangelistDialog2" timestamp="1590045946277">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="607" y="128" key="CommitChangelistDialog2/0.0.2048.1122@0.0.2048.1122" timestamp="1590045946277" />
+    <state width="444" height="466" key="DebuggerActiveHint" timestamp="1590137347969">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="444" height="466" key="DebuggerActiveHint/0.0.2048.1122@0.0.2048.1122" timestamp="1590137347969" />
     <state x="805" y="316" key="FileChooserDialogImpl" timestamp="1589969164068">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="805" y="316" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1589969164068" />
-    <state width="992" height="347" key="GridCell.Tab.0.bottom" timestamp="1589972001967">
+    <state width="2005" height="407" key="GridCell.Tab.0.bottom" timestamp="1590226912575">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="992" height="347" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
-    <state width="992" height="347" key="GridCell.Tab.0.center" timestamp="1589972001967">
+    <state width="2005" height="407" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1590226912575" />
+    <state width="2005" height="407" key="GridCell.Tab.0.center" timestamp="1590226912575">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="992" height="347" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
-    <state width="992" height="347" key="GridCell.Tab.0.left" timestamp="1589972001967">
+    <state width="2005" height="407" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1590226912575" />
+    <state width="2005" height="407" key="GridCell.Tab.0.left" timestamp="1590226912575">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="992" height="347" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
-    <state width="992" height="347" key="GridCell.Tab.0.right" timestamp="1589972001967">
+    <state width="2005" height="407" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1590226912575" />
+    <state width="2005" height="407" key="GridCell.Tab.0.right" timestamp="1590226912575">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="992" height="347" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001967" />
-    <state width="998" height="336" key="GridCell.Tab.1.bottom" timestamp="1589972001964">
+    <state width="2005" height="407" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1590226912575" />
+    <state width="2005" height="407" key="GridCell.Tab.1.bottom" timestamp="1590226913129">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="998" height="336" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
-    <state width="998" height="336" key="GridCell.Tab.1.center" timestamp="1589972001964">
+    <state width="2005" height="407" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1590226913129" />
+    <state width="2005" height="407" key="GridCell.Tab.1.center" timestamp="1590226913129">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="998" height="336" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
-    <state width="998" height="336" key="GridCell.Tab.1.left" timestamp="1589972001963">
+    <state width="2005" height="407" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1590226913129" />
+    <state width="2005" height="407" key="GridCell.Tab.1.left" timestamp="1590226913129">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="998" height="336" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001963" />
-    <state width="998" height="336" key="GridCell.Tab.1.right" timestamp="1589972001964">
+    <state width="2005" height="407" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1590226913129" />
+    <state width="2005" height="407" key="GridCell.Tab.1.right" timestamp="1590226913129">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="998" height="336" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1589972001964" />
+    <state width="2005" height="407" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1590226913129" />
+    <state x="617" y="294" key="Vcs.Push.Dialog.v2" timestamp="1590046000291">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="617" y="294" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1590046000291" />
+    <state x="569" y="290" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590226840476">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="569" y="290" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2048.1122@0.0.2048.1122" timestamp="1590226840476" />
+    <state x="93" y="93" width="1862" height="936" key="dock-window-1" timestamp="1590202459149">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="93" y="93" width="1862" height="936" key="dock-window-1/0.0.2048.1122@0.0.2048.1122" timestamp="1590202459149" />
     <state x="723" y="293" width="602" height="536" key="find.popup" timestamp="1589801148485">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -322,12 +437,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/date/DateUtil.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/dateTime/DateUtil.java</url>
           <line>46</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/file/word/WordReadWrite.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/file/word/WordReadWrite.java</url>
           <line>25</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -335,6 +450,41 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.2.RELEASE/spring-beans-4.2.2.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
           <line>237</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/MethodTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetCode/num21/Num21.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

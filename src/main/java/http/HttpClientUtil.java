@@ -42,9 +42,9 @@ public class HttpClientUtil {
 //            RequestEntity re = new InputStreamRequestEntity(is, b.length, "application/x-www-form-urlencoded; charset=UTF-8");
 //            postMethod.setRequestEntity(re);
 //
-//            List<NameValuePair> list = new ArrayList<NameValuePair>();
-//            list.add(new BasicNameValuePair("1","2"));
-//            UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list,"UTF-8");
+//            List<NameValuePair> baseJava.list = new ArrayList<NameValuePair>();
+//            baseJava.list.add(new BasicNameValuePair("1","2"));
+//            UrlEncodedFormEntity entity = new UrlEncodedFormEntity(baseJava.list,"UTF-8");
 //            RequestEntity re1 = new StringRequestEntity("123456");
 //            //postMethod.setRequestEntity(re1);
 //
@@ -58,7 +58,7 @@ public class HttpClientUtil {
 //
 //            HttpClient httpClient = new HttpClient();
 //            int status = httpClient.executeMethod(postMethod);
-//            String aa1 = postMethod.getResponseBodyAsString();
+//            baseJava.String aa1 = postMethod.getResponseBodyAsString();
 //            System.out.println("aa----"+aa1);
 //            if (status == 200) {
 //                soapResponseData =postMethod.getResponseBodyAsString();
@@ -84,7 +84,7 @@ public class HttpClientUtil {
             String url3 = "http://localhost:8085/fundProxy/findFundProxyData.action";
             String param = "{\"userId\":\"ZXXT_TEST01\"}";
             /*//私钥
-            String privateKey   ="MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIrS6qrgWxPTNRSjgzRgsHmr9dQQViKfodZdweeXB"
+            baseJava.String privateKey   ="MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIrS6qrgWxPTNRSjgzRgsHmr9dQQViKfodZdweeXB"
             		+ "5OAPt97lhLGQUzoqDTdIcmJUop4m5Rz/e26fZ71HMP3XSwkQ7dYIAMu+k3exRkGjz+HW/nAp5DWkTh4BVwODrZTcUBtqGOEV6nr"
             		+ "RqKa+CyIL3SYiBgrlK0ETD9k/qaF+8f/AgMBAAECgYB2O3wxXDM1h0RF95zfFxo2BgawPdmeU2Z6NA/ZNf/119u0aoU+KCulXOEl"
             		+ "ZNBJ3PK3jFC09rTlq1ch8pA1No/ark255cx6Htg0jQ/PvBbyJ8i07JY6S4BMTNfbgOCwVyoylNXx/b7T0k6/TDhYei7IfqGfr"

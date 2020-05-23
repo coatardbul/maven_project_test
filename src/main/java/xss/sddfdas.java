@@ -1,6 +1,6 @@
 package xss;
 
-import entity.UserIp;
+import common.entity.UserIp;
 
 public class sddfdas {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package dataConnection;
 
-import entity.ImportCrmProduct;
-import reflex.ReflexUtil;
+import common.entity.ImportCrmProduct;
+import baseJava.reflex.ReflexUtil;
 
 public class test3 {
     public static void main(String[] args) {

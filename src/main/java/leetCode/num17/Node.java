@@ -49,11 +49,11 @@ public class Node {
 //        this.childNode=childNode;
 //    }
 //
-//    public List<String> getDateList() {
+//    public List<baseJava.String> getDateList() {
 //        return dateList;
 //    }
 //
-//    public void setDateList(List<String> dateList) {
+//    public void setDateList(List<baseJava.String> dateList) {
 //        this.dateList = dateList;
 //    }
 }

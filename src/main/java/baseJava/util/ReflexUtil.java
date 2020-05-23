@@ -44,7 +44,7 @@ public class ReflexUtil {
             if (nameTemp.equalsIgnoreCase(name)) {
                 String attributeTypeFullName = field.getGenericType().toString().trim();
                 String attributeType = attributeTypeFullName.substring(attributeTypeFullName.lastIndexOf(".") + 1);
-                if ("String".equals(attributeType)) {
+                if ("baseJava/string".equals(attributeType)) {
                     field.set(object, value);
                 } else if ("Long".equals(attributeType)) {
                     if (value == null) {
@@ -285,9 +285,9 @@ public class ReflexUtil {
                 if(field.getGenericType().toString().equals(map.get(name).getClass().toString())){
                     field.set(object,map.get(name));
                 }else {
-                    if(field.getGenericType().toString().contains("Long") &&map.get(name).getClass().toString().contains("String") ){
+                    if(field.getGenericType().toString().contains("Long") &&map.get(name).getClass().toString().contains("baseJava/string") ){
                         field.set(object,Long.parseLong((String) map.get(name)));
-                    }else if(field.getGenericType().toString().contains("Integer") &&map.get(name).getClass().toString().contains("String")){
+                    }else if(field.getGenericType().toString().contains("Integer") &&map.get(name).getClass().toString().contains("baseJava/string")){
                         field.set(object,Integer.parseInt((String) map.get(name)));
                     }else if(field.getGenericType().toString().contains("Long") &&map.get(name).getClass().toString().contains("Integer")){
                         field.set(object,((Integer)map.get(name)).longValue());

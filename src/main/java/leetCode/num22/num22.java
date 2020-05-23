@@ -4,8 +4,17 @@ package leetCode.num22;
 import java.util.List;
 
 /**
- * @author: suxiaolei
- * @date: 2019/9/11
+ *Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+ *
+ * For example, given n = 3, a solution set is:
+ *
+ * [
+ *   "((()))",
+ *   "(()())",
+ *   "(())()",
+ *   "()(())",
+ *   "()()()"
+ * ]
  */
 public class num22 {
 
