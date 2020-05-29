@@ -279,6 +279,19 @@
         </dependency>
 
 
+        <!--java并发编程实战##开始-->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.11</artifactId>
+            <version>2.3.7</version>
+        </dependency>
+        <!--java并发编程实战##开始-->
+
     </dependencies>
 
 
