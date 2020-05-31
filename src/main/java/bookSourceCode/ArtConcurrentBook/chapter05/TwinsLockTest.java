@@ -3,9 +3,11 @@
  */
 package bookSourceCode.ArtConcurrentBook.chapter05;
 
+import bookSourceCode.ArtConcurrentBook.chapter04.SleepUtils;
+
 import java.util.concurrent.locks.Lock;
 
-import chapter04.SleepUtils;
+
 
 /**
  * 10-11
