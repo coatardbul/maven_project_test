@@ -1,4 +1,4 @@
-package mul_Thread.countDownLatch;
+package mul_Thread.lockRelated;
 
 import java.util.ArrayList;
 import java.util.List;

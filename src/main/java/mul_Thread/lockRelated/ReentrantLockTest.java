@@ -1,7 +1,4 @@
-package mul_Thread.countDownLatch;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package mul_Thread.lockRelated;
 
 public class ReentrantLockTest {
 

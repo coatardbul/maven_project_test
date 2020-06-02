@@ -1,4 +1,4 @@
-package mul_Thread;
+package mul_Thread.lockRelated;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
