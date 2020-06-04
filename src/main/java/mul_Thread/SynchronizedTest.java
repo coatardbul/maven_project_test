@@ -5,7 +5,7 @@ public class SynchronizedTest implements Runnable {
 
     public  void add() {
         synchronized(this){
-            for (int i = 0; i < 100000; i++) {
+            for (int i = 0; i < 1000000; i++) {
                 count++;
             }
         }
@@ -16,9 +16,9 @@ public class SynchronizedTest implements Runnable {
     @Override
     public void run() {
         synchronized(this) {
-            for (int i = 0; i < 100000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 try {
-                    System.out.println(Thread.currentThread().getName() + ":" + (count++));
+                    System.out.println(Thread.currentThread().getName() + ":" + (++count));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -31,7 +31,7 @@ public class SynchronizedTest implements Runnable {
     public static void main(String[] args) throws InterruptedException {
         SynchronizedTest synchronizedTest = new SynchronizedTest();
         for (int i = 0; i < 10; i++) {
-           Thread t1= new Thread(new SynchronizedTest());
+           Thread t1= new   Thread(new SynchronizedTest());
            t1.start();
           // t1.join();
         }
