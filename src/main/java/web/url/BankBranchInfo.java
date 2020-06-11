@@ -8,19 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BankBranchInfo {
-    /**
-     * 省id
-     */
-    private String id;
-    /**
-     *
-     */
-    private String cityName;
+    private String cityId;
 
     private String branchNo;
 
     private String branchAddr;
 
-    private String branchProviceCity;
+    private String branchProviceCityAddr;
 
 }
