@@ -1,13 +1,12 @@
 package baseJava.string;
 
 
+import org.junit.Test;
+
 public class StringMatch {
-
+@Test
     public  void  match(){
-        String str="multipart/form-data; boundary=--------592316797";
-
-        if(str.matches("[multipart/form\\-data; boundary=]*")){
-            System.out.println("1111");
-        }
+       String str="新晃侗族自治县";
+       System.out.println(str.substring(0,2));
     }
 }
