@@ -22,15 +22,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
 
 public class BankBranchParseUtil {
     public final static int NUM = 34;
     public final static String provinceCityUrl = "http://www.lianhanghao.com/index.php/Index/Ajax?id=";
     public final static String bankHtmlUrl = "http://www.lianhanghao.com/index.php";
-    public final static int BANK = 2;
-    public final static int PAGE = 5;
+    public final static int BANK = 1;
+    public final static int PAGE = 100;
 
-    public final static UrlResponseInfo urlResponseInfo = new UrlResponseInfo();
 
     /**
      * 将省的枚举转换成map类型
@@ -47,6 +48,15 @@ public class BankBranchParseUtil {
 
     }
 
+
+    public Map<String, ProvinceCItyInfo> getMapProvinceCItyInfo(List<ProvinceCItyInfo> allList) {
+        Map<String, ProvinceCItyInfo> map = new HashMap<>();
+        for (ProvinceCItyInfo p : allList) {
+            map.put(p.getSid(), p);
+        }
+        return map;
+    }
+
     /**
      * 获取省市请求url
      *
@@ -59,6 +69,55 @@ public class BankBranchParseUtil {
             list.add(provinceCityUrl + (i));
         }
         return list;
+    }
+
+    /**
+     * 返回的省市信息   1020  联行号 联行号地址  省名称  市名称
+     */
+    public String convertList(List<BankBranchCollectionInfo> list, Map<String, ProvinceCItyInfo> map) {
+        Map<String, String> provinceMap = getProvinceMap();
+        StringBuffer allSb = new StringBuffer();
+        int num = 0;
+        for (BankBranchCollectionInfo b : list) {
+            ProvinceCItyInfo provinceCItyInfoBy = getProvinceCItyInfoBy(b.getId(), map);
+            for (Map.Entry<String, BankBranchInfo> entries : b.getMap().entrySet()) {
+                StringBuffer sb = new StringBuffer();
+                //四位编码
+                sb.append(entries.getKey());
+                sb.append("\t");
+                //联行号
+                sb.append(entries.getValue().getBranchNo());
+                sb.append("\t");
+
+                //联行号地址
+                sb.append(entries.getValue().getBranchAddr());
+                sb.append("\t");
+                //省名称
+                sb.append(provinceMap.get(getProvinceCItyInfoBy(entries.getValue().getCityId(), map).getPid()));
+                sb.append("\t");
+
+                //市名称
+                sb.append(getProvinceCItyInfoBy(entries.getValue().getCityId(), map).getName());
+                sb.append("\t");
+                sb.append("\n");
+                allSb.append(sb);
+                num++;
+            }
+        }
+        System.out.println(num);
+        return allSb.toString();
+    }
+
+    /**
+     * 根据市id获取省市信息名称
+     *
+     * @param id
+     * @param map
+     * @return
+     */
+    public ProvinceCItyInfo getProvinceCItyInfoBy(String cityId, Map<String, ProvinceCItyInfo> map) {
+        ProvinceCItyInfo provinceCItyInfo = map.get(cityId);
+        return provinceCItyInfo;
     }
 
     /**
@@ -113,11 +172,11 @@ public class BankBranchParseUtil {
         Elements elements = doc.select("body");
         // 返回第一个
         Element e = doc.select("body").get(0);
-        if(e.getElementsByTag("table")==null||
-                e.getElementsByTag("table").size()<1||
-                e.getElementsByTag("table").get(1)==null||
-                e.getElementsByTag("table").get(1).getElementsByTag("tbody")==null||
-                e.getElementsByTag("table").get(1).getElementsByTag("tbody").get(0)==null){
+        if (e.getElementsByTag("table") == null ||
+                e.getElementsByTag("table").size() < 1 ||
+                e.getElementsByTag("table").get(1) == null ||
+                e.getElementsByTag("table").get(1).getElementsByTag("tbody") == null ||
+                e.getElementsByTag("table").get(1).getElementsByTag("tbody").get(0) == null) {
             return list;
         }
         List<Node> nodes = e.getElementsByTag("table").get(1).getElementsByTag("tbody").get(0).childNodes();
@@ -171,45 +230,6 @@ public class BankBranchParseUtil {
         return getHtmlUrl(Integer.valueOf(bank), procince, city, 0);
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException, InvocationTargetException, IllegalAccessException {
-        BankBranchParseUtil b = new BankBranchParseUtil();
-        //获取省市请求url
-        List<String> urlList = b.getUrlListByProvinceNum(NUM);
-        //根据请求的url集合获取所有的省市信息
-        List<ProvinceCItyInfo> allList = b.getProvinceCItyInfos(urlList);
-        //将省市信息转换成   html url的集合 带页码
-        List<UrlProvinceCItyInfo> list = b.convertProvinceCityInfoToHtmlUrl(allList);
-
-        List<BankBranchCollectionInfo> bankBranchCollectionInfos = new ArrayList<>();
-        //一个市对应的联行号信息
-        List<BankBranchInfo> bankBranchInfos = new ArrayList<>();
-        for (UrlProvinceCItyInfo urlProvinceCItyInfo : list) {
-            Map<String, BankBranchInfo> map = new HashMap<>();
-            BankBranchCollectionInfo bankBranchCollectionInfo = new BankBranchCollectionInfo();
-            for (int j = 1; j < PAGE; j++) {
-                Thread.sleep((long) (Math.random() * (100)));
-                String htmlUrl = b.getHtmlUrl(urlProvinceCItyInfo.getUrl(), j);
-                System.out.println(htmlUrl);
-                HttpEntity httpEntityByUrl = b.getHttpEntityByUrl(htmlUrl);
-                List<BankBranchInfo> list1 = b.parseHtmlInfo(httpEntityByUrl, urlProvinceCItyInfo);
-
-                for (BankBranchInfo br : list1) {
-                    map.put(br.getBranchNo().substring(3, 7), br);
-                }
-                if (list1.size() > 0) {
-                    bankBranchInfos.addAll(list1);
-
-                }
-            }
-            bankBranchCollectionInfo.setId(urlProvinceCItyInfo.getSid());
-            bankBranchCollectionInfo.setMap(map);
-            System.out.println(map);
-
-            bankBranchCollectionInfos.add(bankBranchCollectionInfo);
-        }
-        System.out.println();
-
-    }
 
     /**
      * 根据请求的url集合获取所有的省市信息
@@ -226,7 +246,7 @@ public class BankBranchParseUtil {
         //获取所有的省市信息
         List<ProvinceCItyInfo> allList = new ArrayList<>();
         for (int i = 0; i < urlList.size(); i++) {
-            Thread.sleep((long) (Math.random() * (100)));
+            // Thread.sleep((long) (Math.random() * (100)));
             HttpEntity httpEntityByUrl = getHttpEntityByUrl(urlList.get(i));
             //返回单个省对应的多个市的集合
             List<ProvinceCItyInfo> provinceCItyInfos = parseProviceCItyInfo(httpEntityByUrl);
@@ -269,5 +289,33 @@ public class BankBranchParseUtil {
 
         }
         return result;
+    }
+
+    public static void main(String[] args) throws IOException, InterruptedException, InvocationTargetException, IllegalAccessException, ExecutionException {
+        ForkJoinPool forkJoinPool = new ForkJoinPool(30);
+
+
+        BankBranchParseUtil b = new BankBranchParseUtil();
+        //获取省市请求url
+        List<String> urlList = b.getUrlListByProvinceNum(NUM);
+
+        ProvinceCItyCountTask p = new ProvinceCItyCountTask(urlList);
+        List<ProvinceCItyInfo> allList = forkJoinPool.submit(p).get();
+        //根据请求的url集合获取所有的省市信息
+        // List<ProvinceCItyInfo> allList = b.getProvinceCItyInfos(urlList);
+        Map<String, ProvinceCItyInfo> mapProvinceCItyInfo = b.getMapProvinceCItyInfo(allList);
+        //将省市信息转换成   html url的集合
+        List<UrlProvinceCItyInfo> list = b.convertProvinceCityInfoToHtmlUrl(allList);
+
+
+        UrlBankBranchTask urlBankBranchTask = new UrlBankBranchTask(list);
+        ForkJoinPool forkJoinPool1 = new ForkJoinPool(30);
+        List<BankBranchCollectionInfo> bankBranchCollectionInfos = forkJoinPool1.submit(urlBankBranchTask).get();
+        //一个市对应的联行号信息
+        String s = b.convertList(bankBranchCollectionInfos, mapProvinceCItyInfo);
+        System.out.println(bankBranchCollectionInfos.size());
+        FileWriterUtil.writerObject(s);
+
+
     }
 }
