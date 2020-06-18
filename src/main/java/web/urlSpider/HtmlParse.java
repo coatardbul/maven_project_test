@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

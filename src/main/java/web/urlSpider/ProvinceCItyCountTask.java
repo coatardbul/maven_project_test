@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import org.apache.http.HttpEntity;
 

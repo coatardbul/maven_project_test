@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

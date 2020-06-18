@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 public enum ProvinceEnum {
     BEIJING("1", "北京市"),

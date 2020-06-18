@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import java.io.BufferedWriter;
 import java.io.File;

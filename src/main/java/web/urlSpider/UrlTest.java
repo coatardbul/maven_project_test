@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.type.TypeReference;

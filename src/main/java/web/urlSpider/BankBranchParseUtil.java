@@ -1,4 +1,4 @@
-package web.url;
+package web.urlSpider;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
@@ -111,7 +111,7 @@ public class BankBranchParseUtil {
     /**
      * 根据市id获取省市信息名称
      *
-     * @param id
+     * @param cityId
      * @param map
      * @return
      */
@@ -304,12 +304,14 @@ public class BankBranchParseUtil {
         //根据请求的url集合获取所有的省市信息
         // List<ProvinceCItyInfo> allList = b.getProvinceCItyInfos(urlList);
         Map<String, ProvinceCItyInfo> mapProvinceCItyInfo = b.getMapProvinceCItyInfo(allList);
+
+        forkJoinPool.shutdown();
         //将省市信息转换成   html url的集合
         List<UrlProvinceCItyInfo> list = b.convertProvinceCityInfoToHtmlUrl(allList);
 
 
         UrlBankBranchTask urlBankBranchTask = new UrlBankBranchTask(list);
-        ForkJoinPool forkJoinPool1 = new ForkJoinPool(30);
+        ForkJoinPool forkJoinPool1 = new ForkJoinPool(5);
         List<BankBranchCollectionInfo> bankBranchCollectionInfos = forkJoinPool1.submit(urlBankBranchTask).get();
         //一个市对应的联行号信息
         String s = b.convertList(bankBranchCollectionInfos, mapProvinceCItyInfo);
