@@ -1,31 +1,17 @@
 package http;
 
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.methods.InputStreamRequestEntity;
 import org.apache.commons.httpclient.methods.PostMethod;
-import org.apache.commons.httpclient.methods.RequestEntity;
-import org.apache.commons.httpclient.methods.StringRequestEntity;
-import org.apache.commons.httpclient.params.HttpMethodParams;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.message.BasicNameValuePair;
 
-import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.security.interfaces.RSAPrivateKey;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 
 public class HttpClientUtil {
     /**
      * 访问服务
      *
-     * @param wsdl      wsdl地址
-     * @param ns        命名空间
-     * @param reqParam  参数
+     * @param wsdl     wsdl地址
+     * @param ns       命名空间
+     * @param reqParam 参数
      * @return
      * @throws Exception
      */
@@ -68,7 +54,7 @@ public class HttpClientUtil {
 //            }
         } catch (Exception e) {
             e.printStackTrace();
-            throw new  Exception(e.getMessage());
+            throw new Exception(e.getMessage());
         } finally {
             if (is != null) {
                 is.close();
@@ -96,7 +82,7 @@ public class HttpClientUtil {
             RSAPrivateKey  rSAPrivateKey =  RSAEncrypt.loadPrivateKeyByStr(privateKey);
             byte[] bytes = RSAEncrypt.encryptByPrivate(rSAPrivateKey, param.getBytes( StandardCharsets.UTF_8 ));
             */
-            String response = accessService(jYwsdl,param  );
+            String response = accessService(jYwsdl, param);
         } catch (Exception e) {
             e.printStackTrace();
         }
