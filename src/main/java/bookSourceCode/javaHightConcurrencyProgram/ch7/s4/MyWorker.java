@@ -11,18 +11,18 @@ public class MyWorker extends UntypedActor {
     }
 
     @Override
-    public void preStart() throws Exception {
+    public void preStart()  {
         System.out.println("MyWorker is starting");
     }
 
     @Override
-    public void postStop() throws Exception {
+    public void postStop(){
         System.out.println("MyWorker is stopping");
 
     }
 
     @Override
-    public void onReceive(Object msg) throws Exception {
+    public void onReceive(Object msg)  {
         if(msg == Msg.WORKING){
             System.out.println("I am working");
         }
