@@ -32,7 +32,7 @@ public class ObjectToJson {
     @Test
     public void test1() throws IllegalAccessException {
         User user = new User();
-        user.setId(123131L);
+        user.setId(1231);
         user.setUserName("asdfg");
         user.setAddr("123456");
 

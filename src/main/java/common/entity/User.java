@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private long id;
+    private int id;
     private String userName;
     private String addr;
     private LocalDateTime updateTime;

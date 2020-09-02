@@ -11,7 +11,7 @@ import java.util.List;
 public class ObjectOfficeToJson {
     public static void main(String[] args) {
         User user = new User();
-        user.setId(123131L);
+        user.setId(12313);
         user.setUserName("asdfg");
         user.setAddr("123456");
 
