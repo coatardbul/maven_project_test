@@ -32,7 +32,8 @@ public class InterLean {
         Function<String, Integer> toInteger = Integer::valueOf;
         Function<String, String> backToString = toInteger.andThen(String::valueOf);
 
-        backToString.apply("123");
+        String apply = backToString.apply("123");
+        System.out.println(apply);
     }
 
     @Test
@@ -42,7 +43,7 @@ public class InterLean {
     }
     @Test
     public void consumerLean() {
-        Consumer<Book> greeter = (p) -> System.out.println("Hello, " + p.getId());
+        Consumer<Book> greeter = (p) -> System.out.println(p);
         greeter.accept(new Book("1", "天空之城1", "玄幻"));
     }
 
