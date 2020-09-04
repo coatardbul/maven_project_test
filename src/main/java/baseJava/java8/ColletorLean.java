@@ -3,23 +3,78 @@ package baseJava.java8;
 import common.entity.Book;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ColletorLean {
 
     @Test
     public void toMap() {
         List<Book> bookList = getBookList();
-        Map<String, String> collect = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName,(o1,o2)->o2));
-        Map<String, String> collect1 = bookList.stream().collect(Collectors.toMap(Book::getType,   Book::getName,(o1, o2)->o2,ConcurrentHashMap::new));
+        Map<String, String> collect = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
+        Map<String, String> collect1 = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2, ConcurrentHashMap::new));
         System.out.println(collect);
         System.out.println(collect1);
+
+    }
+
+    @Test
+    public void mapping() {
+        List<Book> bookList = getBookList();
+        bookList.stream().collect(Collectors.mapping(Book::getType, Collectors.toList()));
+
+
+    }
+
+    @Test
+    public void collectingAndThen() {
+        List<Book> bookList = getBookList();
+        bookList.stream().collect(Collectors.groupingBy(Book::getType, Collectors.collectingAndThen(Collectors.reducing((o1, o2) -> Short.valueOf(o1.getId()).shortValue() > Short.valueOf(o2.getId()).shortValue() ? o1 : o2), x -> {
+            List list = new ArrayList();
+            list.add(x.get());
+            return list;
+        }))).forEach((k, v) -> {
+            System.out.println(k + ":" + v);
+        });
+        bookList.stream().collect(Collectors.collectingAndThen(Collectors.toList(), Collections::unmodifiableList)).forEach(System.out::println);
+
+    }
+
+    @Test
+    public void reducing() {
+        List<Book> bookList = getBookList();
+        Optional<Book> collect = bookList.stream().collect(Collectors.reducing((o1, o2) -> Short.valueOf(o1.getId()).shortValue() > Short.valueOf(o2.getId()).shortValue() ? o1 : o2));
+        System.out.println(collect.get());
+
+
+        // sum: 是每次累计计算的结果，b是Function的结果
+        System.out.println(Stream.of(1, 3, 4).collect(Collectors.reducing(0, x -> x + 1, (sum, b) -> {
+            System.out.println(sum + "-" + b);
+            return sum + b;
+        })));
+
+
+        // 下面代码是对reducing函数功能实现的描述，用于理解reducing的功能
+        int sum = 0;
+        List<Integer> list3 = Arrays.asList(1, 3, 4);
+        for (Integer item : list3) {
+            int b = item + 1;
+            System.out.println(sum + "-" + b);
+            sum = sum + b;
+        }
+        System.out.println(sum);
+
+
+        // 注意reducing可以用于更复杂的累计计算，加减乘除或者更复杂的操作
+        // result = 2 * 4 * 5 = 40
+        System.out.println(Stream.of(1, 3, 4).collect(Collectors.reducing(1, x -> x + 1, (result, b) -> {
+            System.out.println(result + "-" + b);
+            return result * b;
+        })));
 
     }
 
