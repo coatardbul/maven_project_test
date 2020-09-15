@@ -61,6 +61,7 @@ public class ReflexUtil {
                 Field field = fields[i];
                 //打开私有访问
                 field.setAccessible(true);
+
                 //获取属性
                 String nameTemp = field.getName();
                 if(name.contains("_")){

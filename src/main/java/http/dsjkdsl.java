@@ -5,33 +5,22 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 public class dsjkdsl {
     @Test
     public void tes() {
-        int i = 9;
-        System.out.println(i % 2);
-        System.out.println(i / 2);
+        System.out.println(new Random(64).nextInt());
 
     }
 
+    /**
+     * 1为阳
+     */
     @Test
     public void test() {
-        List<String> list = new ArrayList<>();
-
-        // 主体评级
-        list.add("issuerGradegradeTypeLow");
-        list.add("issuerGradegradeLow");
-        list.add("issuerGradegradeTypeHigh");
-        list.add("issuerGradegradeHigh");
-        //债项评级
-        list.add("bondGradegradeTypeLow");
-        list.add("bondGradegradeLow");
-        list.add("bondGradegradeTypeHigh");
-        list.add("bondGradegradeHigh");
-
-        for (int i = 0; i < list.size(); i++) {
-
+        for(int i=0;i<6;i++){
+            System.out.println(new Random(64).nextInt());
         }
     }
 

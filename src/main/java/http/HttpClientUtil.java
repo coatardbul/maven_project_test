@@ -1,5 +1,6 @@
 package http;
 
+import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.PostMethod;
 
 import java.io.InputStream;
@@ -65,24 +66,8 @@ public class HttpClientUtil {
 
     public static void main(String[] args) {
         try {
-            String wsdl = "http://10.50.151.64:8080/fundProxyWeb/findFundProxyData";
-            String jYwsdl = "http://2z26891m45.iok.la:34715/getForApprovalDetail.action";
-            String url3 = "http://localhost:8085/fundProxy/findFundProxyData.action";
-            String param = "{\"userId\":\"ZXXT_TEST01\"}";
-            /*//私钥
-            baseJava.String privateKey   ="MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIrS6qrgWxPTNRSjgzRgsHmr9dQQViKfodZdweeXB"
-            		+ "5OAPt97lhLGQUzoqDTdIcmJUop4m5Rz/e26fZ71HMP3XSwkQ7dYIAMu+k3exRkGjz+HW/nAp5DWkTh4BVwODrZTcUBtqGOEV6nr"
-            		+ "RqKa+CyIL3SYiBgrlK0ETD9k/qaF+8f/AgMBAAECgYB2O3wxXDM1h0RF95zfFxo2BgawPdmeU2Z6NA/ZNf/119u0aoU+KCulXOEl"
-            		+ "ZNBJ3PK3jFC09rTlq1ch8pA1No/ark255cx6Htg0jQ/PvBbyJ8i07JY6S4BMTNfbgOCwVyoylNXx/b7T0k6/TDhYei7IfqGfr"
-            		+ "/B8/U6Igow4D5KfwQJBAMvld0tFhcU0PS1p72BThIxjnVUIQQsUjV2hv3xAKOOsr11chPhD5v2HXcPC+lYzM3qHr1BauNnEgD"
-            		+ "SunnpmM+0CQQCuTIbsR0gxzshGfTDcGmwPzE8dFkWyV1EcWfXDsFANM5aulUudk1URU5t08sMUj9E37uDnxjRjIT1LS9Yp18YbA"
-            		+ "kBFd1BFXNJOdZXCOy1K7Clkiyu3JLDETaQ8Gjda5aEIsHSuoi7LRpcUGWJgp7USWS9Yt5GLFt2Tk9b6G+PyX4+hAkB51YBSVJlA"
-            		+ "R5xyuTuX/tgeSt/aIyFgwewudyt1OB8cuzzOmAkdAklqLRjzLGX0T3sdL9sB5+fiiu9/XGk9IliVAkEAmwONtEUzDXLJVcB0O"
-            		+ "IBCaposMh/eU9G0FpOKmUPK//iopzCYlKxfqPQr5v8WZUiHn834mc9jIVHW7hiFZdGuJg==";
-            RSAPrivateKey  rSAPrivateKey =  RSAEncrypt.loadPrivateKeyByStr(privateKey);
-            byte[] bytes = RSAEncrypt.encryptByPrivate(rSAPrivateKey, param.getBytes( StandardCharsets.UTF_8 ));
-            */
-            String response = accessService(jYwsdl, param);
+            HttpClient httpClient = new HttpClient();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
