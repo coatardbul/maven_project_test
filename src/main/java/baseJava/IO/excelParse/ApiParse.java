@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 public class ApiParse {
 
     private static final String inputFilePath = "D:\\download\\OneDrive\\文档\\希为项目\\风控系统";
-    private static final String inputFileName = "接口文档1.1.xlsx";
+    private static final String inputFileName = "接口文档1.2.xlsx";
 
     private static final String oututFilePathName = "C:\\Users\\coatardbul\\Desktop\\vvv.txt";
 
@@ -53,25 +53,24 @@ public class ApiParse {
                         writeSeparatorInfo("^", row, fw);
                     } else if (rowBegin.equals("请求参数") || rowBegin.equals("返回参数")) {
                         objectFlag = false;
-                        pageFlag=false;
+                        pageFlag = false;
                         fw.write("\n");
                         fw.write("#### " + rowBegin + "\n");
-                    }else if( rowBegin.equals("请求示例") ||  rowBegin.equals("返回示例")){
+                    } else if (rowBegin.equals("请求示例") || rowBegin.equals("返回示例")) {
                         objectFlag = false;
-                        pageFlag=false;
+                        pageFlag = false;
                         fw.write("\n");
                         fw.write("#### " + rowBegin + "\n");
                         fw.write(" ```\n");
                         fw.write(jsonSb.toString());
                         fw.write(" ```\n");
                         jsonSb = new StringBuffer();
-                    }
-                    else if (rowBegin.matches("[a-zA-Z]+")) {
+                    } else if (rowBegin.matches("[a-zA-Z]+")) {
                         appendJsonString(pageFlag, objectFlag, row, jsonSb);
                         writeSeparatorInfo("|", row, fw);
                     } else if (checkcountname(rowBegin)) {
-                        if(rowBegin.contains("分页")){
-                            pageFlag=true;
+                        if (rowBegin.contains("分页")) {
+                            pageFlag = true;
                         }
                         fw.write("### " + rowBegin + "\n");
                     } else if (rowBegin.contains("/api")) {
@@ -103,17 +102,26 @@ public class ApiParse {
 
     private static void appendJsonString(Boolean pageFlag, Boolean objectFlag, Row row, StringBuffer jsonSb) {
         //分页+当前
-        if (pageFlag && objectFlag) {
-            for(int i=0;i<3;i++){
+        if (objectFlag) {
+            for (int i = 0; i < 3; i++) {
                 jsonSb.append("\t");
             }
-            jsonSb.append("\""+row.getCell(0).getStringCellValue()+"\": ");
-            if(row.getCell(1).getStringCellValue().contains("String")){
-                jsonSb.append("\""+row.getCell(3)+"\"");
-            }else if(row.getCell(1).getStringCellValue().contains("list")){
+            jsonSb.append("\"" + row.getCell(0).getStringCellValue() + "\": ");
+            if (row.getCell(1).getStringCellValue().contains("String")) {
+                if (row.getCell(3) == null) {
+                    jsonSb.append("\"" + row.getCell(2) + "\"");
+                } else {
+                    jsonSb.append("\"" + row.getCell(3) + "\"");
+                }
+            } else if (row.getCell(1).getStringCellValue().contains("list")) {
 
-            }else {
-                jsonSb.append(row.getCell(3));
+            } else {
+                if(row.getCell(3) == null){
+                    jsonSb.append(row.getCell(2));
+                }else {
+                    jsonSb.append(row.getCell(3));
+                }
+
             }
             jsonSb.append(",\n");
         }
