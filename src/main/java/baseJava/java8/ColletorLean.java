@@ -3,6 +3,7 @@ package baseJava.java8;
 import common.entity.Book;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -45,6 +46,23 @@ public class ColletorLean {
     }
 
     @Test
+    public void sum(){
+        List<Book> bookList = getBookList();
+        BigDecimal bigDecimal = bookList.stream().map(Book::getBigDecimalNum).collect(Collectors.toList()).stream().reduce(BigDecimal.ZERO,(x1,x2)->{
+            if(x2==null){
+               return x1;
+            }
+            if(x1==null){
+                return x2;
+            }
+            return x1.add(x2);
+        });
+        System.out.println(bigDecimal);
+
+    }
+
+
+    @Test
     public void reducing() {
         List<Book> bookList = getBookList();
         Optional<Book> collect = bookList.stream().collect(Collectors.reducing((o1, o2) -> Short.valueOf(o1.getId()).shortValue() > Short.valueOf(o2.getId()).shortValue() ? o1 : o2));
@@ -52,8 +70,8 @@ public class ColletorLean {
 
 
         // sum: 是每次累计计算的结果，b是Function的结果
-        System.out.println(Stream.of(1, 3, 4).collect(Collectors.reducing(0, x -> x + 1, (sum, b) -> {
-            System.out.println(sum + "-" + b);
+        System.out.println(Stream.of(1, 3, 4).collect(Collectors.reducing(0, x -> x, (sum, b) -> {
+            System.out.println("########"+sum + "-" + b);
             return sum + b;
         })));
 
@@ -79,12 +97,13 @@ public class ColletorLean {
     }
 
     public List<Book> getBookList() {
-        Book b1 = new Book("1", "天空之城1", "玄幻");
-        Book b2 = new Book("2", "天空之城2", "玄幻");
-        Book b3 = new Book("3", "天空之城3", "玄幻");
-        Book b4 = new Book("4", "天空之城4", "玄幻");
-        Book b5 = new Book("5", "三体1", "科幻");
-        Book b6 = new Book("6", "三体2", "科幻");
+        Book b1 = new Book("1", "天空之城1", "玄幻",new BigDecimal("12.1"));
+        Book b2 = new Book("2", "天空之城2", "玄幻",new BigDecimal("12.1"));
+        Book b3 = new Book("3", "天空之城3", "玄幻",new BigDecimal("12.1"));
+        Book b4 = new Book("4", "天空之城4", "玄幻",new BigDecimal("12.1"));
+        Book b5 = new Book("5", "三体1", "科幻",new BigDecimal("12.2"));
+        Book b6 = new Book("6", "三体2", "科幻",new BigDecimal("12.1"));
+        b6.setBigDecimalNum(null);
         List<Book> list = new ArrayList<>();
         list.add(b1);
         list.add(b2);
