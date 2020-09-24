@@ -65,7 +65,7 @@ public class ApiParse {
                         fw.write(jsonSb.toString());
                         fw.write(" ```\n");
                         jsonSb = new StringBuffer();
-                    } else if (rowBegin.matches("[a-zA-Z]+")) {
+                    } else if (rowBegin.matches("[—-]?[a-zA-Z]+")) {
                         appendJsonString(pageFlag, objectFlag, row, jsonSb);
                         writeSeparatorInfo("|", row, fw);
                     } else if (checkcountname(rowBegin)) {

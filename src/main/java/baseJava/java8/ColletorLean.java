@@ -30,7 +30,21 @@ public class ColletorLean {
 
 
     }
+    @Test
+    public void count() {
+        List<Book> bookList = getBookList();
+        long count = bookList.stream().filter(book -> book.getType().equals("玄幻")).count();
+        System.out.println(count);
 
+
+    }
+    @Test
+    public void filter() {
+        List<Book> bookList = getBookListNull();
+        List<Book> collect = bookList.stream().filter(x -> x.getId() == "14").collect(Collectors.toList());
+        System.out.println(collect);
+
+    }
     @Test
     public void collectingAndThen() {
         List<Book> bookList = getBookList();
@@ -112,5 +126,9 @@ public class ColletorLean {
         list.add(b5);
         list.add(b6);
         return list;
+    }
+
+    public List<Book> getBookListNull() {
+       return null;
     }
 }
