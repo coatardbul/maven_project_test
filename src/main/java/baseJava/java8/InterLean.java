@@ -39,7 +39,7 @@ public class InterLean {
     @Test
     public void supplierLean() {
         Supplier<Book> personSupplier = Book::new;
-        personSupplier.get();   // new Person
+        personSupplier.get();   // new Personqq
     }
     @Test
     public void consumerLean() {
