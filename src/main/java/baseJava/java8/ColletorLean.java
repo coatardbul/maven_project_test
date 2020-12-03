@@ -18,6 +18,8 @@ public class ColletorLean {
         List<Book> bookList = getBookList();
         Map<String, String> collect = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
         Map<String, String> collect1 = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2, ConcurrentHashMap::new));
+     bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
+
         System.out.println(collect);
         System.out.println(collect1);
 
@@ -26,7 +28,7 @@ public class ColletorLean {
     @Test
     public void mapping() {
         List<Book> bookList = getBookList();
-        bookList.stream().collect(Collectors.mapping(Book::getType, Collectors.toList()));
+        List<String> collect = bookList.stream().collect(Collectors.mapping(Book::getType, Collectors.toList()));
 
 
     }
@@ -43,7 +45,6 @@ public class ColletorLean {
         List<Book> bookList = getBookListNull();
         List<Book> collect = bookList.stream().filter(x -> x.getId() == "14").collect(Collectors.toList());
         System.out.println(collect);
-
     }
     @Test
     public void collectingAndThen() {
@@ -72,10 +73,11 @@ public class ColletorLean {
             return x1.add(x2);
         });
         System.out.println(bigDecimal);
-
     }
 
-
+private String convertToString(Object v){
+        return v.toString();
+}
     @Test
     public void reducing() {
         List<Book> bookList = getBookList();

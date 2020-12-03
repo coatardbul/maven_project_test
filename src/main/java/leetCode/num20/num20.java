@@ -43,7 +43,8 @@ public class num20 {
 
     @Test
     public void te() {
-        isValid("()[]{}");
+
+        System.out.println("系统初始化的关键字不能删除或停用".contains("不能"));
     }
 
     public Boolean backTrace(String str, Map<String, String> map) {

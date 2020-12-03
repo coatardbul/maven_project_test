@@ -1,13 +1,29 @@
 package baseJava.dateTime;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class DateUtil {
     public static void main(String[] args) {
+String str="2018-01-01";
+
+            boolean matches = str.matches("\\d{4}[-]{1}\\d{2}[-]{1}\\d{2}");
+            System.out.println(matches);
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date parse = df.parse(str);
+            System.out.println(parse.getTime());
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
         // 获取当前的日期时间
         LocalDateTime currentTime = LocalDateTime.now();
@@ -21,7 +37,7 @@ public class DateUtil {
         int seconds = currentTime.getSecond();
 
         System.out.println("月: " + month + ", 日: " + day + ", 秒: " + seconds);
-
+new Date().getTime();
         LocalDateTime date2 = currentTime.withDayOfMonth(10).withYear(2012);
         System.out.println("date2: " + date2);
 
