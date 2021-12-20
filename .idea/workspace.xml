@@ -3,15 +3,63 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="2131">
-      <change afterPath="$PROJECT_DIR$/src/main/java/network/urlSpider/Andm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/ImgUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/xxas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/StringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ThsPriceBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/util/DateRangeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/util/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/FileEncodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/FileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/GifUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/email/qwqwdqw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/dateTime/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/dateTime/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetCode/num20/num20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetCode/num20/num20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/divideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/divideTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/StringMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,42 +109,49 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/mq" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/baseJava/IO" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/baseJava/IO" />
       <recent name="D:\workspace\idea\maven_project_test\src\main\java\mq" />
       <recent name="D:\workspace\idea\maven_project_test\src\main\java\web" />
       <recent name="D:\workspace\idea\maven_project_test\src\main\java\mul_Thread\hightConcurrentUtil" />
       <recent name="D:\workspace\idea\maven_project_test" />
-      <recent name="D:\workspace\idea\maven_project_test\src\main\java\bookSourceCode\algorithm" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="baseJava.IO" />
+      <recent name="baseJava.math" />
+      <recent name="baseJava.util" />
       <recent name="web.url" />
       <recent name="mul_Thread.lockRelated" />
-      <recent name="mul_Thread.utils" />
-      <recent name="leetCode.num22" />
-      <recent name="file" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/baseJava/math" />
       <recent name="D:\workspace\idea\maven_project_test\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Andm">
-    <configuration name="Andm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="network.urlSpider.Andm" />
+  <component name="RunManager" selected="Application.sfds">
+    <configuration name="GifUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.video.GifUtil" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="network.urlSpider.*" />
+          <option name="PATTERN" value="baseJava.video.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseJava.dateTime.DateUtil" />
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.math.StringTest" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.dateTime.*" />
+          <option name="PATTERN" value="baseJava.math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,34 +172,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColletorLean.collectingAndThen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="sfds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.IO.sfds" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.java8.*" />
+          <option name="PATTERN" value="baseJava.IO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="baseJava.java8" />
-      <option name="MAIN_CLASS_NAME" value="baseJava.java8.ColletorLean" />
-      <option name="METHOD_NAME" value="collectingAndThen" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColletorLean.reducing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.util.test" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.java8.*" />
+          <option name="PATTERN" value="baseJava.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="baseJava.java8" />
-      <option name="MAIN_CLASS_NAME" value="baseJava.java8.ColletorLean" />
-      <option name="METHOD_NAME" value="reducing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UrlTest.te1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_project_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baseJava.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baseJava.math" />
+      <option name="MAIN_CLASS_NAME" value="baseJava.math.UrlTest" />
+      <option name="METHOD_NAME" value="te1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,37 +222,20 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="num20.te" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven_project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetCode.num20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetCode.num20" />
-      <option name="MAIN_CLASS_NAME" value="leetCode.num20.num20" />
-      <option name="METHOD_NAME" value="te" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.DateUtil" />
-      <item itemvalue="Application.Andm" />
-      <item itemvalue="JUnit.ColletorLean.collectingAndThen" />
-      <item itemvalue="JUnit.ColletorLean.reducing" />
-      <item itemvalue="JUnit.num20.te" />
+      <item itemvalue="Application.StringTest" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.GifUtil" />
+      <item itemvalue="Application.sfds" />
+      <item itemvalue="JUnit.UrlTest.te1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Andm" />
-        <item itemvalue="JUnit.num20.te" />
-        <item itemvalue="JUnit.ColletorLean.reducing" />
-        <item itemvalue="JUnit.ColletorLean.collectingAndThen" />
-        <item itemvalue="Application.DateUtil" />
+        <item itemvalue="Application.sfds" />
+        <item itemvalue="Application.GifUtil" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.StringTest" />
+        <item itemvalue="JUnit.UrlTest.te1" />
       </list>
     </recent_temporary>
   </component>
@@ -324,6 +371,59 @@
       <workItem from="1606827344388" duration="1098000" />
       <workItem from="1606874350173" duration="11000" />
       <workItem from="1606897627971" duration="7025000" />
+      <workItem from="1606987095237" duration="2767000" />
+      <workItem from="1607046638328" duration="603000" />
+      <workItem from="1607063978682" duration="3840000" />
+      <workItem from="1607305874427" duration="3367000" />
+      <workItem from="1607415770024" duration="1626000" />
+      <workItem from="1610007226398" duration="8000" />
+      <workItem from="1611715432702" duration="747000" />
+      <workItem from="1611718657393" duration="1183000" />
+      <workItem from="1611740551052" duration="1034000" />
+      <workItem from="1615707351458" duration="646000" />
+      <workItem from="1615717004171" duration="321000" />
+      <workItem from="1616076464381" duration="275000" />
+      <workItem from="1617004036069" duration="1644000" />
+      <workItem from="1617351373473" duration="184000" />
+      <workItem from="1617592689885" duration="1544000" />
+      <workItem from="1617870018473" duration="667000" />
+      <workItem from="1618563465381" duration="27000" />
+      <workItem from="1619408152374" duration="1000000" />
+      <workItem from="1619677527347" duration="775000" />
+      <workItem from="1620727094273" duration="598000" />
+      <workItem from="1620798187577" duration="240000" />
+      <workItem from="1620979685557" duration="1842000" />
+      <workItem from="1621247291743" duration="976000" />
+      <workItem from="1621480364178" duration="580000" />
+      <workItem from="1621910662616" duration="2247000" />
+      <workItem from="1622082756241" duration="954000" />
+      <workItem from="1623321045522" duration="1598000" />
+      <workItem from="1625538937639" duration="340000" />
+      <workItem from="1625563935141" duration="2049000" />
+      <workItem from="1625646535758" duration="1567000" />
+      <workItem from="1625668859450" duration="2781000" />
+      <workItem from="1625733509026" duration="612000" />
+      <workItem from="1625879107987" duration="1011000" />
+      <workItem from="1629459439387" duration="2279000" />
+      <workItem from="1635838700973" duration="55000" />
+      <workItem from="1636542048182" duration="868000" />
+      <workItem from="1636711299904" duration="590000" />
+      <workItem from="1637059120334" duration="438000" />
+      <workItem from="1637293838644" duration="1091000" />
+      <workItem from="1637574028273" duration="747000" />
+      <workItem from="1637738097654" duration="1395000" />
+      <workItem from="1637758859700" duration="687000" />
+      <workItem from="1638007399489" duration="1693000" />
+      <workItem from="1638083716637" duration="1877000" />
+      <workItem from="1638172644402" duration="701000" />
+      <workItem from="1638515053308" duration="5566000" />
+      <workItem from="1638844826242" duration="1993000" />
+      <workItem from="1639209523619" duration="1520000" />
+      <workItem from="1639212242235" duration="12000" />
+      <workItem from="1639407033279" duration="5195000" />
+      <workItem from="1639464633457" duration="1861000" />
+      <workItem from="1639493401770" duration="6877000" />
+      <workItem from="1639775044906" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1590045949980</created>
@@ -472,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604044244018</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2131">
+      <created>1606987122883</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606987122883</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,140 +610,79 @@
     <option name="LAST_COMMIT_MESSAGE" value="2131" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2506" y="203" key="#Inspections" timestamp="1600165086137">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2506" y="203" key="#Inspections/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600165086137" />
-    <state x="2698" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1600336232522">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2698" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600336232522" />
-    <state x="1020" y="440" width="849" height="585" key="#xdebugger.evaluate" timestamp="1606985475241">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2728" y="382" width="640" height="597" key="#xdebugger.evaluate/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600166465965" />
-    <state x="808" y="382" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599640903816" />
-    <state x="1020" y="440" width="849" height="585" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1606985475241" />
-    <state x="2361" y="163" key="CommitChangelistDialog2" timestamp="1604044243385">
-      <screen x="1792" y="40" width="1920" height="1080" />
-    </state>
-    <state x="2489" y="120" key="CommitChangelistDialog2/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600335035595" />
-    <state x="569" y="120" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599216597454" />
-    <state x="2361" y="163" key="CommitChangelistDialog2/1792.40.1920.1080/0.0.1792.1120@1792.40.1920.1080" timestamp="1604044243385" />
-    <state width="831" height="450" key="DebuggerActiveHint" timestamp="1606980470876">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="831" height="437" key="DebuggerActiveHint/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600166418973" />
-    <state width="831" height="450" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1606980470876" />
-    <state x="1974" y="132" key="DiffContextDialog" timestamp="1604044234875">
-      <screen x="1792" y="40" width="1920" height="1080" />
-    </state>
-    <state x="2102" y="89" key="DiffContextDialog/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600055094526" />
-    <state x="182" y="89" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599130313134" />
-    <state x="1974" y="132" key="DiffContextDialog/1792.40.1920.1080/0.0.1792.1120@1792.40.1920.1080" timestamp="1604044234875" />
-    <state width="1878" height="366" key="GridCell.Tab.0.bottom" timestamp="1606985121938">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951079" />
-    <state width="1357" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849633" />
-    <state width="1279" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599640873801" />
-    <state width="1878" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606985121938" />
-    <state width="1750" height="295" key="GridCell.Tab.0.bottom/0.25.1792.1041@0.25.1792.1041" timestamp="1605857767322" />
-    <state width="1878" height="366" key="GridCell.Tab.0.center" timestamp="1606985121935">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951078" />
-    <state width="1357" height="340" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849633" />
-    <state width="1279" height="298" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599640873801" />
-    <state width="1878" height="366" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606985121935" />
-    <state width="1750" height="295" key="GridCell.Tab.0.center/0.25.1792.1041@0.25.1792.1041" timestamp="1605857767321" />
-    <state width="1878" height="366" key="GridCell.Tab.0.left" timestamp="1606985121933">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951077" />
-    <state width="1357" height="340" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849633" />
-    <state width="1279" height="298" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599640873801" />
-    <state width="1878" height="366" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606985121933" />
-    <state width="1750" height="295" key="GridCell.Tab.0.left/0.25.1792.1041@0.0.1792.1066" timestamp="1605857767330" />
-    <state width="1750" height="295" key="GridCell.Tab.0.left/0.25.1792.1041@0.25.1792.1041" timestamp="1605857767321" />
-    <state width="1878" height="366" key="GridCell.Tab.0.right" timestamp="1606985121936">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951079" />
-    <state width="1357" height="340" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849633" />
-    <state width="1279" height="298" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599640873801" />
-    <state width="1878" height="366" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606985121936" />
-    <state width="1750" height="295" key="GridCell.Tab.0.right/0.25.1792.1041@0.25.1792.1041" timestamp="1605857767322" />
-    <state width="1878" height="366" key="GridCell.Tab.1.bottom" timestamp="1606985123259">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951082" />
-    <state width="1280" height="298" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849628" />
-    <state width="1279" height="298" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599640875466" />
-    <state width="1878" height="366" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1606985123259" />
-    <state width="1878" height="366" key="GridCell.Tab.1.center" timestamp="1606985123258">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951081" />
-    <state width="1280" height="298" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849628" />
-    <state width="1279" height="298" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599640875465" />
-    <state width="1878" height="366" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1606985123258" />
-    <state width="1878" height="366" key="GridCell.Tab.1.left" timestamp="1606985123257">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951080" />
-    <state width="1280" height="298" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849628" />
-    <state width="1279" height="298" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599640875465" />
-    <state width="1878" height="366" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1606985123257" />
-    <state width="1878" height="366" key="GridCell.Tab.1.right" timestamp="1606985123258">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1750" height="382" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1606873951081" />
-    <state width="1280" height="298" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1920.1050@0.0.1920.1046" timestamp="1600651849628" />
-    <state width="1279" height="298" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600660265672" />
-    <state width="1877" height="424" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599640875466" />
-    <state width="1878" height="366" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1606985123258" />
-    <state x="460" y="310" key="IDE.errors.dialog" timestamp="1604627544618">
+    <state x="829" y="192" key="#xdebugger.evaluate" timestamp="1639622627461">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="460" y="310" key="IDE.errors.dialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604627544618" />
-    <state x="2414" y="155" key="SettingsEditor" timestamp="1599732738763">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2414" y="155" key="SettingsEditor/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599732738763" />
-    <state x="494" y="155" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1599475013099" />
-    <state x="2370" y="323" key="Vcs.Push.Dialog.v2" timestamp="1604044250685">
-      <screen x="1792" y="40" width="1920" height="1080" />
-    </state>
-    <state x="2498" y="275" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600335043308" />
-    <state x="578" y="275" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599216758401" />
-    <state x="2370" y="323" key="Vcs.Push.Dialog.v2/1792.40.1920.1080/0.0.1792.1120@1792.40.1920.1080" timestamp="1604044250685" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1606985103193">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="960" height="540" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1606985103193" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup/0.25.1920.1001@0.25.1920.1001" timestamp="1606985004193" />
-    <state x="2561" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604044204232">
-      <screen x="1792" y="40" width="1920" height="1080" />
-    </state>
-    <state x="2689" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600170840002" />
-    <state x="769" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599216581567" />
-    <state x="2561" y="497" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.40.1920.1080/0.0.1792.1120@1792.40.1920.1080" timestamp="1604044204232" />
-    <state x="2598" y="274" width="570" height="536" key="find.popup" timestamp="1600137404605">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2598" y="274" width="570" height="536" key="find.popup/0.0.1920.1046/1920.0.1920.1050@1920.0.1920.1050" timestamp="1600137404605" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1604628320336">
+    <state x="829" y="192" key="#xdebugger.evaluate/0.0.1792.1120@0.0.1792.1120" timestamp="1639622627461" />
+    <state width="432" height="466" key="DebuggerActiveHint" timestamp="1638709457803">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1604628320336" />
+    <state width="432" height="466" key="DebuggerActiveHint/0.0.1792.1120@0.0.1792.1120" timestamp="1638709457803" />
+    <state width="1750" height="381" key="GridCell.Tab.0.bottom" timestamp="1639651223075">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065503" />
+    <state width="1750" height="381" key="GridCell.Tab.0.center" timestamp="1639651223074">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223074" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065502" />
+    <state width="1750" height="381" key="GridCell.Tab.0.left" timestamp="1639651223074">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223074" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065502" />
+    <state width="1750" height="381" key="GridCell.Tab.0.right" timestamp="1639651223075">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065503" />
+    <state width="1750" height="381" key="GridCell.Tab.1.bottom" timestamp="1639651223076">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223076" />
+    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756246" />
+    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
+    <state width="1750" height="381" key="GridCell.Tab.1.center" timestamp="1639651223075">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
+    <state width="1750" height="381" key="GridCell.Tab.1.center/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756245" />
+    <state width="1750" height="381" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
+    <state width="1750" height="381" key="GridCell.Tab.1.left" timestamp="1639651223075">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
+    <state width="1750" height="381" key="GridCell.Tab.1.left/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756245" />
+    <state width="1750" height="381" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
+    <state width="1750" height="381" key="GridCell.Tab.1.right" timestamp="1639651223076">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="381" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223076" />
+    <state width="1750" height="381" key="GridCell.Tab.1.right/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756246" />
+    <state width="1750" height="381" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
+    <state x="405" y="168" key="SettingsEditor" timestamp="1638515884408">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="405" y="168" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1638515884408" />
+    <state x="405" y="181" key="SettingsEditor/0.25.1792.1041@0.25.1792.1041" timestamp="1635838718168" />
+    <state width="896" height="560" key="XDebugger.FullValuePopup" timestamp="1639408559405">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="896" height="560" key="XDebugger.FullValuePopup/0.0.1792.1120@0.0.1792.1120" timestamp="1639408559405" />
+    <state width="370" height="350" key="documentation.popup.size" timestamp="1639408807041">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="370" height="350" key="documentation.popup.size/0.0.1792.1120@0.0.1792.1120" timestamp="1639408807041" />
+    <state x="597" y="315" width="660" height="490" key="find.popup" timestamp="1636542061501">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="597" y="315" width="660" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1636542061501" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1638521375462">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1638521375462" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,7 +729,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java</url>
-          <line>43</line>
+          <line>38</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -835,6 +881,86 @@
           <url>file://$PROJECT_DIR$/src/main/java/network/urlSpider/Andm.java</url>
           <line>43</line>
           <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/util/DateRangeUtil.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/util/test.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/util/test.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/video/GifUtil.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/util/test.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

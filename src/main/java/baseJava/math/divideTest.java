@@ -1,9 +1,14 @@
 package baseJava.math;
 
+import baseJava.util.DateRangeUtil;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.math.BigDecimal;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Random;
 
 public class divideTest {
     private static String exception(Throwable t) throws IOException {
@@ -19,13 +24,26 @@ public class divideTest {
         return baos.toString();
     }
 
+
+
     public static void main(String[] args) {
-       String s="12312";
-       System.out.println(new BigDecimal(s.toString()));
+        String analyseDateRange="202001";
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.YEAR, Integer.parseInt(analyseDateRange.substring(0, 4)) );
+        cal.set(Calendar.MONTH, Integer.parseInt(analyseDateRange.substring(4, 6))-1);
+        cal.add(Calendar.MONTH, -1);
+        String s= cal.get(Calendar.YEAR) + DateRangeUtil.getDayMonthStr(cal.get(Calendar.MONTH) + 1);
+
+        System.out.println(s);
+
+    }
 
 
-//        System.out.println(Integer.MAX_VALUE);
-//
-//        System.out.println("除法运算结果是：" + b3.divide(bd, BigDecimal.ROUND_UP));
+    public static String getDayMonthStr(int num) {
+        if (num < 10) {
+            return "0" + num;
+        } else {
+            return String.valueOf(num);
+        }
     }
 }

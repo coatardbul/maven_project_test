@@ -1,5 +1,10 @@
 package baseJava.file;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.junit.Test;
 
 import java.io.*;
@@ -7,31 +12,21 @@ import java.io.*;
 public class fileTest {
 
 
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void main(String[] args) throws Exception{
 
-        String path = "C:\\Users\\xiaolei.su\\Desktop";//所创建文件的路径
+        String path = "/Users/coatardbul/Downloads/他行电子流水190813/光大—公司/光大银行201710-12.xls";
+        InputStream is=          new FileInputStream(path);
+        Workbook wb  = new HSSFWorkbook(is);
+        Sheet sheet = wb.getSheetAt(0);
+        for (int n = 16;  100+1 > n; n++) {
+            Row row = sheet.getRow(n);
+            Cell dc = row.getCell(1);
 
-        File f = new File(path);
-
-        if (!f.exists()) {
-
-            f.mkdirs();//创建目录
-        }
-
-        String fileName = "hello.pdf";//文件名及类型
-
-        File file = new File(path, fileName);
-
-        if (!file.exists()) {
-
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-
-                e.printStackTrace();
-            }
+            System.out.println(is);
 
         }
+        System.out.println(is);
+
 
     }
 

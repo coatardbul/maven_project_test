@@ -17,10 +17,10 @@ public class StreamLean extends SuperLean {
         //静态方法语法	ClassName::methodName
         list.forEach(StreamLean::print);
         //对象实例语法
-        list.forEach(new StreamLean()::print1);
-        //对象的超类方法语法
-        list.forEach(super::print1);
-        list.forEach(System.out::println);
+//        list.forEach(new StreamLean()::print1);
+//        //对象的超类方法语法
+//        list.forEach(super::print1);
+//        list.forEach(System.out::println);
 
     }
     @Test
