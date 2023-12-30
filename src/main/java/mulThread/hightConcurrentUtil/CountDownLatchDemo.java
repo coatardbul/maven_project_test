@@ -11,7 +11,7 @@ public class CountDownLatchDemo implements Runnable {
 
     public void run() {
         try {
-            Thread.sleep(1000 * 1000);
+            Thread.sleep(10 * 1000);
             System.out.println("check complete!");
             end.countDown();
         } catch (InterruptedException e) {

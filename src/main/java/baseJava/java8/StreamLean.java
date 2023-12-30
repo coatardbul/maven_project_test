@@ -6,21 +6,20 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamLean extends SuperLean {
 
 
     @Test
     public void staticMethod(){
-        List<String> list = Arrays.asList("aaaa", "bbbb", "cccc");
+        List<String> list = Arrays.asList("2022-01-04", "2022-01-02", "2022-01-03");
+        list= list.stream().sorted().collect(Collectors.toList());
+System.out.println(list);
 
-        //静态方法语法	ClassName::methodName
-        list.forEach(StreamLean::print);
-        //对象实例语法
-//        list.forEach(new StreamLean()::print1);
-//        //对象的超类方法语法
-//        list.forEach(super::print1);
-//        list.forEach(System.out::println);
+String datestr="2022年02月03日";
+    String hello = "[\u4E00-\u9FA5]";
+    System.out.println(datestr.replaceAll(hello,"-"));
 
     }
     @Test

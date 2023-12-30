@@ -44,15 +44,12 @@ public class AbcReplace {
     public static void main(String[] args) {
 
 
-        String  filePath ="C:\\Users\\coatardbul\\Desktop";
-        String fileName ="2020年1月23日网银指令.xlsx";
+        String  filePath ="/Users/coatardbul/Desktop";
+        String fileName ="方差标准差.xlsx";
         File excelFile = new File(filePath+"/"+fileName);
         InputStream is = null;
-        List<List<String>> sheetlist =null;
         try {
             is = new FileInputStream(excelFile);
-            //利用POI 把Excel表遍历生成List类型
-            //     Workbook wb = new XSSFWorkbook(is);
             Workbook wb = null;
             // 根据文件后缀（xls/xlsx）进行判断
             if (excelFile.getName().endsWith("xls")) {
@@ -65,39 +62,17 @@ public class AbcReplace {
             Sheet sheet = wb.getSheetAt(0);
             //获得行数
             int rowSize = sheet.getLastRowNum() + 1;
-            for (int j = 1; j < rowSize; j++) {//遍历行
+            for (int j = 0; j < rowSize; j++) {
+                //遍历行
                 Row row = sheet.getRow(j);
-                if (row == null) {//略过空行
+                if (row == null) {
+                    //略过空行
                     continue;
                 }
                String  agentDraweeAcctNo = row.getCell(8).getStringCellValue();
-               String  draweeAcctNo =row.getCell(11).getStringCellValue();
-               if(StringUtils.isNotBlank(agentDraweeAcctNo)&&StringUtils.isNotBlank(draweeAcctNo)){
-                   if(StringUtils.isNotBlank(agentDraweeAcctNo)){
-                       for(Map.Entry<String,String> entry:abcAcctNoMap.entrySet()){
-                           if(entry.getKey().equals(agentDraweeAcctNo)){
-                               System.out.println("替换前账号："+agentDraweeAcctNo+"  替换后账号："+entry.getValue());
-                               row.getCell(8).setCellValue(entry.getValue());
-                           }
-                       }
-                   }else{
-                       for(Map.Entry<String,String> entry:abcAcctNoMap.entrySet()){
-                           if(entry.getKey().equals(draweeAcctNo)){
-                               System.out.println("替换前账号："+agentDraweeAcctNo+"  替换后账号："+entry.getValue());
-                               row.getCell(11).setCellValue(entry.getValue());
-                           }
-                       }
-                   }
-
-               }
+          int s=-1;
 
             }
-
-            // 输出文件
-            String outPutFilePath="C:\\Users\\coatardbul\\Desktop\\ss\\"+fileName;
-            FileOutputStream fileOut = new FileOutputStream(outPutFilePath);
-            wb.write(fileOut);
-            fileOut.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

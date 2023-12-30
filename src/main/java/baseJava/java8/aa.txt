@@ -1,0 +1,1212 @@
+package com.asiainfo.davp.dao.impl;
+
+import com.alibaba.fastjson.JSONArray;
+import com.asiainfo.davp.constant.Constants;
+import com.asiainfo.davp.dao.*;
+import com.asiainfo.davp.model.*;
+import com.asiainfo.davp.model.module.DatasetFieldMap;
+import com.asiainfo.davp.service.DatasetService;
+import com.asiainfo.davp.system.BeanFactory;
+import com.asiainfo.davp.system.BiUser;
+import com.asiainfo.davp.system.UserHolder;
+import com.asiainfo.davp.system.datasource.DataSourceLoader;
+import com.asiainfo.davp.system.manager.DataManagerFactory;
+import com.asiainfo.davp.system.manager.IDataManager;
+import com.asiainfo.davp.util.DataSourceType;
+import com.asiainfo.davp.utils.SqlBuildUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.util.CollectionUtils;
+import ru.yandex.clickhouse.ClickHouseConnection;
+import ru.yandex.clickhouse.ClickHouseDataSource;
+import ru.yandex.clickhouse.settings.ClickHouseProperties;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+import java.sql.SQLException;
+import java.util.*;
+import java.util.stream.Collectors;
+
+/**
+ * @Author: zhoukai
+ * @Date: 2021/10/20 15:20
+ * @Description:
+ */
+@Repository
+public class QueryDataDaoImpl implements QueryDataDao {
+    private static Logger logger = LoggerFactory.getLogger(QueryDataDaoImpl.class);
+
+    private static final String DAVP_BI_DATASET_FIELD_MAPPING="davp_bi_dataset_field_mapping";
+    //on上关联字段
+    private static final String DAVP_BI_DATASET_FIELD_MAPPING_MATCH_FIELD="match_text";
+    //查询属性
+    private static final String DAVP_BI_DATASET_FIELD_MAPPING_SELECT_FIELD="sys_text";
+    //on上具体的数值
+    private static final String DAVP_BI_DATASET_FIELD_MAPPING_MATCH_FIELD_ID_VALUE="field_id";
+    //地图类型
+    private static  final String MODULE_TYPE_MAP="echartsMap";
+
+    @Resource
+    private JdbcTemplate jdbcTemplate;
+
+    @Resource
+    private DatasetService datasetService;
+    @Resource
+    private DatasetDao datasetDao;
+
+    @Resource
+    private DatasetFieldDao datasetFieldDao;
+
+    @Resource
+    private DatasetAuthMapDao datasetAuthMapDao;
+
+    @Resource
+    private DatasetFieldMappingDao datasetFieldMappingDao;
+
+    @Resource
+    private DataManagerFactory dataManagerFactory;
+
+    private String dealNorm(DatasetField datasetField, List<DatasetField> datasetFields) {
+        String field = datasetField.getPhysicalName();
+        for (int i = 0; i < datasetFields.size(); i++) {
+            String fieldName = "${" + datasetFields.get(i).getFieldName() + "}";
+            String realName =  datasetFields.get(i).getTableName() + "." + datasetFields.get(i).getPhysicalName();
+            field = field.contains(fieldName) ? field.replace(fieldName, realName) : field;
+        }
+        return field;
+    }
+
+    @Override
+    public List getModuleScreenBoxValue(String column, String tableName, String datasetId) {
+        Dataset dataset = datasetDao.get(datasetId);
+        JdbcTemplate template = null;
+        if (dataset != null) {
+            String dsCode = dataset.getDataSourceId();
+            template = dataManagerFactory.getJdbcTemplate(dsCode);
+        }
+        String sql = "SELECT DISTINCT " + column + " from " + tableName;
+        List list = template.queryForList(sql);
+        List outList = new ArrayList();
+        for (int i = 0; i < list.size(); i++) {
+            Map valueMap = (Map) list.get(i);
+            Map outMap = new HashMap();
+            for (Object k : valueMap.keySet()) {
+                outMap.put("label", valueMap.get(k));
+                outMap.put("value", valueMap.get(k));
+            }
+            outList.add(outMap);
+        }
+        return outList;
+    }
+
+
+    @Override
+    public List getDatasetBoxValue(String physicalName, String tableName, String dsCode) {
+        JdbcTemplate template = null;
+        DataSourceLoader dataSourceLoader = BeanFactory.getBean(DataSourceLoader.class);
+        if (StringUtils.isEmpty(dsCode)) {
+            template = jdbcTemplate;
+        } else {
+            DataSource dataSource = dataSourceLoader.getDataSource(dsCode);
+            template = new JdbcTemplate(dataSource);
+        }
+        String sql = "SELECT DISTINCT " + physicalName + " from " + tableName;
+        return template.queryForList(sql);
+    }
+
+
+    private Map<String, String> getTableAlias(List<DatasetTable> datasetTableList) {
+        Map<String, String> aliasMap = new HashMap<>();
+        String[] aliaCategory = new String[]{"a","b","c","d","e","f","g","h","i","j"};
+        for (int i = 0, datasetTableListSize = datasetTableList.size(); i < datasetTableListSize; i++) {
+            DatasetTable datasetTable = datasetTableList.get(i);
+            String aliaName = aliaCategory[i];
+            aliasMap.put(datasetTable.getTableName(), aliaName);
+        }
+        return aliasMap;
+    }
+
+
+
+    private Map<String, String> setTableAlias( Map<String, String> aliasMap , List<DatasetField> datasetFields ,boolean isClickhouse) {
+        for (int i = 0; i < datasetFields.size(); i++) {
+            DatasetField datasetField = datasetFields.get(i);
+            //省市映射表,纬度，有映射，添加表别名
+            if(1==datasetField.getType()&&datasetField.getMatchRegionMapping()!=null &&datasetField.getMatchRegionMapping().size()>0){
+                String lessTableName = DAVP_BI_DATASET_FIELD_MAPPING;
+                String aliasPriTableName = isClickhouse ? "a" :" a" +( aliasMap.size()+i) + " ";
+                if (!aliasMap.containsKey(lessTableName)) {
+                    aliasMap.put(lessTableName, aliasPriTableName);
+                }
+            }
+        }
+        return aliasMap;
+    }
+
+
+    private String getTableLink(DatasetRoot datasetRoot, Map<String, String> aliasMap){
+       return getTableLink(null,datasetRoot,aliasMap);
+    }
+
+    private String getTableLink(String moduleType,DatasetRoot datasetRoot, Map<String, String> aliasMap){
+        StringBuilder sqlLinkMode = new StringBuilder();
+        sqlLinkMode.append(" from ");
+        List<DatasetTable> datasetTableList = datasetRoot.getTableList();
+        DatasetTable masterTable = null;
+        if(datasetTableList.size() == 1) {
+            masterTable = datasetTableList.get(0);
+        } else {
+            Optional<DatasetTable> masterOpt = datasetTableList.stream()
+                    .filter(table -> table.isMaster())
+                    .filter(table -> !table.isSlave()).findFirst();
+            if (masterOpt.isPresent()) {
+                masterTable = masterOpt.get();
+            }
+        }
+
+
+        String masterTableName = masterTable.getTableName();
+        sqlLinkMode.append(masterTableName).append(" ").append(aliasMap.get(masterTableName));
+        sqlLinkMode.append(" ");
+
+        List<DatasetTableLink> datasetTableLinkList = datasetRoot.getLinkList();
+        Map<String, String> joinPieces = new HashMap<>();
+        if(datasetTableLinkList.size() > 0) {
+            for (DatasetTableLink link : datasetTableLinkList) {
+                String mTableName = link.getMasterTable();
+                String sTableName = link.getSlaveTable();
+                String masterAlias = aliasMap.get(mTableName);
+                String slaveAlias = aliasMap.get(sTableName);
+
+                String existPiece = joinPieces.get(mTableName + sTableName);
+                if (existPiece == null) {
+                    String joinSqlPiece = String.format("%s join %s %s on %s.%s = %s.%s ",
+                            link.getLinkMode(),
+                            sTableName,
+                            slaveAlias,
+                            slaveAlias,
+                            link.getSlaveField(),
+                            masterAlias,
+                            link.getMasterField()
+                    );
+                    joinPieces.put(mTableName + sTableName, joinSqlPiece);
+                } else {
+                    //用于两表间多键关联
+                    String condiSqlPiece = String.format(" and %s.%s = %s.%s ",
+                            slaveAlias,
+                            link.getSlaveField(),
+                            masterAlias,
+                            link.getMasterField());
+                    existPiece += condiSqlPiece;
+                    joinPieces.put(mTableName + sTableName, existPiece);
+                }
+
+            }
+        }
+        for (String value : joinPieces.values()) {
+            sqlLinkMode.append(value).append(" ");
+        }
+
+        //省市表
+        if(MODULE_TYPE_MAP.equals(moduleType)){
+            //纬度信息，
+            List<DatasetField> latitudeDatasetField = datasetRoot.getDatasetFields().stream().filter(o1 -> 1 == o1.getType()).collect(Collectors.toList());
+            if(latitudeDatasetField.get(0).getMatchRegionMapping()!=null &&latitudeDatasetField.get(0).getMatchRegionMapping().size()>0){
+                sqlLinkMode.append("left join " + buildMapFieldMapSqlBlock(latitudeDatasetField.get(0)) + aliasMap.get(DAVP_BI_DATASET_FIELD_MAPPING) + "on " +
+                        aliasMap.get(latitudeDatasetField.get(0).getTableName()) + "." + latitudeDatasetField.get(0).getPhysicalName() + " = " +
+                        aliasMap.get(DAVP_BI_DATASET_FIELD_MAPPING) + "." + DAVP_BI_DATASET_FIELD_MAPPING_MATCH_FIELD +
+                        "  and "+ aliasMap.get(DAVP_BI_DATASET_FIELD_MAPPING)+ "." +DAVP_BI_DATASET_FIELD_MAPPING_MATCH_FIELD_ID_VALUE+
+                        "='"+latitudeDatasetField.get(0).getId()+"' ");
+            }
+        }
+        sqlLinkMode.append("where 1=1 ");
+        return sqlLinkMode.toString();
+    }
+
+
+    //获取查询维度、group by、order by分组语句
+    private String[] getGroupSql(List<DatasetField> datasetFields, Map<String, String> aliasMap, boolean isClickhouse, StringBuffer orderSql, boolean isDatasetPreview, String dsCode) {
+         return  getGroupSql(null,datasetFields,aliasMap,isClickhouse,orderSql,isDatasetPreview, dsCode);
+    }
+    //获取查询维度、group by、order by分组语句
+    private String[] getGroupSql(String moduleType,List<DatasetField> datasetFields, Map<String, String> aliasMap, boolean isClickhouse,StringBuffer orderSql, boolean isDatasetPreview, String dsCode) {
+        IDataManager dataManager = dataManagerFactory.build(dsCode);
+        DataSourceType dsType = dataManager.getDbType();
+        StringBuffer sql = new StringBuffer(16);
+        sql.append("select ");
+        StringBuffer sqlCondion = new StringBuffer(16);
+        sqlCondion.append("group by ");
+        boolean needGroup = false;
+        for (int i = 0; i < datasetFields.size(); i++) {
+            DatasetField datasetField = datasetFields.get(i);
+            String tableName = datasetField.getTableName();
+            String field = datasetField.getPhysicalName();
+            String fieldName = SqlBuildUtils.columnAliasBuild(datasetField.getFieldName(), dsType);
+            JSONArray levelField = datasetField.getLevelField();
+            String translateField = datasetField.getTranslateField();
+            String translateSource = datasetField.getTranslateSource();
+            //数据库表字段类型
+            String tableFieldType = null;
+            if (datasetField.getType() == 1 || datasetField.getType() == 4) {
+                String queryFieldTypeTableName = isClickhouse ? datasetField.getDatasetId() + "_" + tableName : tableName;
+                tableFieldType = dataManager.getFieldType(queryFieldTypeTableName, field);
+            }
+            //获取维度，1代表维度，2代表度量，3代表计算指标 4代表分档维度
+            if (datasetField.getType() == 1) {
+                needGroup = true;
+                //日期类型
+                if (datasetField.getFieldType().equals("2")) {
+                    String dateFormat = StringUtils.isNotBlank(datasetField.getDateFormat()) ? datasetField.getDateFormat() : Constants.DEFAULT_FORMAT;
+                    String datePrecision = isDatasetPreview ? dateFormat : datasetField.getDatePrecision();
+                    //数据库是否日期类型
+                    if (StringUtils.containsIgnoreCase(tableFieldType,"date")) {
+                        String dateFormatBuild = SqlBuildUtils.dateToCharBuild(aliasMap.get(tableName) + "." + field, datePrecision, dsType);
+                        sql.append(dateFormatBuild + fieldName + ", ");
+                        sqlCondion.append(dateFormatBuild + ", ");
+                    } else {
+                        String dateFormatBuild = SqlBuildUtils.dateToCharBuild(SqlBuildUtils.charToDateBuild(aliasMap.get(tableName) + "." + field, dateFormat, dsType), datePrecision, dsType);
+                        sql.append(dateFormatBuild + fieldName + ", ");
+                        sqlCondion.append(dateFormatBuild + ", ");
+                    }
+                } else {
+                    //地图省市纬度字段映射
+                    if(MODULE_TYPE_MAP.equals(moduleType)){
+                        String filedMappingColumn = getFiledMappingColumn(aliasMap, datasetField);
+                        sql.append(filedMappingColumn);
+                        sql.append(fieldName + ",");
+                        sqlCondion.append(filedMappingColumn+",");
+                    }else {
+                        sql.append( aliasMap.get(tableName) + "." + field + " "+fieldName + ",");
+                        sqlCondion.append( aliasMap.get(tableName) + "." + field+",");
+                        if( StringUtils.isNotEmpty(translateField) && translateSource != null){
+                            sql.append(aliasMap.get(tableName) + "." + translateField + " \"" + field + "-CN\"" + ",");
+                            sqlCondion.append(aliasMap.get(tableName) + "." + translateField + ",");
+                        }
+                    }
+
+                }
+                //是否排序
+                if (StringUtils.isNotEmpty(datasetField.getOrderRule())) {
+                    orderSql.append(fieldName + " " + datasetField.getOrderRule() + ",");
+                }
+            }
+            //分档维度
+            if (datasetField.getType() == 4) {
+                needGroup = true;
+                StringBuffer caseSql = new StringBuffer("case ");
+                for (int j = 0; j < levelField.size(); j++) {
+                    caseSql.append("when ");
+                    Map jsonObject = (Map) levelField.get(j);
+                    String groupName = (String) jsonObject.get("groupName");
+                    List groupRule = (List) jsonObject.get("groupRule");
+                    for (int k = 0; k < groupRule.size(); k++) {
+                        if (k == 0) {
+                            if (StringUtils.isNotBlank(String.valueOf(groupRule.get(k)))) {
+                                caseSql.append(aliasMap.get(tableName) + "." + field);
+                            }
+                            continue;
+                        }
+                        if (k == 1) {
+                            if (StringUtils.isNotBlank(String.valueOf(groupRule.get(k)))) {
+                                caseSql.append(groupRule.get(k).equals("<") ? " > " : " >= ");
+                                caseSql.append(groupRule.get(0));
+                            }
+                            continue;
+                        }
+                        if (k == 2) {
+                            if (StringUtils.isNotBlank((String) groupRule.get(k))) {
+                                if (StringUtils.isNotBlank((String) groupRule.get(k - 1))) {
+                                    caseSql.append(" and ");
+                                }
+                                caseSql.append(aliasMap.get(tableName) + "." + field);
+                                caseSql.append(groupRule.get(k).equals("<") ? " < " : " <= ");
+                            }
+                            continue;
+                        }
+                        if (k == 3) {
+                            if (StringUtils.isNotBlank((String) groupRule.get(k))) {
+                                caseSql.append(groupRule.get(k));
+                            }
+                            continue;
+                        }
+                    }
+                    caseSql.append(" then " + "'" + groupName + "'");
+                }
+                caseSql.append(" END ");
+                sql.append(caseSql + fieldName + ", ");
+                sqlCondion.append(DataSourceType.ORACLE.equals(dsType) ? caseSql + ", " : fieldName + ", ");
+
+            }
+        }
+        //没有维度的时候，就没有group by 和 order by
+        if (!needGroup) {
+            return new String[]{sql.toString(), "", ""};
+        }
+        String sql1 = sql.toString().trim();
+        String sql2 = sqlCondion.toString().trim();
+        return new String[]{sql1.substring(0, sql1.length() - 1), sql2.substring(0, sql2.length() - 1)};
+    }
+
+
+    /**
+     * 有地图映射字段，翻译成地图字段
+     * 其他正常显示
+     * @param aliasMap
+     * @param datasetField
+     * @return
+     */
+    private String getFiledMappingColumn(Map<String, String> aliasMap, DatasetField datasetField){
+        String tableName = datasetField.getTableName();
+        String field = datasetField.getPhysicalName();
+        //地图省市纬度字段映射
+        if(datasetField.getMatchRegionMapping()!=null&&datasetField.getMatchRegionMapping().size()>0){
+            String isNullMapStr = dataManagerFactory.buildSysDataManager().ifNull(
+                    (aliasMap.get(DAVP_BI_DATASET_FIELD_MAPPING) + "." + DAVP_BI_DATASET_FIELD_MAPPING_SELECT_FIELD),
+                    (aliasMap.get(tableName) + "." + field))+"  ";
+           return isNullMapStr;
+        }else {
+            return  aliasMap.get(tableName) + "." + field + " " ;
+        }
+    }
+
+
+
+    //获取普通查询字段
+    private String getSelectSql(List<DatasetField> datasetFields, Map<String, String> aliasMap, boolean isDatasetPreview, StringBuffer orderbySql, DataSourceType dsType) {
+        StringBuffer sql = new StringBuffer(16);
+        for (int i = 0; i < datasetFields.size(); i++) {
+            DatasetField datasetField = datasetFields.get(i);
+            String tableName = datasetField.getTableName();
+            String field = datasetField.getPhysicalName();
+            String fieldName = SqlBuildUtils.columnAliasBuild(datasetField.getFieldName(), dsType);
+            //1:维度；2:度量；3：计算指标；4分档维度
+            if (datasetField.getType() == 2 || datasetField.getType() == 3) {
+                if (datasetField.getType() == 3) {
+                    List<DatasetField> datasetFieldList = isDatasetPreview ? datasetFields:datasetFieldDao.findFields(datasetField.getDatasetId());
+                    field = dealNorm(datasetField, datasetFieldList);
+                } else {
+                    field = tableName + "." + field;
+                    if (StringUtils.isNotEmpty(datasetField.getOrderRule())) {
+                        orderbySql.append(fieldName + " " + datasetField.getOrderRule() + ",");
+                    }
+                }
+                //遍历map的值将表达式中真实表名替换为别名
+                for (String key : aliasMap.keySet()) {
+                    field = field.replace(key, aliasMap.get(key));
+                }
+                if (null == datasetField.getFieldGroup() || 1  == datasetField.getFieldGroup()) {
+                    //没有设置聚合方式时  默认求和
+                    sql.append("sum(" + field + ")  " + fieldName + ",");
+                }
+                //计数
+                else if (datasetField.getFieldGroup() == 2) {
+                    //自定义指标
+                    if(datasetField.getIndicatorType()!=null &&datasetField.getIndicatorType()==2 ){
+                        sql.append("count(1) "+fieldName+" ,");
+                    }else {
+                        sql.append("count(" + field + ") " + fieldName + ",");
+                    }
+                }
+                //平均
+                else if (datasetField.getFieldGroup() == 3) {
+                    sql.append("avg(" + field + ") " + fieldName + ",");
+                }
+                //最大值
+                else if (datasetField.getFieldGroup() == 4) {
+                    sql.append("max(" + field + ") " + fieldName + ",");
+                }
+                //最小值
+                else if (datasetField.getFieldGroup() == 5) {
+                    sql.append("min(" + field + ") " + fieldName + ",");
+                }
+                //去重计数
+                else if (datasetField.getFieldGroup() == 6) {
+                    sql.append("count( distinct " + field + ") " + fieldName + ",");
+                }
+            }
+        }
+        if (StringUtils.isNotEmpty(sql)) {
+            String result = sql.toString().trim();
+            return result.substring(0, result.length() - 1);
+        }
+        return "";
+    }
+
+    //获取where查询条件
+    private String getWhereSql(DatasetRoot datasetRoot, Map<String, String> aliasMap, Map<String, Object> screenMap, List<ModuleFilter> moduleFilters, boolean isClickHouse, boolean isDatasetPreview,List<String> params, String dsCode) {
+        IDataManager dataManager = dataManagerFactory.build(dsCode);
+        DataSourceType dsType = dataManager.getDbType();
+        List<FilterCondition> filterList = datasetRoot.getFilterList();
+        List<DatasetField> datasetFields = datasetRoot.getDatasetFields();
+        StringBuffer sqlWhere = new StringBuffer(16);
+        String compareDateSql = "";
+        //数据集过滤条件
+        if (!CollectionUtils.isEmpty(filterList)) {
+            for (FilterCondition filterCondition : filterList) {
+                //1文本 2日期 3数字
+                String type = filterCondition.getFieldType();
+                String field = filterCondition.getPhysicalName();
+                String tableName = filterCondition.getTableName();
+                Integer queryType = filterCondition.getQueryType();
+                Integer isEnum = filterCondition.getIsEnum();
+                //过滤模式  collocation--配置模式   sql---sql模式
+                String fieldMode = filterCondition.getFieldMode();
+                if(StringUtils.isEmpty(fieldMode) || "collocation".equalsIgnoreCase(fieldMode)){
+                    if ("1".equals(type)) {
+                        JSONArray textValue = filterCondition.getTextValue();
+                        JSONArray textenumValue = filterCondition.getTextenumValue();
+                        sqlWhere.append(" and (");
+                        //按照枚举查询
+                        if (isEnum == 1) {
+                            for (int i = 0; i < textValue.size(); i++) {
+                                sqlWhere.append(aliasMap.get(tableName) + "." + field + " = " + transToVar("'" + textValue.get(i) + "'" ,params)+ " or ");
+                            }
+                            sqlWhere = new StringBuffer(sqlWhere.substring(0, sqlWhere.toString().trim().length() - 2));
+                        } else {//按照条件查询
+                            if (queryType == 1) {
+                                sqlWhere.append(aliasMap.get(tableName) + "." + field + SqlBuildUtils.conditionBuild(textenumValue.get(0), transToVar("'"+textenumValue.get(1)+"'",params), dsType));
+                            } else {
+                                String connector = queryType == 2 ? " or " : " and " ;
+                                sqlWhere.append(aliasMap.get(tableName) + "." + field + SqlBuildUtils.conditionBuild(textenumValue.get(0), transToVar("'"+textenumValue.get(1)+"'",params), dsType) + connector)
+                                        .append(aliasMap.get(tableName) + "." + field + SqlBuildUtils.conditionBuild(textenumValue.get(2), transToVar("'"+textenumValue.get(3)+"'",params), dsType));
+                            }
+                        }
+                        sqlWhere.append(") ");
+                    }
+                    if ("2".equals(type)) {
+                        sqlWhere.append(" and " + dateFormatBuild(filterCondition, aliasMap.get(tableName) + "." + field, tableName, field, datasetFields,params, dsCode) + " ");
+                    }
+                    if ("3".equals(type)) {
+                        JSONArray numberValue = filterCondition.getNumberValue();
+                        if (!CollectionUtils.isEmpty(numberValue)) {
+                            if (queryType == 1) {
+                                sqlWhere.append(" and " + aliasMap.get(tableName) + "." + field +" "+ numberValue.get(0) + ( numberValue.get(0).equals("is null") || numberValue.get(0).equals("is not null") ? "" :transToVar(numberValue.get(1),params)) + " ");
+                            } else {
+                                String connector = queryType == 2 ? " or " : " and " ;
+                                sqlWhere.append(" and (" + aliasMap.get(tableName) + "." + field +" "+ numberValue.get(0) + ( numberValue.get(0).equals("is null") || numberValue.get(0).equals("is not null") ? "" :transToVar(numberValue.get(1),params)) + connector)
+                                        .append(aliasMap.get(tableName) + "." + field +" "+ numberValue.get(2) + ( numberValue.get(2).equals("is null") || numberValue.get(2).equals("is not null") ? "" :transToVar(numberValue.get(3),params)) + ") ");
+                            }
+                        }
+
+                    }
+                }
+                if("sql".equalsIgnoreCase(fieldMode)){
+                    List<DatasetField> datasetFieldAll = isDatasetPreview ? datasetFields:datasetFieldDao.findFields(filterCondition.getDatasetId());
+                    String fieldSql = filterCondition.getFieldSql();
+                    for (int i = 0; i < datasetFieldAll.size(); i++) {
+                        String variableName = "${" + datasetFieldAll.get(i).getFieldName() + "}";
+                        fieldSql = fieldSql.contains(variableName) ? fieldSql.replace(variableName, aliasMap.get(datasetFieldAll.get(i).getTableName()) + "." + datasetFieldAll.get(i).getPhysicalName()) : fieldSql;
+                    }
+                    //先去掉最左空格
+                    fieldSql = fieldSql.replaceAll("^[   ]+", "");
+                    //判断是否and开头
+                    if(fieldSql.toLowerCase().startsWith("and")){
+                        sqlWhere.append(" " + fieldSql + " ");
+                    }else {
+                        sqlWhere.append(" and " + fieldSql + " ");
+                    }
+                }
+            }
+        }
+        //将本次查询的过滤条件重新复制到另外一个集合中，每处理一个条件就去掉一个，直至所有条件均被处理完
+        Map<String, Object> dealMap = new HashMap<>();
+        if(!CollectionUtils.isEmpty(screenMap)){
+            for (String s : screenMap.keySet()) {
+                dealMap.put(s,screenMap.get(s));
+            }
+        }
+
+        //组件自带筛选条件
+        if (!CollectionUtils.isEmpty(moduleFilters) && !CollectionUtils.isEmpty(dealMap)) {
+            for (ModuleFilter moduleFilter : moduleFilters) {
+                String filterTableName = moduleFilter.getTableName();
+                String physicalName = moduleFilter.getPhysicalName();
+                String allName = filterTableName + "." + physicalName;
+                String tableName = filterTableName;
+                Object screenName = dealMap.get(allName);
+                if (screenName == null) {
+                    continue;
+                }
+                //screenMap中的处理过之后就将其移除掉，不重复处理。
+                String[] values = screenName.toString().split(",");
+                dealMap.remove(allName);
+                String dateFormat = null;
+                //1=下拉框;2=文本;3=时间;4=数字区间
+                if (moduleFilter.getControlType() == 1) {
+                    int chooseType = moduleFilter.getChooseType();
+                    //单选
+                    if (chooseType == 1) {
+                        sqlWhere.append(" and " + allName + " = " + transToVar("'" +values[0]+"' ",params));
+                    } else {//多选
+                        sqlWhere.append(" and " + allName + " in ( ");
+                        String value = "";
+                        for (int i = 0; i < values.length; i++) {
+                            value+="'" + values[i] + "',";
+                        }
+                        value = value.substring(0, value.length() - 1);
+                        sqlWhere.append(transToVar(value,params)+")");
+                    }
+                }
+                if (moduleFilter.getControlType() == 2) {
+                    sqlWhere.append(" and " + allName + SqlBuildUtils.conditionBuild(moduleFilter.getQueryMode(), transToVar("'"+values[0]+"'",params), dsType));
+                }
+                if (moduleFilter.getControlType() == 3) {
+                    DatasetField timeField = null;
+                    String queryFieldTypeTableName = isClickHouse ? datasetRoot.getDataset().getDatasetId() + "_" + tableName : tableName;
+                    String tableFieldType = dataManager.getFieldType(queryFieldTypeTableName, physicalName);
+                    DatasetField datasetField = datasetFieldDao.getFieldOne(datasetRoot.getDataset().getDatasetId(),tableName,physicalName);
+                    if(datasetField == null){
+                        continue;
+                    }
+                    timeField = datasetField;
+                    // todo 时间增加季度
+                    if (moduleFilter.getDateMode() == 1) {
+                        dateFormat = "yyyy";
+                    } else if (moduleFilter.getDateMode() == 2 || moduleFilter.getDateMode() == 4) {
+                        dateFormat = "yyyyMM";
+                    }  else {
+                        dateFormat = "yyyyMMdd";
+                    }
+                    if (tableFieldType.toLowerCase().contains("date")) {
+                        compareDateSql =  " and " + SqlBuildUtils.dateToCharBuild(aliasMap.get(tableName) + "." + physicalName, dateFormat, dsType);
+                    } else {
+                        compareDateSql = " and " + SqlBuildUtils.dateToCharBuild(SqlBuildUtils.charToDateBuild(aliasMap.get(tableName) + "." + physicalName, timeField.getDateFormat(), dsType), dateFormat, dsType);
+                    }
+                    sqlWhere.append(compareDateSql);
+                    if (moduleFilter.getScreenMode() == 1 && moduleFilter.getDateMode() != 4) {
+                        sqlWhere.append(" = " + transToVar("'"+values[0].replace("-", "") + "'",params));
+                    } else {
+                        String startTime = values[0].replace("-", "");
+                        String endTime = values[1].replace("-", "");
+                        sqlWhere.append(SqlBuildUtils.dateRangeBuild(compareDateSql, transToVar("'"+startTime+"'",params), transToVar("'"+endTime+"'",params), dsType));
+                    }
+                }
+                if (moduleFilter.getControlType() == 4) {
+                    if (values.length > 1) {
+                        if (StringUtils.isNotEmpty(values[0]) && StringUtils.isNotEmpty(values[1])) {
+                            sqlWhere.append(" and( " + transToVar(values[0],params) + " <= " + allName + " and " + allName + " <= " + transToVar(values[1],params) + ") ");
+                        }
+                        if (StringUtils.isEmpty(values[0]) && StringUtils.isNotEmpty(values[1])) {
+                            sqlWhere.append(" and " + allName + " <= " + transToVar(values[1],params) + " ");
+                        }
+                    }
+                    if (values.length == 1) {
+                        sqlWhere.append(" and " + transToVar("'"+values[0]+"'",params) + " <= " + allName + " ");
+                    }
+                }
+            }
+        }
+
+
+        //外部链接参数或外部联动的过滤条件
+        if (!CollectionUtils.isEmpty(dealMap)) {
+            Set<String> strings = screenMap.keySet();
+            for (String key : strings) {
+
+                if(!dealMap.containsKey(key)){
+                    continue;
+                }
+                String value = dealMap.get(key).toString();
+                String tableName = key.split("\\.")[0];
+                String columnName = key.split("\\.")[1];
+                DatasetField datasetField = datasetFieldDao.getFieldOne(datasetRoot.getDataset().getDatasetId(),tableName,columnName);
+                if(datasetField == null){
+                    continue;
+                }
+                String queryTableName = isClickHouse ? datasetRoot.getDataset().getDatasetId() + "_" + tableName : tableName;
+                String tableFieldType = dataManager.getFieldType(queryTableName, columnName);
+                //根据param中的日期类型设置dateFormat类型
+                String dateFormat = datasetField.getDateFormat();
+                if(datasetField.getType()==1&&"2".equals(datasetField.getFieldType())){
+                    if(value.length()==4){
+                        dateFormat="yyyy";
+                    }else if(value.length()==13){
+                        //202207,202209 季度
+                        dateFormat="yyyyMM";
+                    }else if(value.length()==6){
+                        dateFormat="yyyyMM";
+                    }else if(value.length()==8){
+                        dateFormat="yyyyMMdd";
+                    }
+                }
+
+                //日期类型
+                if (StringUtils.equalsIgnoreCase("2", datasetField.getFieldType())) {
+
+                    String dataDealSql = null;
+                    if (tableFieldType.toLowerCase().contains("date")) {
+                        dataDealSql = " and " + SqlBuildUtils.dateToCharBuild(key, dateFormat, dsType);
+                    } else {
+                        dataDealSql = " and " + SqlBuildUtils.dateToCharBuild(SqlBuildUtils.charToDateBuild(key, datasetField.getDateFormat(), dsType), dateFormat, dsType);
+                    }
+                    sqlWhere.append(dataDealSql);
+                    //判断是否为时间区间
+                    if(value.contains(",")){
+                        String startTime = value.split(",")[0];
+                        String endTime = value.split(",")[1];
+                        sqlWhere.append(SqlBuildUtils.dateRangeBuild(dataDealSql, transToVar(startTime,params), transToVar(endTime,params), dsType));
+                    }else{
+                        sqlWhere.append(" = " + transToVar( "'"+value+ "'",params));
+                    }
+                    dealMap.remove(key);
+                }else{
+                    //多选下拉框，传值用,号隔开
+                    if(value.contains(",")){
+                        sqlWhere.append(" and " + key + " in ( " + transToVar( value,params)+") ");
+                        dealMap.remove(key);
+                    }else  if(value.endsWith("%")){
+                        sqlWhere.append(" and " + key + " like " + transToVar( "'"+value+ "' ",params));
+                        dealMap.remove(key);
+                    }else if (value.contains("!=")){
+                        sqlWhere.append(" and " + key + value);
+                    } else {
+                        sqlWhere.append(" and " + key + " = " + transToVar( "'"+value+ "' ",params));
+                        dealMap.remove(key);
+                    }
+                }
+            }
+        }
+
+        BiUser user = UserHolder.getBiUser();
+        if (user != null) {
+            List<DatasetAuthMap> authList = datasetAuthMapDao.getAuthMapList(datasetRoot.getDataset().getDatasetId());
+            Map authMap  = user.getAuthMap();
+            if(authMap != null && !CollectionUtils.isEmpty(authList)){
+                Set<String> strings = user.getAuthMap().keySet();
+                for(String s : strings){
+                    Optional<DatasetAuthMap> first = authList.stream().filter(k -> Objects.equals(s, k.getAuthKey()) && Objects.equals(user.getAppCode(), k.getAppCode()))
+                            .findFirst();
+                    if(authMap.get(s) != null && first.isPresent()){
+                        sqlWhere.append(" and " + first.get().getTableName() + "." + first.get().getPhysicalName() + " = " + transToVar(authMap.get(s),params) + " ");
+                    }
+                }
+            }
+        }
+        String result = sqlWhere.toString();
+        for (String key : aliasMap.keySet()) {
+            result = result.replaceAll(key, aliasMap.get(key));
+        }
+        return result;
+    }
+
+
+    /**
+     * BI数据查询sql拼接逻辑收敛
+     *
+     * @param datasetRoot
+     * @param screenMap
+     * @param dsCode
+     * @param isDatasetPreview
+     * @return
+     */
+    @Override
+    public String getSql(String moduleType,DatasetRoot datasetRoot, Map<String, Object> screenMap, String dsCode, List<ModuleFilter> moduleFilters, boolean isDatasetPreview,List<String> params) {
+        List<DatasetField> datasetFields = datasetRoot.getDatasetFields();
+        List<DatasetTable> datasetTableList = datasetRoot.getTableList();
+
+
+
+        StringBuffer orderSql = new StringBuffer();
+        //获取别名集合
+        Map<String, String> aliasMap = getTableAlias(datasetTableList);
+        //地图省市纬度字段，是否需要添加别名
+        if(MODULE_TYPE_MAP.equals(moduleType)){
+            setTableAlias(aliasMap,datasetFields,Boolean.FALSE);
+        }
+        //获取from语句
+        String sqlLinkMode = getTableLink(moduleType,datasetRoot, aliasMap);
+        String[] selectAndGroupSql = getSelectAndGroupSql(datasetFields,aliasMap,orderSql,moduleType,Boolean.FALSE,isDatasetPreview, dsCode);
+        if (StringUtils.isNotEmpty(orderSql)) {
+            orderSql = new StringBuffer(" order by " + orderSql.toString().trim().substring(0, orderSql.toString().trim().length() - 1));
+        }
+        //获取过滤条件
+        String whereSql = getWhereSql(datasetRoot, aliasMap, screenMap, moduleFilters,Boolean.FALSE,isDatasetPreview,params, dsCode);
+        return selectAndGroupSql[0] + sqlLinkMode + whereSql +" "+ selectAndGroupSql[1] + orderSql;
+    }
+
+
+    /**
+     * 查询方式改为按照前端传的datasetFields顺序来拼接select 后面的列
+     */
+    private String[] getSelectAndGroupSql(List<DatasetField> datasetFields, Map<String, String> aliasMap, StringBuffer orderSql, String moduleType, Boolean isClickhouse, boolean isDatasetPreview, String dsCode) {
+        IDataManager dataManager = dataManagerFactory.build(dsCode);
+        DataSourceType dsType = dataManager.getDbType();
+        List<String> dateTypes = dataManager.getDateTypes();
+        StringBuffer selectSql = new StringBuffer(16);
+        selectSql.append("select ");
+        StringBuffer groupSql = new StringBuffer(16);
+        if (datasetFields.stream().anyMatch(item->item.getType() == 1 || item.getType() == 4)){
+            groupSql.append("group by ");
+        }
+
+        String [] selectAndGroupSql =new String[]{"",""};
+        for (int i = 0; i < datasetFields.size(); i++) {
+            DatasetField datasetField = datasetFields.get(i);
+            String tableName = datasetField.getTableName();
+            String field = datasetField.getPhysicalName();
+            String fieldName = SqlBuildUtils.columnAliasBuild(datasetField.getFieldName(), dsType);
+            //指标==2，计算指标==3
+            if (datasetField.getType() == 2 || datasetField.getType() == 3) {
+                if (datasetField.getType() == 3) {
+                    List<DatasetField> datasetFieldList = isDatasetPreview ? datasetFields:datasetFieldDao.findFields(datasetField.getDatasetId());
+                    field = dealNorm(datasetField, datasetFieldList);
+                } else {
+                    field = tableName + "." + field;
+                }
+                if (StringUtils.isNotEmpty(datasetField.getOrderRule())) {
+                    orderSql.append(fieldName + " " + datasetField.getOrderRule() + ",");
+                }
+                //遍历map的值将表达式中真实表名替换为别名
+                for (String key : aliasMap.keySet()) {
+                    field = field.replace(key, aliasMap.get(key));
+                }
+                if (null == datasetField.getFieldGroup() || 1  == datasetField.getFieldGroup()) {
+                    if (datasetField.getType() == 3) {
+                        //todo 需要处理计算指标内原始指标的聚合方式
+                        selectSql.append( field + " " + fieldName + ",");
+                    } else {
+                        //没有设置聚合方式时  默认求和
+                        selectSql.append("sum(" + field + ")  " + fieldName + ",");
+                    }
+                }
+                //计数
+                else if (datasetField.getFieldGroup() == 2) {
+                    //自定义指标
+                    if(datasetField.getIndicatorType()!=null &&datasetField.getIndicatorType()==2 ){
+                        selectSql.append("count(1) "+fieldName+" ,");
+                    }else {
+                        selectSql.append("count(" + field + ") " + fieldName + ",");
+                    }
+                }
+                //平均
+                else if (datasetField.getFieldGroup() == 3) {
+                    selectSql.append("avg(" + field + ") " + fieldName + ",");
+                }
+                //最大值
+                else if (datasetField.getFieldGroup() == 4) {
+                    selectSql.append("max(" + field + ") " + fieldName + ",");
+                }
+                //最小值
+                else if (datasetField.getFieldGroup() == 5) {
+                    selectSql.append("min(" + field + ") " + fieldName + ",");
+                }
+                //去重计数
+                else if (datasetField.getFieldGroup() == 6) {
+                    selectSql.append("count( distinct " + field + ") " + fieldName + ",");
+                }
+            }
+            //维度==1，分档维度==4
+            if(datasetField.getType() == 1 || datasetField.getType() == 4){
+                JSONArray levelField = datasetField.getLevelField();
+                String translateField = datasetField.getTranslateField();
+                String translateSource = datasetField.getTranslateSource();
+                //数据库表字段类型
+                String tableFieldType = null;
+                if (datasetField.getType() == 1 || datasetField.getType() == 4) {
+                    String queryFieldTypeTableName = isClickhouse ? datasetField.getDatasetId() + "_" + tableName : tableName;
+                    tableFieldType = dataManager.getFieldType(queryFieldTypeTableName,field);
+                }
+                if (datasetField.getType() == 1) {
+                    //日期类型
+                    if (datasetField.getFieldType().equals("2")) {
+                        String dateFormat = StringUtils.isNotBlank(datasetField.getDateFormat()) ? datasetField.getDateFormat() : Constants.DEFAULT_FORMAT;
+                        String datePrecision = isDatasetPreview ? dateFormat : datasetField.getDatePrecision();
+                        String dateFormatBuild = "";
+                        String newDatePrecision = Constants.QUARTER.equals(datePrecision) ? "MM" : datePrecision;
+                        //数据库是否日期类型
+                        boolean isDate = tableFieldType != null && (dateTypes.contains(tableFieldType.toLowerCase()) || dateTypes.contains(tableFieldType.toUpperCase()));
+                        if (isDate) {
+                            dateFormatBuild = SqlBuildUtils.dateToCharBuild(aliasMap.get(tableName) + "." + field, newDatePrecision, dsType);
+                        } else {
+                            dateFormatBuild = SqlBuildUtils.dateToCharBuild(SqlBuildUtils.charToDateBuild(aliasMap.get(tableName) + "." + field, dateFormat, dsType), newDatePrecision , dsType);
+                        }
+                        if (Constants.QUARTER.equals(datePrecision)){
+                            dateFormatBuild = SqlBuildUtils.connectorBuild(dsType, SqlBuildUtils.getYEAR(dsType, aliasMap.get(tableName) + "." + field, isDate), "'_'", "FLOOR((" + dateFormatBuild + "+2)/3)");
+                        }
+                        selectSql.append(dateFormatBuild + fieldName + ", ");
+                        groupSql.append(dateFormatBuild + ", ");
+                    } else {
+                        //地图省市纬度字段映射
+                        if(MODULE_TYPE_MAP.equals(moduleType)){
+                            //当为echarts地图时-多加一个原始值字段
+                            selectSql.append(aliasMap.get(tableName) + "." + field + " " );
+                            selectSql.append(SqlBuildUtils.columnAliasBuild(datasetField.getFieldName()+"-原始值", dsType));
+                            selectSql.append(",");
+                            String filedMappingColumn = getFiledMappingColumn(aliasMap, datasetField);
+                            selectSql.append(filedMappingColumn);
+                            selectSql.append(fieldName + ",");
+                            groupSql.append(filedMappingColumn+",");
+                        }else {
+                            selectSql.append( aliasMap.get(tableName) + "." + field + " "+fieldName + ",");
+                            groupSql.append( aliasMap.get(tableName) + "." + field+",");
+                            if( StringUtils.isNotEmpty(translateField) && translateSource != null){
+                                selectSql.append(aliasMap.get(tableName) + "." + translateField + " \"" + datasetField.getFieldName() + "-CN\"" + ",");
+                                groupSql.append(aliasMap.get(tableName) + "." + translateField + ",");
+                            }
+                        }
+
+                    }
+                    //是否排序
+                    if (StringUtils.isNotEmpty(datasetField.getOrderRule())) {
+                        orderSql.append(fieldName + " " + datasetField.getOrderRule() + ",");
+                    }
+                }
+                //分档维度
+                if (datasetField.getType() == 4) {
+                    StringBuffer caseSql = new StringBuffer("case ");
+                    for (int j = 0; j < levelField.size(); j++) {
+                        caseSql.append("when ");
+                        Map jsonObject = (Map) levelField.get(j);
+                        String groupName = (String) jsonObject.get("groupName");
+                        List groupRule = (List) jsonObject.get("groupRule");
+                        for (int k = 0; k < groupRule.size(); k++) {
+                            if (k == 0) {
+                                if (StringUtils.isNotBlank(String.valueOf(groupRule.get(k)))) {
+                                    caseSql.append(aliasMap.get(tableName) + "." + field);
+                                }
+                                continue;
+                            }
+                            if (k == 1) {
+                                if (StringUtils.isNotBlank(String.valueOf(groupRule.get(k)))) {
+                                    caseSql.append(groupRule.get(k).equals("<") ? " > " : " >= ");
+                                    caseSql.append(groupRule.get(0));
+                                }
+                                continue;
+                            }
+                            if (k == 2) {
+                                if (StringUtils.isNotBlank((String) groupRule.get(k))) {
+                                    if (StringUtils.isNotBlank((String) groupRule.get(k - 1))) {
+                                        caseSql.append(" and ");
+                                    }
+                                    caseSql.append(aliasMap.get(tableName) + "." + field);
+                                    caseSql.append(groupRule.get(k).equals("<") ? " < " : " <= ");
+                                }
+                                continue;
+                            }
+                            if (k == 3) {
+                                if (StringUtils.isNotBlank((String) groupRule.get(k))) {
+                                    caseSql.append(groupRule.get(k));
+                                }
+                                continue;
+                            }
+                        }
+                        caseSql.append(" then " + "'" + groupName + "'");
+                    }
+                    caseSql.append(" END ");
+                    selectSql.append(caseSql + fieldName + ", ");
+                    groupSql.append(DataSourceType.ORACLE.equals(dsType) ? caseSql + ", " : fieldName + ", ");
+
+                }
+
+            }
+        }
+        if (StringUtils.isNotEmpty(selectSql)) {
+            String result = selectSql.toString().trim();
+            selectAndGroupSql[0]=result.substring(0, result.length() - 1);
+        }
+        if(StringUtils.isNotEmpty(groupSql)){
+            String result = groupSql.toString().trim();
+            selectAndGroupSql[1]=result.substring(0, result.length() - 1);
+        }
+        return selectAndGroupSql;
+    }
+
+//    /**
+//     * 获取查询条件，不带任何过滤分组函数，紧查询列
+//     *
+//     * @param dataSetLinkList
+//     * @param datasetFields
+//     * @return
+//     */
+//    @Override
+//    public String getSqlNew(List<DataSetLink> dataSetLinkList, List<DatasetField> datasetFields) {
+//        获取别名集合
+//        Map<String, String> aliasMap = getTableAlias(dataSetLinkList);
+//        //获取from语句
+//        String selectSql = getSelectSqlNew(datasetFields, aliasMap);
+//        DatasetRoot datasetRoot=new DatasetRoot();
+//        datasetRoot.setDatasetFields(datasetFields);
+//        datasetRoot.setDatasetLinkList(dataSetLinkList);
+//        String fromSql = getTableLink(datasetRoot, aliasMap);
+//        return selectSql + fromSql;
+//        return "";
+//    }
+
+    private String getSelectSqlNew(List<DatasetField> datasetFields, Map<String, String> aliasMap) {
+        StringBuffer sql = new StringBuffer(16);
+        sql.append("select ");
+        for (int i = 0; i < datasetFields.size(); i++) {
+            DatasetField datasetField = datasetFields.get(i);
+            String tableName = datasetField.getTableName();
+            String field = datasetField.getPhysicalName();
+            String fieldName = "`" + datasetField.getFieldName() + "`";
+            //获取维度，1代表维度，2代表度量
+            if (datasetField.getType() == 1 || datasetField.getType() == 2) {
+                sql.append(aliasMap.get(tableName) + "." + field + " " + fieldName + ",");
+            }
+        }
+        return sql.toString().trim().substring(0, sql.length() - 1);
+    }
+
+    @Override
+    public Boolean tableExist(String datasetId, JdbcTemplate clickHouseJdbc) {
+        String tableName = "table_" + datasetId;
+        List<Map<String, Object>> list = clickHouseJdbc.queryForList("select * from system.columns c  where c.database ='datasets' and c.`table` = '" + tableName + "'");
+        if (list.size() > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public Boolean haveData(String datasetId, JdbcTemplate clickHouseJdbc) {
+        String tableName = "table_" + datasetId;
+        Map<String, Object> map = clickHouseJdbc.queryForMap("select count(*) count from  " + tableName);
+        if (map != null && map.containsKey("count") && (Integer.valueOf(map.get("count").toString()) > 0)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 根据仪表板对应数据集和选中的条件构建相应的clickHouse查询语句
+     *
+     * @param screenMap
+     * @return
+     */
+    public String getClickHouseSql(DatasetRoot datasetRoot, Map<String, Object> screenMap, List<ModuleFilter> moduleFilters, JdbcTemplate clickHouseJdbc,List<String> params) {
+//        StringBuffer orderSql = new StringBuffer();
+//        List<DatasetField> datasetFields = datasetRoot.getDatasetFields();
+//        List<DataSetLink> dataSetLinkList = datasetRoot.getDatasetLinkList();
+//        List<DatasetTable> datasetTableList = datasetRoot.getDatasetTableList();
+//        //获取别名集合
+//        Map<String, String> aliasMap = getTableAlias(datasetTableList);
+//        //获取from语句
+//        String fromSql = getTableLink(datasetRoot, aliasMap);
+//        String[] selectAndGroupSql = getSelectAndGroupSql(datasetFields,aliasMap,DataSourceType.CLICKHOUSE,orderSql,clickHouseJdbc,"",Boolean.TRUE,false);
+//        if (StringUtils.isNotEmpty(orderSql)) {
+//            orderSql = new StringBuffer(" order by " + orderSql.toString().trim().substring(0, orderSql.toString().trim().length() - 1));
+//        }
+//        //获取过滤条件
+//        String whereSql = getWhereSql(datasetRoot, aliasMap, DataSourceType.CLICKHOUSE, clickHouseJdbc, screenMap, moduleFilters,Boolean.TRUE, Boolean.FALSE,params);
+//        return processingTableName(selectAndGroupSql[0] + fromSql + whereSql + selectAndGroupSql[1] + orderSql,
+//               dataSetLinkList.stream().filter(dataSetLink -> dataSetLink.getIsSplitTable()).collect(Collectors.toList()),
+//               screenMap, aliasMap, datasetRoot.getDataset().getDatasetId(), Boolean.TRUE);
+        return "";
+    }
+
+//    /**
+//     * 将拼接好的查询sql再次处理一下
+//     * 1) CK==将表名改成CK数据库中的---逻辑为 {datasetId}_{源表表名}
+//     * 2) 对存在分表配置的表，将源表改成分表(根据仪表板筛选条件传值构建)
+//     * @param sql
+//     * @param dataSetLinkList
+//     * @param params
+//     * @param aliasMap
+//     * @param datasetId
+//     * @param isClickHouse
+//     * @return
+//     */
+//    private String processingTableName(String sql, List<DataSetLink> dataSetLinkList, Map<String, Object> params, Map<String, String> aliasMap, String datasetId, Boolean isClickHouse) {
+//
+//        //如果存在分表配置将源表换成分表
+//        Map<String, String> replaceTable = new HashMap<>();
+//        here:
+//        for (DataSetLink dataSetLink : dataSetLinkList) {
+//            //取分表配置并排序
+//            List<SplitTableConfig> list = (List) JSONArray.parseArray(dataSetLink.getSplitTableConfig(), SplitTableConfig.class);
+//            Collections.sort(list, new Comparator<SplitTableConfig>() {
+//                @Override
+//                public int compare(SplitTableConfig obj1, SplitTableConfig obj2) {
+//                    return obj1.getOrder() <  obj2.getOrder() ? -1 : 1;
+//                }
+//            });
+//            String tableName = dataSetLink.getPriTableName();
+//            for (SplitTableConfig splitTableConfig : list) {
+//                String tableNameSuffix = (String)params.get(tableName + "." + splitTableConfig.getSplitTableField());
+//                //若有一个值为空-就不构建分表了
+//                if(StringUtils.isEmpty(tableNameSuffix)){
+//                    break here;
+//                }
+//                //时间格式
+//                if(splitTableConfig.getIsTime() != null && splitTableConfig.getIsTime()){
+//                    tableNameSuffix = LocalDate.parse(tableNameSuffix).toString(splitTableConfig.getTimeSplitTableFormat());
+//                }
+//                replaceTable.put(tableName,StringUtils.isEmpty(replaceTable.get(tableName)) ? tableName + splitTableConfig.getLinkSymbol()+tableNameSuffix : replaceTable.get(tableName)+splitTableConfig.getLinkSymbol()+tableNameSuffix );
+//            }
+//        }
+//
+//        if(replaceTable.size() > 0){
+//            for (String key : replaceTable.keySet()) {
+//                sql = sql.replace(key, datasetId + "_" + replaceTable.get(key));
+//                aliasMap.remove(key);
+//            }
+//        }
+//
+//        //如果是CK，把源表表名换成同步CK的表名
+//        if(isClickHouse){
+//            for (String key : aliasMap.keySet()) {
+//                sql = sql.replace(key, datasetId + "_" + key);
+//            }
+//        }
+//
+//        return sql;
+//    }
+
+    @Override
+    public List<Map<String, Object>> getTranslateField(Map<String, Object> params,String physicalName,String translateField,String tableName,DatasetRoot datasetRoot) {
+        String whereSl = "";
+        String column1 = tableName + "." + physicalName;
+        String column2 = tableName + "." + translateField;
+        //获取别名集合
+        Map<String, String> aliasMap = getTableAlias(datasetRoot.getTableList());
+        //获取from语句
+        String sqlLinkMode = getTableLink(datasetRoot, aliasMap);
+        for (String key : aliasMap.keySet()) {
+            column1 = column1.replace(key, aliasMap.get(key));
+            column2 = column2.replace(key, aliasMap.get(key));
+        }
+        //获取select语句
+        String selectSql = "select DISTINCT " + column1 + " as value, " + column2 + " as label ";
+        JdbcTemplate template = dataManagerFactory.getJdbcTemplate(datasetRoot.getDataset().getDataSourceId());
+        //where条件
+        if (params.get("fieldName") != null) {
+            String allName = (String) params.get("fieldName");
+            for (String key : aliasMap.keySet()) {
+                allName = allName.replace(key, aliasMap.get(key));
+            }
+            whereSl = " and " + allName + " in (" + params.get("parentId") + ")";
+        }
+        return template.queryForList(selectSql + sqlLinkMode + whereSl);
+
+    }
+
+    /**
+     * @param filterCondition 过滤条件
+     * @return 日期格式化sql
+     */
+    private String dateFormatBuild(FilterCondition filterCondition, String physicalName, String tableName, String field, List<DatasetField> datasetFields, List<String> params, String dsCode) {
+        IDataManager dataManager = dataManagerFactory.build(dsCode);
+        DataSourceType dsType = dataManager.getDbType();
+        DatasetField timeField = null;
+        String dateFormat = filterCondition.getDateFormat();
+        List<DatasetField> datasetFieldList = new ArrayList<>();
+        String tableFieldType = dataManager.getFieldType(tableName, filterCondition.getPhysicalName());
+        if (StringUtils.isNotEmpty(filterCondition.getDatasetId())) {
+            datasetFieldList = datasetFieldDao.findFields(filterCondition.getDatasetId());
+        } else {
+            datasetFieldList = datasetFields;
+        }
+        for (DatasetField datasetField : datasetFieldList) {
+            if (datasetField.getPhysicalName().equals(filterCondition.getPhysicalName()) && datasetField.getTableName().equals(filterCondition.getTableName())) {
+                timeField = datasetField;
+            }
+        }
+        if (StringUtils.isNotEmpty(dateFormat)) {
+            int filterMode = filterCondition.getFilterMode();
+            int chooseWay = filterCondition.getChooseWay();
+            JSONArray relativeTime = filterCondition.getRelativeTime();
+            JSONArray absoluteTime = filterCondition.getAbsoluteTime();
+            String sql = "";
+            if (tableFieldType.toLowerCase().contains("date")) {
+                sql = SqlBuildUtils.dateToCharBuild(physicalName, dateFormat, dsType);
+            } else {
+                sql = SqlBuildUtils.dateToCharBuild(SqlBuildUtils.charToDateBuild(physicalName, timeField.getDateFormat(), dsType), dateFormat, dsType);
+            }
+            //过滤方式:单时间
+            if (filterMode == 1) {
+                if (chooseWay == 1) { //精确时间
+                    sql += " = " + transToVar("'" + absoluteTime.get(0) + "'",params);
+                } else if (chooseWay == 2) { //相对时间
+                    sql += " = " + SqlBuildUtils.dateToCharBuild(SqlBuildUtils.relativeTimeFormatBuild(String.valueOf(relativeTime.get(0)), dateFormat, dsType), dateFormat, dsType);
+                }
+            }
+            //过滤方式:区间时间
+            if (filterMode == 2) {
+                if (chooseWay == 1) {
+                    String startTime = String.valueOf(absoluteTime.get(0));
+                    String endTime = String.valueOf(absoluteTime.get(1));
+                    sql += SqlBuildUtils.dateRangeBuild(sql, transToVar(startTime,params), transToVar(endTime,params), dsType);
+                }
+                if (chooseWay == 2) {
+                    String startTime = SqlBuildUtils.dateToCharBuild(SqlBuildUtils.relativeTimeFormatBuild(String.valueOf(relativeTime.get(0)), dateFormat, dsType), dateFormat, dsType);
+                    String endTime = SqlBuildUtils.dateToCharBuild(SqlBuildUtils.relativeTimeFormatBuild(String.valueOf(relativeTime.get(1)), dateFormat, dsType), dateFormat, dsType);
+                    sql += SqlBuildUtils.dateRangeBuild(sql, transToVar(startTime,params), transToVar(endTime,params), dsType);
+                }
+            }
+            return sql;
+        } else {
+            throw new RuntimeException("时间精度错误");
+        }
+    }
+
+    public static void tableExistTest(String datasetId) {
+        ClickHouseConnection conn = null;
+        ClickHouseProperties properties = new ClickHouseProperties();
+        properties.setUser("default");
+        properties.setPassword("Qzxt-77@2021");
+        ClickHouseDataSource dataSource = new ClickHouseDataSource("jdbc:clickhouse://10.19.28.154:8123/datasets", properties);
+/*        DataSourceLoader dataSourceLoader = BeanFactory.getBean(DataSourceLoader.class);
+        DataSource dataSource = dataSourceLoader.getDataSource(dsCode);*/
+        try {
+            dataSource.getConnection().setReadOnly(false);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+        String tableName = "table_" + datasetId;
+        List<Map<String, Object>> map = jdbcTemplate.queryForList("select * from system.columns c  where c.database ='datasets' and c.table ='table_1IunYf000'");
+    }
+
+    /**
+     * 查询表字段类型
+     *
+     * @param tableName
+     * @param field
+     * @return
+     */
+    private String getFieldType(String tableName, String field, JdbcTemplate jdbcTemplate1) {
+        String sql = "select " + field + " from " + tableName + " where 1=2";
+        return jdbcTemplate1.queryForRowSet(sql).getMetaData().getColumnTypeName(1);
+    }
+
+    private String transToVar(Object value,List<String> params){
+        //多选下拉框，传值用,号隔开
+        if(String.valueOf(value).contains(",")){
+            String[] split = String.valueOf(value).split(",");
+            for(String item:split){
+                params.add(item);
+            }
+            List<String> collect = Arrays.stream(split).map(o1 ->" ? ").collect(Collectors.toList());
+            String join = String.join(",", collect);
+            return join;
+        }else {
+            params.add(String.valueOf(value));
+            return "? ";
+        }
+    }
+
+    private String buildMapFieldMapSqlBlock(DatasetField field) {
+        List<DatasetFieldMap> fieldMaps = datasetFieldMappingDao.findFields(field.getDatasetId(), field.getId());
+        if (fieldMaps.size() == 0) return null;
+        StringBuilder sqlBlock = new StringBuilder("(");
+        Iterator<DatasetFieldMap> iterator = fieldMaps.iterator();
+        while (iterator.hasNext()) {
+            DatasetFieldMap fieldMap = iterator.next();
+            sqlBlock.append(" SELECT '").append(fieldMap.getId()).append("' as ID, ")
+                    .append("'").append(fieldMap.getDatasetId()).append("' as DATASET_ID, ")
+                    .append("'").append(fieldMap.getFieldId()).append("' as FIELD_ID, ")
+                    .append("'").append(fieldMap.getSysText()).append("' as SYS_TEXT, ")
+                    .append("'").append(fieldMap.getMatchText()).append("' as MATCH_TEXT ");
+            sqlBlock.append(" FROM DUAL ");
+            if (iterator.hasNext()) {
+                sqlBlock.append(" UNION ALL ");
+            }
+        }
+        sqlBlock.append(")");
+        return sqlBlock.toString();
+    }
+}

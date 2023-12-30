@@ -18,23 +18,26 @@ public class ColletorLean {
     public void toMap() {
         List<Book> bookList = getBookList();
         Map<String, String> collect = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
+
+        bookList.stream().collect(Collectors.toMap(Book::getType, Function.identity(), (o1, o2) -> o2));
+
         Map<String, String> collect1 = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2, ConcurrentHashMap::new));
-        bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
+        Map<String, String> collect2 = bookList.stream().collect(Collectors.toMap(Book::getType, Book::getName, (o1, o2) -> o2));
 
         System.out.println(collect);
         System.out.println(collect1);
 
-        Date date=new Date();//取时间
+        Date date = new Date();//取时间
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
-        calendar.set(Calendar.HOUR,0);
-        calendar.set(Calendar.MINUTE,0);
-        calendar.set(Calendar.SECOND,0);
-        calendar.set(Calendar.MILLISECOND,0);
+        calendar.set(Calendar.HOUR, 0);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
         Date time = calendar.getTime();
-        SimpleDateFormat s=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String format = s.format(time);
-        System.out.println("开始时间："+format);
+        System.out.println("开始时间：" + format);
 
     }
 
@@ -42,13 +45,13 @@ public class ColletorLean {
     public void mapping() {
         List<Book> bookList = getBookList();
         List<String> collect = bookList.stream().collect(Collectors.mapping(Book::getType, Collectors.toList()));
-int num=10;
-int s=30;
+        int num = 10;
+        int s = 30;
 
-BigDecimal ss=new BigDecimal(1.623);
+        BigDecimal ss = new BigDecimal(1.623);
         System.out.println(ss.intValue());
 
-System.out.println(num%s);
+        System.out.println(num % s);
 
     }
 
@@ -69,20 +72,20 @@ System.out.println(num%s);
     @Test
     public void collectingAndThen() {
         List<Book> bookList = getBookList();
-        bookList.stream().collect(Collectors.groupingBy(Book::getType, Collectors.collectingAndThen(Collectors.reducing((o1, o2) -> Short.valueOf(o1.getId()).shortValue() > Short.valueOf(o2.getId()).shortValue() ? o1 : o2), x -> {
+        Map<String, List> collect = bookList.stream().collect(Collectors.groupingBy(Book::getType, Collectors.collectingAndThen(Collectors.reducing((o1, o2) -> Short.valueOf(o1.getId()).shortValue() > Short.valueOf(o2.getId()).shortValue() ? o1 : o2), x -> {
             List list = new ArrayList();
             list.add(x.get());
             return list;
-        }))).forEach((k, v) -> {
-            System.out.println(k + ":" + v);
-        });
+        })));
         bookList.stream().collect(Collectors.collectingAndThen(Collectors.toList(), Collections::unmodifiableList)).forEach(System.out::println);
 
     }
-@Test
-public void  test1(){
 
-}
+    @Test
+    public void test1() {
+
+    }
+
     @Test
     public void sum() {
         List<Book> bookList = getBookList();

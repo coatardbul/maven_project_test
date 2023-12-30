@@ -35,31 +35,69 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="2131">
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/ImgUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/xxas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/StringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ThsPriceBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/UrlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/util/DateRangeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/util/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/FileEncodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/FileResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/video/GifUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/network/email/qwqwdqw.java" afterDir="false" />
+    <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pmd-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/aes.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/AESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/Base64Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StrategyQueryBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/aa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/aaa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/bb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/ddfgfd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/dfaskfhdl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/MyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/ProxyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cos/Asdjflksd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/sdfsd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pic/TesseractExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliPost11Verify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliPostVerify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliVerify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliWuYingVerify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/FanWeiPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/Fanwei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/HmacSha1Signature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/ParserUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/TongHuaShun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfs3333.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfsd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfsd22w234324.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/TongHuaShunUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wide/ddfgfd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wide/jdkfjdl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/MainTest1111.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maven_project_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/file/fileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/AbcReplace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/AbcReplace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/MathTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/divideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/divideTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/StringMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/StringConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/Abc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mulThread/ThreadInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mulThread/ThreadInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CountDownLatchDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/network/dsjkdsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/dsjkdsl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +125,12 @@
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settingsali.xml" />
       </MavenGeneralSettings>
     </option>
@@ -98,60 +138,95 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1Un2JNcuy7LbgCuGgIpt07LlGDQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/baseJava/IO" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AliPost11Verify.executor&quot;: &quot;JRebel Debug&quot;,
+    &quot;Application.AliPostVerify.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AliVerify.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AliWuYingVerify.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fanwei.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParserUtil.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TongHuaShun.executor&quot;: &quot;Run&quot;,
+    &quot;Application.jldfsj.executor&quot;: &quot;Run&quot;,
+    &quot;Application.jldfsjsdfsd.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.jldfsjsdfsd22222.executor&quot;: &quot;Run&quot;,
+    &quot;Application.jldfsjsdfsd22w234324.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.MainTest.testR1232.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.dsjkdsl.tessdfsfst.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.maven_project_test [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.maven_project_test [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.maven_project_test [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/coatardbul/IdeaProjects/maven_project_test/src/main/java/other&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e56f51e35eba561512b9526c1f3dcbf5&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/other" />
+      <recent name="$PROJECT_DIR$/src/main/java/robot" />
+      <recent name="$PROJECT_DIR$/src/main/java/js" />
+      <recent name="$PROJECT_DIR$/src/main/java/baseJava/java8" />
       <recent name="$PROJECT_DIR$/src/main/java/baseJava/IO" />
-      <recent name="D:\workspace\idea\maven_project_test\src\main\java\mq" />
-      <recent name="D:\workspace\idea\maven_project_test\src\main\java\web" />
-      <recent name="D:\workspace\idea\maven_project_test\src\main\java\mul_Thread\hightConcurrentUtil" />
-      <recent name="D:\workspace\idea\maven_project_test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="baseJava.IO" />
-      <recent name="baseJava.math" />
-      <recent name="baseJava.util" />
-      <recent name="web.url" />
-      <recent name="mul_Thread.lockRelated" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/src/main/java/baseJava/math" />
       <recent name="D:\workspace\idea\maven_project_test\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="robot" />
+      <recent name="js" />
+      <recent name="baseJava.java8" />
+      <recent name="baseJava.IO" />
+      <recent name="baseJava.math" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.sfds">
-    <configuration name="GifUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseJava.video.GifUtil" />
+  <component name="RunManager" selected="Application.AliPost11Verify">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AliPost11Verify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot.AliPost11Verify" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.video.*" />
+          <option name="PATTERN" value="robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseJava.math.StringTest" />
+    <configuration name="AliPostVerify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot.AliPostVerify" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.math.*" />
+          <option name="PATTERN" value="robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sfds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseJava.IO.sfds" />
+    <configuration name="AliVerify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot.AliVerify" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.IO.*" />
+          <option name="PATTERN" value="robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,12 +260,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="baseJava.util.test" />
+    <configuration name="Fanwei" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="robot.Fanwei" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.util.*" />
+          <option name="PATTERN" value="robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,21 +273,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UrlTest.te1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="baseJava.math.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="baseJava.math" />
-      <option name="MAIN_CLASS_NAME" value="baseJava.math.UrlTest" />
-      <option name="METHOD_NAME" value="te1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -223,23 +294,33 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StringTest" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.GifUtil" />
-      <item itemvalue="Application.sfds" />
-      <item itemvalue="JUnit.UrlTest.te1" />
+      <item itemvalue="Application.AliPost11Verify" />
+      <item itemvalue="Application.AliPostVerify" />
+      <item itemvalue="Application.AliVerify" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Fanwei" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.sfds" />
-        <item itemvalue="Application.GifUtil" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.StringTest" />
-        <item itemvalue="JUnit.UrlTest.te1" />
+        <item itemvalue="Application.AliPost11Verify" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AliVerify" />
+        <item itemvalue="Application.Fanwei" />
+        <item itemvalue="Application.AliPostVerify" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-22f8fbaa" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -424,6 +505,112 @@
       <workItem from="1639464633457" duration="1861000" />
       <workItem from="1639493401770" duration="6877000" />
       <workItem from="1639775044906" duration="345000" />
+      <workItem from="1639988011477" duration="2804000" />
+      <workItem from="1640138021354" duration="266000" />
+      <workItem from="1640339082665" duration="675000" />
+      <workItem from="1640529583104" duration="730000" />
+      <workItem from="1640612379695" duration="1089000" />
+      <workItem from="1640682971953" duration="659000" />
+      <workItem from="1641051969147" duration="2553000" />
+      <workItem from="1641388158445" duration="617000" />
+      <workItem from="1642243425827" duration="1960000" />
+      <workItem from="1642247849264" duration="31000" />
+      <workItem from="1642250359403" duration="763000" />
+      <workItem from="1642575536486" duration="509000" />
+      <workItem from="1645079000811" duration="707000" />
+      <workItem from="1645935741658" duration="805000" />
+      <workItem from="1646126809719" duration="665000" />
+      <workItem from="1646296453535" duration="996000" />
+      <workItem from="1646460041698" duration="807000" />
+      <workItem from="1646748517806" duration="2423000" />
+      <workItem from="1647040345203" duration="641000" />
+      <workItem from="1648094417940" duration="520000" />
+      <workItem from="1649231100469" duration="278000" />
+      <workItem from="1649661706151" duration="678000" />
+      <workItem from="1649681541001" duration="562000" />
+      <workItem from="1652152664446" duration="830000" />
+      <workItem from="1653557073318" duration="1749000" />
+      <workItem from="1653965616021" duration="512000" />
+      <workItem from="1653967128608" duration="809000" />
+      <workItem from="1654164578770" duration="2708000" />
+      <workItem from="1654682544368" duration="2036000" />
+      <workItem from="1654740250080" duration="1702000" />
+      <workItem from="1654755869011" duration="1820000" />
+      <workItem from="1654826269123" duration="2767000" />
+      <workItem from="1654911100460" duration="1471000" />
+      <workItem from="1655262319269" duration="603000" />
+      <workItem from="1655278048164" duration="2114000" />
+      <workItem from="1655369355100" duration="1104000" />
+      <workItem from="1655798920969" duration="2211000" />
+      <workItem from="1656334338377" duration="596000" />
+      <workItem from="1657163795284" duration="588000" />
+      <workItem from="1658990352721" duration="1826000" />
+      <workItem from="1658992432402" duration="1000000" />
+      <workItem from="1660044433719" duration="1109000" />
+      <workItem from="1661948884487" duration="1021000" />
+      <workItem from="1662721513600" duration="954000" />
+      <workItem from="1663316156428" duration="354000" />
+      <workItem from="1663508213619" duration="804000" />
+      <workItem from="1663655173185" duration="721000" />
+      <workItem from="1663727228694" duration="108000" />
+      <workItem from="1663813408710" duration="1982000" />
+      <workItem from="1664351042280" duration="1984000" />
+      <workItem from="1665392826159" duration="2502000" />
+      <workItem from="1665448522964" duration="5000" />
+      <workItem from="1665557840357" duration="1329000" />
+      <workItem from="1665623428981" duration="91000" />
+      <workItem from="1666076951910" duration="633000" />
+      <workItem from="1666080563195" duration="48000" />
+      <workItem from="1666173422067" duration="1563000" />
+      <workItem from="1666340468819" duration="253000" />
+      <workItem from="1666774134626" duration="723000" />
+      <workItem from="1668334642408" duration="143000" />
+      <workItem from="1668668448726" duration="150000" />
+      <workItem from="1668856829354" duration="5750000" />
+      <workItem from="1669548154784" duration="637000" />
+      <workItem from="1670318118625" duration="3318000" />
+      <workItem from="1673017242069" duration="362000" />
+      <workItem from="1675139435783" duration="597000" />
+      <workItem from="1676121721041" duration="3811000" />
+      <workItem from="1679702327300" duration="1722000" />
+      <workItem from="1684481472792" duration="624000" />
+      <workItem from="1687342905697" duration="634000" />
+      <workItem from="1687346806638" duration="2058000" />
+      <workItem from="1687507211008" duration="578000" />
+      <workItem from="1689149495951" duration="6922000" />
+      <workItem from="1689157801705" duration="72000" />
+      <workItem from="1689158267771" duration="4744000" />
+      <workItem from="1689169339609" duration="74000" />
+      <workItem from="1691417128249" duration="4314000" />
+      <workItem from="1691467908949" duration="1618000" />
+      <workItem from="1691570457667" duration="21000" />
+      <workItem from="1695608529161" duration="3407000" />
+      <workItem from="1698223680729" duration="17000" />
+      <workItem from="1698546272680" duration="184000" />
+      <workItem from="1699612828805" duration="1183000" />
+      <workItem from="1701227208113" duration="774000" />
+      <workItem from="1701449287051" duration="1423000" />
+      <workItem from="1701604869376" duration="2674000" />
+      <workItem from="1701659695918" duration="1607000" />
+      <workItem from="1701770156818" duration="1820000" />
+      <workItem from="1701923426959" duration="581000" />
+      <workItem from="1702136536106" duration="8501000" />
+      <workItem from="1702205783922" duration="5727000" />
+      <workItem from="1702220789294" duration="1560000" />
+      <workItem from="1702458322865" duration="750000" />
+      <workItem from="1702861891985" duration="3037000" />
+      <workItem from="1702966353794" duration="1527000" />
+      <workItem from="1703033965851" duration="2929000" />
+      <workItem from="1703120956728" duration="7007000" />
+      <workItem from="1703320753389" duration="2018000" />
+      <workItem from="1703467458392" duration="4081000" />
+      <workItem from="1703483270946" duration="424000" />
+      <workItem from="1703552761090" duration="1145000" />
+      <workItem from="1703640101055" duration="586000" />
+      <workItem from="1703729254530" duration="5646000" />
+      <workItem from="1703747553282" duration="7028000" />
+      <workItem from="1703812366065" duration="4235000" />
+      <workItem from="1703857440137" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1590045949980</created>
@@ -579,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606987122883</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2131">
+      <created>1639988078641</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1639988078641</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +789,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="s" />
@@ -608,81 +801,6 @@
     <MESSAGE value="api接口工具" />
     <MESSAGE value="2131" />
     <option name="LAST_COMMIT_MESSAGE" value="2131" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="829" y="192" key="#xdebugger.evaluate" timestamp="1639622627461">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="829" y="192" key="#xdebugger.evaluate/0.0.1792.1120@0.0.1792.1120" timestamp="1639622627461" />
-    <state width="432" height="466" key="DebuggerActiveHint" timestamp="1638709457803">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="432" height="466" key="DebuggerActiveHint/0.0.1792.1120@0.0.1792.1120" timestamp="1638709457803" />
-    <state width="1750" height="381" key="GridCell.Tab.0.bottom" timestamp="1639651223075">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065503" />
-    <state width="1750" height="381" key="GridCell.Tab.0.center" timestamp="1639651223074">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223074" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065502" />
-    <state width="1750" height="381" key="GridCell.Tab.0.left" timestamp="1639651223074">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223074" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065502" />
-    <state width="1750" height="381" key="GridCell.Tab.0.right" timestamp="1639651223075">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right/0.25.1792.1041@0.25.1792.1041" timestamp="1639626065503" />
-    <state width="1750" height="381" key="GridCell.Tab.1.bottom" timestamp="1639651223076">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223076" />
-    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756246" />
-    <state width="1750" height="381" key="GridCell.Tab.1.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
-    <state width="1750" height="381" key="GridCell.Tab.1.center" timestamp="1639651223075">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
-    <state width="1750" height="381" key="GridCell.Tab.1.center/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756245" />
-    <state width="1750" height="381" key="GridCell.Tab.1.center/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
-    <state width="1750" height="381" key="GridCell.Tab.1.left" timestamp="1639651223075">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223075" />
-    <state width="1750" height="381" key="GridCell.Tab.1.left/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756245" />
-    <state width="1750" height="381" key="GridCell.Tab.1.left/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
-    <state width="1750" height="381" key="GridCell.Tab.1.right" timestamp="1639651223076">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1750" height="381" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1639651223076" />
-    <state width="1750" height="381" key="GridCell.Tab.1.right/0.25.1792.1041@0.25.1792.1041" timestamp="1639621756246" />
-    <state width="1750" height="381" key="GridCell.Tab.1.right/0.25.1792.1095@0.25.1792.1095" timestamp="1639409192164" />
-    <state x="405" y="168" key="SettingsEditor" timestamp="1638515884408">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="405" y="168" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1638515884408" />
-    <state x="405" y="181" key="SettingsEditor/0.25.1792.1041@0.25.1792.1041" timestamp="1635838718168" />
-    <state width="896" height="560" key="XDebugger.FullValuePopup" timestamp="1639408559405">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="896" height="560" key="XDebugger.FullValuePopup/0.0.1792.1120@0.0.1792.1120" timestamp="1639408559405" />
-    <state width="370" height="350" key="documentation.popup.size" timestamp="1639408807041">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="370" height="350" key="documentation.popup.size/0.0.1792.1120@0.0.1792.1120" timestamp="1639408807041" />
-    <state x="597" y="315" width="660" height="490" key="find.popup" timestamp="1636542061501">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="597" y="315" width="660" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1636542061501" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1638521375462">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1638521375462" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -961,6 +1079,126 @@
           <url>file://$PROJECT_DIR$/src/main/java/baseJava/IO/sfds.java</url>
           <line>41</line>
           <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cos/Asdjflksd.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/string/MyTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/wide/jdkfjdl.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CyclicBarrierDemo.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CyclicBarrierDemo.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/jldfsj.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/ParserUtil.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/ParserUtil.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliWuYingVerify.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliWuYingVerify.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliWuYingVerify.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliPostVerify.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/Main.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/Main.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/Main.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="173" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
