@@ -19,6 +19,10 @@ import java.util.Objects;
  * @author tzf 2020/6/9
  */
 public class MainTest {
+    String sfd=" \"root\": {\n" +
+            "        \"wfcode\": \"217\",\n" +
+            "        \"createdateselect\": \"0\"\n" +
+            "    }";
     /**
      * 模拟缓存服务
      */

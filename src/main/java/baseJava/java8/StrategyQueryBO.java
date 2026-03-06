@@ -33,7 +33,7 @@ public class StrategyQueryBO {
     /**
      * 页数
      */
-    private Integer perpage;
+    private String perpage;
     /**
      * 页码
      */
@@ -64,6 +64,9 @@ public class StrategyQueryBO {
      * 排序类型 desc
      */
     private String sort_order;
+
+
+    private String rsh;
 
 
 }

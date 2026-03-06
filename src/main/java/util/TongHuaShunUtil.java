@@ -22,7 +22,7 @@ public class TongHuaShunUtil {
         // 获取JS执行引擎
         ScriptEngine se = new ScriptEngineManager().getEngineByName("javascript");
         String userPath=System.getProperty("user.dir");
-        FileReader fileReader = new FileReader(userPath+ "/js/aes.min.js");
+        FileReader fileReader = new FileReader("/Users/coatardbul/IdeaProjects/maven_project_test/src/main/java/util/aes.min.js");
 
         se.eval(fileReader);
         // 是否可调用

@@ -42,6 +42,21 @@
 
 
         <dependency>
+            <groupId>ai.z.openapi</groupId>
+            <artifactId>zai-sdk</artifactId>
+            <version>0.3.3</version>
+        </dependency>
+
+
+        <!-- 只示意关键依赖 -->
+        <dependency>
+            <groupId>com.github.haifengl</groupId>
+            <artifactId>smile-core</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
             <version>2.1.5.RELEASE</version>
@@ -81,6 +96,8 @@
             <artifactId>hutool-all</artifactId>
             <version>5.4.3</version>
         </dependency>
+
+
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
@@ -92,6 +109,11 @@
             <version>1.18.6</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.3</version> <!-- 使用最新的版本 -->
+        </dependency>
 
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -100,6 +122,13 @@
             <type>pom</type>
         </dependency>
 
+
+
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>alibaba-dingtalk-service-sdk</artifactId>
+            <version>2.0.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.pdfbox</groupId>

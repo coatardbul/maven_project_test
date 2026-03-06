@@ -35,69 +35,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pmd-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/aes.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/AESUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/HttpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StrategyQueryBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/aa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/aaa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/bb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/ddfgfd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/dfaskfhdl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/MyTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/ProxyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cos/Asdjflksd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/network/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/network/sdfsd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pic/TesseractExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliPost11Verify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliPostVerify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliVerify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliWuYingVerify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/FanWeiPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/Fanwei.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/HmacSha1Signature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/ParserUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/TongHuaShun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfs3333.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfsd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfsd22w234324.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/TongHuaShunUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wide/ddfgfd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wide/jdkfjdl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/MainTest1111.java" afterDir="false" />
+    <list default="true" id="44dfdba1-c3db-4aa1-9481-5e3f8fe27d6c" name="Default Changelist" comment="2131">
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StrategyBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/ABetaCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pic/MD5Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/AliModifyVerify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/ChaoJiYing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/ImageDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/dsjfldsj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/robot/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stock/AAAA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stock/BasicChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/aes.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/DingDingMsgBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/DingTalkBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/HttpClientExample1111.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/HttpClientExample222.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/PythonCaller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/SnowFlakeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/SnowflakeIdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TickData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TickInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TickModelTrainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TickPriceStaticBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/TrendAnalyzerWithRegression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/dsjfld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zmkg/sfdjlks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/maven_project_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/AbcReplace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/AbcReplace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/IO/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/ColletorLean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StreamLean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/StrategyQueryBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/StrategyQueryBO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/math/ArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/StringConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/StringConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/string/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/string/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/Abc.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseJava/test/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mulThread/ThreadInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mulThread/ThreadInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CountDownLatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CountDownLatchDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/network/dsjkdsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/dsjkdsl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseJava/test/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pic/TesseractExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/robot/jldfsj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfs3333.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/robot/jldfsjsdfs3333.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/TongHuaShunUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/TongHuaShunUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zmkg/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zmkg/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +99,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;coatardbul&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/coatardbul/maven_project_test.git&quot;,
+    &quot;accountId&quot;: &quot;16b96f88-f591-47ab-b490-66fa3ff4ec07&quot;
+  }
+}</component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
@@ -135,6 +124,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -147,54 +140,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AliPost11Verify.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;Application.AliPostVerify.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AliVerify.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AliWuYingVerify.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fanwei.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParserUtil.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.TongHuaShun.executor&quot;: &quot;Run&quot;,
-    &quot;Application.jldfsj.executor&quot;: &quot;Run&quot;,
-    &quot;Application.jldfsjsdfsd.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.jldfsjsdfsd22222.executor&quot;: &quot;Run&quot;,
-    &quot;Application.jldfsjsdfsd22w234324.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.MainTest.testR1232.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.dsjkdsl.tessdfsfst.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.maven_project_test [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.maven_project_test [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.maven_project_test [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/coatardbul/IdeaProjects/maven_project_test/src/main/java/other&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e56f51e35eba561512b9526c1f3dcbf5&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ABetaCalculator.executor": "Debug",
+    "Application.AliPost11Verify.executor": "JRebel Debug",
+    "Application.AliPostVerify.executor": "Run",
+    "Application.AliVerify.executor": "Debug",
+    "Application.AliWuYingVerify.executor": "Run",
+    "Application.BasicChat.executor": "Run",
+    "Application.BetaCalculator.executor": "Debug",
+    "Application.BetaCoefficientAnalyzer.executor": "Run",
+    "Application.CyclicBarrierDemo.executor": "Run",
+    "Application.DingTalkBot.executor": "Run",
+    "Application.Fanwei.executor": "Run",
+    "Application.HelloWorld.executor": "Run",
+    "Application.HttpClientExample.executor": "Run",
+    "Application.HttpClientExample1111.executor": "Run",
+    "Application.HttpClientExample222.executor": "Run",
+    "Application.ImageDownloader.executor": "Run",
+    "Application.MD5Example.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.MainTest.executor": "Run",
+    "Application.ParserUtil.executor": "Debug",
+    "Application.PythonCaller.executor": "Debug",
+    "Application.SnowFlakeUtil.executor": "Run",
+    "Application.SnowflakeIdWorker.executor": "Run",
+    "Application.StockTopicAnalyzer.executor": "Run",
+    "Application.SuperLean.executor": "Debug",
+    "Application.Tess4JUrlExample.executor": "Run",
+    "Application.TesseractExample.executor": "Debug",
+    "Application.TestController.executor": "Debug",
+    "Application.TongHuaShun.executor": "Run",
+    "Application.TrendAnalyzer.executor": "Run",
+    "Application.TrendAnalyzerWithRegression.executor": "Run",
+    "Application.baseJava.test.BetaCoefficientAnalyzer.executor": "Debug",
+    "Application.dsjfld.executor": "Debug",
+    "Application.dsjfldsj.executor": "Run",
+    "Application.jldfsj.executor": "Run",
+    "Application.jldfsjsdfs3333.executor": "Run",
+    "Application.jldfsjsdfsd.executor": "Debug",
+    "Application.jldfsjsdfsd22222.executor": "Run",
+    "Application.jldfsjsdfsd22w234324.executor": "Debug",
+    "Application.sfdjlks.executor": "Run",
+    "Application.test.executor": "Run",
+    "Application.zmkg.Main.executor": "Run",
+    "Application.zmkg.TrendAnalyzer.executor": "Run",
+    "JUnit.MainTest.testR1232.executor": "Run",
+    "JUnit.dsjkdsl.tessdfsfst.executor": "Run",
+    "Maven.maven_project_test [clean].executor": "Run",
+    "Maven.maven_project_test [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.maven_project_test [package].executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/coatardbul/IdeaProjects/maven_project_test/src/main/java/util",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "e56f51e35eba561512b9526c1f3dcbf5",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/other" />
+      <recent name="$PROJECT_DIR$/src/main/java/util" />
+      <recent name="$PROJECT_DIR$/src/main/java/zmkg" />
       <recent name="$PROJECT_DIR$/src/main/java/robot" />
+      <recent name="$PROJECT_DIR$/src/main/java/other" />
       <recent name="$PROJECT_DIR$/src/main/java/js" />
-      <recent name="$PROJECT_DIR$/src/main/java/baseJava/java8" />
-      <recent name="$PROJECT_DIR$/src/main/java/baseJava/IO" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
@@ -202,14 +233,14 @@
       <recent name="D:\workspace\idea\maven_project_test\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="baseJava.java8" />
+      <recent name="zmkg" />
+      <recent name="util" />
       <recent name="robot" />
       <recent name="js" />
-      <recent name="baseJava.java8" />
-      <recent name="baseJava.IO" />
-      <recent name="baseJava.math" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AliPost11Verify">
+  <component name="RunManager" selected="Application.BasicChat">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -221,12 +252,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AliPost11Verify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="robot.AliPost11Verify" />
+    <configuration name="ABetaCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.test.ABetaCalculator" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="robot.*" />
+          <option name="PATTERN" value="baseJava.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,12 +265,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AliPostVerify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="robot.AliPostVerify" />
+    <configuration name="BasicChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stock.BasicChat" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="robot.*" />
+          <option name="PATTERN" value="stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -247,12 +278,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AliVerify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="robot.AliVerify" />
+    <configuration name="BetaCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baseJava.test.BetaCalculator" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="robot.*" />
+          <option name="PATTERN" value="baseJava.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,12 +291,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fanwei" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="robot.Fanwei" />
+    <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mulThread.hightConcurrentUtil.CyclicBarrierDemo" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="robot.*" />
+          <option name="PATTERN" value="mulThread.hightConcurrentUtil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -273,12 +304,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="StockTopicAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stock.StockTopicAnalyzer" />
       <module name="maven_project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="stock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -294,26 +325,27 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AliPost11Verify" />
-      <item itemvalue="Application.AliPostVerify" />
-      <item itemvalue="Application.AliVerify" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Fanwei" />
+      <item itemvalue="Application.BasicChat" />
+      <item itemvalue="Application.StockTopicAnalyzer" />
+      <item itemvalue="Application.CyclicBarrierDemo" />
+      <item itemvalue="Application.ABetaCalculator" />
+      <item itemvalue="Application.BetaCalculator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AliPost11Verify" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AliVerify" />
-        <item itemvalue="Application.Fanwei" />
-        <item itemvalue="Application.AliPostVerify" />
+        <item itemvalue="Application.BasicChat" />
+        <item itemvalue="Application.StockTopicAnalyzer" />
+        <item itemvalue="Application.CyclicBarrierDemo" />
+        <item itemvalue="Application.ABetaCalculator" />
+        <item itemvalue="Application.BetaCalculator" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-22f8fbaa" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -611,6 +643,59 @@
       <workItem from="1703747553282" duration="7028000" />
       <workItem from="1703812366065" duration="4235000" />
       <workItem from="1703857440137" duration="7000" />
+      <workItem from="1703959770886" duration="49000" />
+      <workItem from="1704157907830" duration="636000" />
+      <workItem from="1704251278062" duration="600000" />
+      <workItem from="1704420500530" duration="723000" />
+      <workItem from="1704507874618" duration="202000" />
+      <workItem from="1704730755973" duration="221000" />
+      <workItem from="1705367747699" duration="608000" />
+      <workItem from="1705389310619" duration="965000" />
+      <workItem from="1706150606565" duration="2018000" />
+      <workItem from="1706866918467" duration="1551000" />
+      <workItem from="1707181606682" duration="193000" />
+      <workItem from="1709000374808" duration="533000" />
+      <workItem from="1709517757017" duration="403000" />
+      <workItem from="1709773122636" duration="1134000" />
+      <workItem from="1710136862671" duration="487000" />
+      <workItem from="1710297025452" duration="585000" />
+      <workItem from="1711523029102" duration="1162000" />
+      <workItem from="1711592007181" duration="293000" />
+      <workItem from="1712040208358" duration="260000" />
+      <workItem from="1712108745026" duration="470000" />
+      <workItem from="1712451254613" duration="882000" />
+      <workItem from="1713363673675" duration="1502000" />
+      <workItem from="1713405500119" duration="8450000" />
+      <workItem from="1713595345610" duration="1795000" />
+      <workItem from="1713859561503" duration="1996000" />
+      <workItem from="1714457483072" duration="38000" />
+      <workItem from="1714457528876" duration="543000" />
+      <workItem from="1714620030038" duration="128000" />
+      <workItem from="1714734215827" duration="230000" />
+      <workItem from="1715222279705" duration="854000" />
+      <workItem from="1717773666937" duration="986000" />
+      <workItem from="1718270643729" duration="2898000" />
+      <workItem from="1718443157009" duration="1328000" />
+      <workItem from="1719102770930" duration="7150000" />
+      <workItem from="1719496951531" duration="1341000" />
+      <workItem from="1720078869153" duration="791000" />
+      <workItem from="1730613010780" duration="768000" />
+      <workItem from="1730634146454" duration="649000" />
+      <workItem from="1734852265626" duration="981000" />
+      <workItem from="1734854393712" duration="372000" />
+      <workItem from="1734856875374" duration="1004000" />
+      <workItem from="1735197380771" duration="1145000" />
+      <workItem from="1736411523152" duration="3713000" />
+      <workItem from="1740067441012" duration="2352000" />
+      <workItem from="1743328266420" duration="1000" />
+      <workItem from="1761461562696" duration="875000" />
+      <workItem from="1761880800318" duration="1698000" />
+      <workItem from="1762731301519" duration="108000" />
+      <workItem from="1770275598571" duration="3407000" />
+      <workItem from="1771160659020" duration="129000" />
+      <workItem from="1771160801561" duration="1018000" />
+      <workItem from="1771686540305" duration="1879000" />
+      <workItem from="1771773823041" duration="3622000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1590045949980</created>
@@ -773,7 +858,15 @@
       <option name="project" value="LOCAL" />
       <updated>1639988078641</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="2131">
+      <option name="closed" value="true" />
+      <created>1703959779152</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1703959779152</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1106,11 +1199,6 @@
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mulThread/hightConcurrentUtil/CyclicBarrierDemo.java</url>
           <line>50</line>
           <option name="timeStamp" value="152" />
@@ -1149,11 +1237,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/network/dsjkdsl.java</url>
           <line>206</line>
           <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/robot/jldfsj.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/robot/ParserUtil.java</url>
@@ -1200,7 +1283,90 @@
           <line>166</line>
           <option name="timeStamp" value="173" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pic/MD5Example.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/SnowFlakeUtil.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliVerify.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/AliVerify.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/robot/dsjfldsj.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/dsjfld.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/TestController.java</url>
+          <line>419</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/TestController.java</url>
+          <line>470</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/TestController.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/TestController.java</url>
+          <line>244</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/TestController.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zmkg/PythonCaller.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/java8/SuperLean.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/baseJava/test/ABetaCalculator.java</url>
+          <line>496</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
